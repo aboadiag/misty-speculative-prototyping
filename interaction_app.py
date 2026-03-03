@@ -42,6 +42,7 @@ def init_db():
 #identify face --> captured by her vision system
 @app.route('/identify', methods=['POST'])
 def identify():
+
     data = request.get_json()
     if data and 'base64' in data:
         img_data = base64.b64decode(data['base64'])
@@ -50,9 +51,12 @@ def identify():
             f.write(img_data)
             
         name = vision_module.identify_face(filepath)
-        is_new = True
+        is_new = False # if person face is unknown, may not be new, just "unknown"
 
         if name not in ["Unknown", "Error"]:
+            # Strip suffixes before checking database ---
+            clean_name = name.split('_')[0].lower()
+
             conn = sqlite3.connect(DB_PATH)
             cursor = conn.cursor()
             
@@ -70,12 +74,36 @@ def identify():
                 print(f"Syncing {name} to SQL database...")
                 cursor.execute("INSERT INTO users (name, face_id) VALUES (?, ?)", 
                                (name.lower(), f"{name}.jpg"))
-                is_new = False # Set to false so she greets you properly immediately
-            
+                is_new = True 
+        
             conn.commit()
             conn.close()
 
+        #If name is "Unknown", is_new stays False. 
+        # This prevents Misty from starting the "What is your name" talk 
+        # unless you specifically want her to.
+
     return jsonify({"status": "success", "identified_as": name, "is_new": is_new})
+
+# View all remembered friends
+@app.route('/history', methods=['GET'])
+def get_history():
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        # This helper makes the results look like dictionaries instead of lists
+        conn.row_factory = sqlite3.Row 
+        cursor = conn.cursor()
+        
+        cursor.execute("SELECT name, last_seen FROM users ORDER BY last_seen DESC")
+        rows = cursor.fetchall()
+        
+        # Convert rows to a list of dicts
+        history = [dict(row) for row in rows]
+        
+        conn.close()
+        return jsonify({"status": "success", "count": len(history), "history": history})
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 # learn face that has been captured by vision system --> save to face db
 @app.route('/learn', methods=['POST'])

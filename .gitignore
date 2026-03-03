@@ -1,4 +1,5 @@
 # --- Private Data ---
+pruned_backups/
 known_faces/
 incoming_photos/
 audio_cache/

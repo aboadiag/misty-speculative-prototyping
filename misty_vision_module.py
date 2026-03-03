@@ -25,7 +25,7 @@ def identify_face(image_path):
         # model_name='ArcFace', #VGG-Face #Reliable and relatively fast
         # detector_backend='retinaface',  # best accuracy
         model_name='VGG-Face',
-        detector_backend='opencv',
+        detector_backend='opencv', #fast and accurate
         distance_metric='cosine',   # 'cosine' is generally better for lighting changes
         enforce_detection=False     # Prevents crashing if a face isn't perfectly clear
     )
@@ -40,7 +40,8 @@ def identify_face(image_path):
 
             # --- THE FIX: ENFORCE STRICTNESS ---
             # If the distance is > 0.45, Misty is just guessing.
-            if distance > 0.45:
+            if distance > 0.38:
+                print(f"Distance {distance:.4f} too high. Treating as Unknown.")
                 return "Unknown"
             
             # Extract the name from the filename (e.g., 'kyle.jpg' -> 'kyle')

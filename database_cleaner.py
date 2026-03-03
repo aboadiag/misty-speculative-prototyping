@@ -21,37 +21,36 @@ def prune_database():
         os.makedirs(PRUNED_FOLDER)
 
     files = [f for f in os.listdir(KNOWN_FACES) if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
-    unique_people = {}
+    people_collections = {}
 
-    print(f"--- Starting Pruning on {len(files)} files ---")
+    print(f"--- Maintenance Starting ---")
 
     for filename in files:
         path = os.path.join(KNOWN_FACES, filename)
-        # Identify person (e.g., 'kyle_1.jpg' -> 'kyle')
         name = filename.split('_')[0].split('.')[0].lower()
-        blur_score = get_blur_score(path)
+        score = get_blur_score(path)
 
-        if name not in unique_people:
-            unique_people[name] = {'filename': filename, 'score': blur_score}
-        else:
-            old_best = unique_people[name]
-            if blur_score > old_best['score']:
-                shutil.move(os.path.join(KNOWN_FACES, old_best['filename']), 
-                            os.path.join(PRUNED_FOLDER, old_best['filename']))
-                print(f"Replacing {old_best['filename']} with sharper version: {filename}")
-                unique_people[name] = {'filename': filename, 'score': blur_score}
-            else:
-                shutil.move(path, os.path.join(PRUNED_FOLDER, filename))
-                print(f"Removing low-quality/duplicate: {filename} (Score: {blur_score:.2f})")
+        if name not in people_collections:
+            people_collections[name] = []
+        people_collections[name].append({'filename': filename, 'score': score})
 
-    # --- THE CACHE WIPE ---
-    print("Wiping DeepFace representation cache...")
+    for name, images in people_collections.items():
+        # Sort images by blur score (sharpest first)
+        images.sort(key=lambda x: x['score'], reverse=True)
+        
+        # Keep the top 5 sharpest images, move the rest to pruned
+        to_keep = images[:5] 
+        to_prune = images[5:]
+
+        for item in to_prune:
+            shutil.move(os.path.join(KNOWN_FACES, item['filename']), 
+                        os.path.join(PRUNED_FOLDER, item['filename']))
+            print(f"Pruned extra/blurry image for {name}: {item['filename']}")
+
+    # Wipe the .pkl cache so DeepFace sees the new gallery
     for f in os.listdir(KNOWN_FACES):
         if f.endswith(".pkl"):
             os.remove(os.path.join(KNOWN_FACES, f))
-            print(f"Deleted cache file: {f}")
-
-    print("--- Maintenance Complete ---")
 
 if __name__ == "__main__":
     prune_database()
