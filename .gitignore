@@ -1,0 +1,20 @@
+# --- Private Data ---
+known_faces/
+incoming_photos/
+audio_cache/
+
+# --- Python Junk ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# --- VS Code & System ---
+.vscode/
+.DS_Store
+structure.txt
+
+# Secrets
+.env
