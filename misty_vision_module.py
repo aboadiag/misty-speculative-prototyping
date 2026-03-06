@@ -1,4 +1,5 @@
-#misty_vision_module.py
+# misty_vision_module.py
+# used to identify face and save to database
 from deepface import DeepFace
 import os
 import pandas as pd
@@ -47,9 +48,10 @@ def identify_face(image_path):
             # Extract the name from the filename (e.g., 'kyle.jpg' -> 'kyle')
             best_match_path = best_match['identity']
             filename = os.path.basename(best_match_path)
-            name = os.path.splitext(filename)[0]
+            raw_name = os.path.splitext(filename)[0]
+            clean_name = raw_name.split('_')[0] 
             
-            return name
+            return clean_name
         
         return "Unknown"
 

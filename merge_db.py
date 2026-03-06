@@ -12,8 +12,8 @@ def merge_database():
         return
 
     # 1. Create a backup
-    shutil.copy(DB_NAME, f"{DB_NAME}.backup_{int(datetime.now().timestamp())}")
-    print("Backup created.")
+    # shutil.copy(DB_NAME, f"{DB_NAME}.backup_{int(datetime.now().timestamp())}")
+    # print("Backup created.")
 
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()

@@ -10,7 +10,7 @@ class MistyHeartMonitorView extends WatchUi.View {
     // --- CONFIGURATION ---
     // TODO: REPLACE THIS IP with your Laptop's real IP Address (e.g., 192.168.1.50)
     // Keep the :5000/update_breath part at the end.
-    hidden var LAPTOP_URL = "https://d240-128-237-82-210.ngrok-free.app/update_breath"; // connect to ngrok then to my laptop
+    hidden var LAPTOP_URL = "https://4a2f-128-237-82-114.ngrok-free.app/update_breath"; // connect to ngrok then to my laptop
     
     hidden var _timer;
     hidden var _currentRate = 0;

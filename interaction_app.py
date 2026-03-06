@@ -1,11 +1,15 @@
 ## interaction_app.py
-## purpose: vision and data server
+## purpose: vision and garmin data server
 from flask import Flask, request, jsonify
 import sqlite3
 import os
 import misty_vision_module as vision_module
 from datetime import datetime
 import base64
+import misty_brain as mb
+
+# Use the Robot instance from your brain
+misty = mb.misty
 
 #define flask app 
 app = Flask(__name__)
@@ -39,10 +43,64 @@ def init_db():
     conn.close()
     print(f"Database initialized at: {DB_PATH}")
 
+# --- Global State --- to store the last activity
+last_recorded_activity = "STILL"
+
+# ==========================================
+# 1. GARMIN ENDPOINTS (Port 5000)
+# ==========================================
+@app.route('/update_activity', methods=['POST'])
+def update_activity():
+    global last_recorded_activity
+    data = request.json
+    last_recorded_activity = data.get('activity_type', 'STILL')
+
+    try:
+        data = request.json
+        # Garmin/Phone Apps usually send activity as a string or ID
+        activity = data.get('activity_type', 'UNKNOWN').upper()
+        confidence = data.get('confidence', 100) # How sure the sensor is
+        
+        print(f"P01 Activity Detected: {activity} ({confidence}% confidence)")
+        
+        # --- REACTION LOGIC ---
+        if activity == "STILL":
+            # Misty turns Dim Blue and looks slightly down (resting)
+            misty.ChangeLED(0, 0, 50)
+            print("Misty enters Resting Mode.")
+            
+        elif activity in ["WALKING", "ON_FOOT"]:
+            # Misty turns Green and looks up/excited
+            misty.ChangeLED(0, 255, 0)
+            misty.MoveHead(-10, 0, 0, 40)
+            print("Misty acknowledges movement!")
+            
+        elif activity in ["RUNNING", "CYCLING"]:
+            # Misty pulses Red/Orange for high intensity
+            misty.TransitionLED(255, 69, 0, 0, 0, 0, "Blink", 500)
+            print("Misty detects high intensity workout!")
+
+        return jsonify({"status": "updated"}), 200
+
+    except Exception as e:
+        print(f"Activity Update Error: {e}")
+        return jsonify({"error": str(e)}), 500
+    
+
+@app.route('/current_state', methods=['GET'])
+def current_state():
+    return jsonify({"activity_type": last_recorded_activity})
+
+
+# ==========================================
+# 2. VISION ENDPOINTS (Port 5000)
+# ==========================================
 #identify face --> captured by her vision system
 @app.route('/identify', methods=['POST'])
+# purpose: check database to identify a person (based on face)
+# checks vision system DB and matches face with name and status (i.e, is_new, bool)
+# Name is either a specific name, "unkown", or "error"
 def identify():
-
     data = request.get_json()
     if data and 'base64' in data:
         img_data = base64.b64decode(data['base64'])
@@ -121,21 +179,29 @@ def learn_new_face():
         f.write(img_data)
 
     # 2. Record the encounter in SQLite
+    # strip the suffix (like _0) for the SQL 'name' column 
+    # so "abena_0" and "abena_1" both count as "abena" in your history.
+    clean_name = name.split('_')[0]
+    
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     cursor.execute(
         "INSERT OR REPLACE INTO users (name, face_id, last_seen) VALUES (?, ?, ?)",
-        (name, filename, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+        (clean_name, filename, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     )
     conn.commit()
     conn.close()
 
     # 3. Wipe the DeepFace cache (.pkl) so the new face is active immediately
-    for f in os.listdir(vision_module.FACES_DB):
-        if f.endswith(".pkl"):
-            os.remove(os.path.join(vision_module.FACES_DB, f))
+    try:
+        for f in os.listdir(vision_module.FACES_DB):
+            if f.endswith(".pkl"):
+                os.remove(os.path.join(vision_module.FACES_DB, f))
+                print("Cache cleared: New faces are now live.")
+    except Exception as e:
+        print(f"Warning: Could not clear cache: {e}")
 
-    return jsonify({"status": "success", "message": f"Learned {name}"})
+    return jsonify({"status": "success", "message": f"Learned {clean_name}"})
 
 
 #base app route

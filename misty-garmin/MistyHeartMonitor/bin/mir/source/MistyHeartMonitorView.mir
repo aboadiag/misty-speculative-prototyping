@@ -21,7 +21,7 @@ class MistyHeartMonitorView extends WatchUi.View {
     }
     [ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 13; @position = 15; @symbol_vardef = [LAPTOP_URL,13,15,25]; ]
     protected
-    var LAPTOP_URL = "https://d240-128-237-82-210.ngrok-free.app/update_breath";
+    var LAPTOP_URL = "https://4a2f-128-237-82-114.ngrok-free.app/update_breath";
     [ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 15; @position = 15; @symbol_vardef = [_timer,15,15,21]; ]
     protected
     var _timer;
