@@ -50,7 +50,7 @@ def misty_motivates_and_reminders(name):
     motivation = user_data.get('motivation', "The best way to predict the future is to create it.")
     
     text = f"I've been tracking your progress on {goal}. Just a reminder: {motivation}"
-    mb.speak_smart(text, misty)
+    mb.speak_smart(text, misty, name=name)
 
 # Misty looks up research on the mental impacts (positive and negative)
 # on mental wellbeing from https://www.health.harvard.edu/blog/the-health-effects-of-too-much-gaming-2020122221645
@@ -85,13 +85,13 @@ def misty_engagement_dialogue(name):
     try:
         energy = int(input(f"(Terminal) Enter {name}'s energy level (1-10): "))
         if energy > 7:
-            mb.speak_smart("That's fantastic! Let's channel that energy into your goal.", misty)
+            mb.speak_smart("That's fantastic! Let's channel that energy into your goal.", misty, name=name)
         elif energy > 4:
-            mb.speak_smart("Not bad. A quick walk might get you back to a ten.", misty)
+            mb.speak_smart("Not bad. A quick walk might get you back to a ten.", misty, name=name)
         else:
-            mb.speak_smart("I'm sorry to hear that. Maybe it's time for a 15 minute power nap.", misty)
+            mb.speak_smart("I'm sorry to hear that. Maybe it's time for a 15 minute power nap.", misty, name=name)
     except ValueError:
-        mb.speak_smart("I didn't quite catch that, but I'm here for you anyway.", misty)
+        mb.speak_smart("I didn't quite catch that, but I'm here for you anyway.", misty, name=name)
 
 if __name__ == "__main__":
     # 1. Start by finding the person
