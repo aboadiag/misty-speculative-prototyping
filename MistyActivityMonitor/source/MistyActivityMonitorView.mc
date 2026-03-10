@@ -10,7 +10,7 @@ class MistyActivityMonitorView extends WatchUi.View {
 
     // --- CONFIGURATION ---
     // Updated endpoint to /update_activity
-    hidden var LAPTOP_URL = "https://1454-128-237-82-119.ngrok-free.app/update_activity"; 
+    hidden var LAPTOP_URL = "https://6332-128-237-82-119.ngrok-free.app/update_activity"; 
     
     hidden var _timer;
     hidden var _currentActivity = "STILL";

@@ -24,7 +24,7 @@ PROFILE_CASCADE = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_pro
 
 ## IP addresses
 TTS_KEY = os.getenv("ELEVEN_LAB_KEY")
-NGROK_URL = "https://1454-128-237-82-119.ngrok-free.app" #NGROK URL --->vision server url
+NGROK_URL = "https://f3a5-128-237-82-216.ngrok-free.app" #NGROK URL --->vision server url
 
 # Search range for the head (Pitch, Roll, Yaw)
 # Yaw is left/right. -40 is right, 40 is left.
@@ -53,24 +53,40 @@ print(f"TTS_KEY value: {TTS_KEY}")
 if not os.path.exists(AUDIO_FOLDER):
     os.makedirs(AUDIO_FOLDER)
 
+import requests
+
+
+# At the top with your other globals
+CURRENT_USER = "guest"
+
+def set_current_user(name):
+    global CURRENT_USER
+    # Clean it once here
+    CURRENT_USER = re.sub(r'_\d+', '', str(name)).lower().strip()
 
 # use eleven labs api to speak text
-def speak_smart(text, misty_object):
-    VOICE_ID = "21m00Tcm4TlvDq8ikWAM" #rachel
+def speak_smart(text, misty_object, name="guest"):
+    #"21m00Tcm4TlvDq8ikWAM" #rachel
+    VOICE_ID = "SAz9YHcvj6GT2YYXdXww" # River, Relaxed, Neutral, Informative
+    VOICE_NAME = "River"
 
     # Clean the name for natural speech ---
     # This looks for names followed by underscores or numbers and cleans them
     # e.g., "Hello abena_1!" -> "Hello abena!"
     spoken_text = re.sub(r'_\d+', '', text) # Removes _1, _2, etc.
     spoken_text = spoken_text.replace('_', ' ') # Replaces any other underscores with spaces
+    file_safe_text = "".join([c if c.isalnum() else "_" for c in spoken_text])
 
-    clean_filename = "".join([c if c.isalnum() else "_" for c in text])
-    filename = f"{clean_filename[:30]}_{VOICE_ID[:5]}.mp3" 
+    # clean_filename = "".join([c if c.isalnum() else "_" for c in text])
+    # clean_filename = re.sub(r'_\d+', '', str(name)).lower().strip()
+    # filename = f"{VOICE_NAME}_{VOICE_ID[:4]}_{clean_filename[:30]}.mp3" 
+    filename = f"{VOICE_NAME}_{CURRENT_USER}_{file_safe_text[:25]}.mp3"
+
     local_path = os.path.join(AUDIO_FOLDER, filename)
     # check_credits()
 
     if not os.path.exists(local_path):
-        print(f"Requesting ElevenLabs (Voice: {VOICE_ID})...")
+        print(f"Requesting ElevenLabs (Voice: {VOICE_NAME})...")
         try:
             # This is the correct v1.x client path
             response = client.text_to_speech.convert(
@@ -327,3 +343,29 @@ def user_calibration(misty_object):
 
     speak_smart("Perfect. I have saved those angles to my memory. Calibration complete.", misty_object)
     return name # Return name so the brain knows who it just met
+
+
+if __name__ == "__main__":
+  # Check if key actually exists
+    if not TTS_KEY:
+        print("CRITICAL: TTS_KEY is empty. Check your .env file!")
+    else:
+        url = "https://api.elevenlabs.io/v1/voices"
+        headers = {
+            "xi-api-key": TTS_KEY,
+            "Content-Type": "application/json"
+        }
+        
+        print(f"Attempting to fetch voices with key: {TTS_KEY[:5]}***") # Safety check
+        response = requests.get(url, headers=headers)
+
+        if response.status_code == 200:
+            voices = response.json().get('voices', [])
+            print(f"{'NAME':<15} | {'VOICE ID':<25} | {'CATEGORY'}")
+            print("-" * 60)
+            for v in voices:
+                # This filter ensures you only see the ones that won't give a 402 error
+                    print(f"{v['name']:<15} | {v['voice_id']:<25} | {v['category']}")
+        else:
+            print(f"Error fetching voices. Status: {response.status_code}")
+            print(f"Server says: {response.text}")

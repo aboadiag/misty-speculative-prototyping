@@ -23,7 +23,7 @@ class MistyActivityMonitorView extends WatchUi.View {
     }
     [ @file = "C:\Users\aboad\misty-speculative-prototyping\MistyActivityMonitor\source\MistyActivityMonitorView.mc"; @line = 13; @position = 15; @symbol_vardef = [LAPTOP_URL,13,15,25]; ]
     protected
-    var LAPTOP_URL = "https://1454-128-237-82-119.ngrok-free.app/update_activity";
+    var LAPTOP_URL = "https://6332-128-237-82-119.ngrok-free.app/update_activity";
     [ @file = "C:\Users\aboad\misty-speculative-prototyping\MistyActivityMonitor\source\MistyActivityMonitorView.mc"; @line = 15; @position = 15; @symbol_vardef = [_timer,15,15,21]; ]
     protected
     var _timer;

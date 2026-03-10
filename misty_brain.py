@@ -9,7 +9,7 @@ import os
 from dotenv import load_dotenv
 import re
 import misty_vision_processing as misty_vp
-from misty_vision_processing import scan_for_person, learn_person, speak_smart, user_calibration
+from misty_vision_processing import scan_for_person, learn_person, speak_smart, user_calibration, set_current_user
 
 # 1. Try to load the file
 load_status = load_dotenv()

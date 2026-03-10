@@ -103,7 +103,8 @@ if __name__ == "__main__":
     if identified_name:
         # 2. Run the new modules
         # misty_jokes()
-        time.sleep(3)
+        # time.sleep(3)
         misty_checksin(identified_name)
+        time.sleep(3)
     else:
         print("No one found to joke with.")
