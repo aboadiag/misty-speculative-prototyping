@@ -1,0 +1,203 @@
+[ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
+import Toybox.Application;
+[ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [WatchUi,3,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Communications,4,14,28]; ]
+import Toybox.Communications;
+[ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Timer,5,14,19]; ]
+import Toybox.Timer;
+[ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc"; @line = 8; @symbol_classdef = [mistyStateDetectionApp,8,6,28]; @symbol_extends<0> = [Application,8,37,48]; @symbol_extends<1> = [AppBase,8,49,56]; ]
+class mistyStateDetectionApp extends Application.AppBase {
+    [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc"; @line = 9; @position = 8; @symbol_vardef = [view,9,8,12]; @symbol_type<0> = [mistyStateDetectionView,9,16,39]; ]
+    var view as mistyStateDetectionView or Null;
+    [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc"; @line = 11; @position = 15; @symbol_vardef = [NGROK_GARMIN,11,15,27]; ]
+    protected
+    var NGROK_GARMIN = "https://3ac1-128-237-82-119.ngrok-free.app/get_situation";
+    [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc"; @line = 13; @symbol_functiondef = [initialize,13,13,23]; ]
+    function initialize() as Void {
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_13_26_15_4_start:
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc" 14 8 ]
+        symbol [ AppBase %tmp.2 14 8 15 ];
+        %tmp.2 = getv ? :AppBase;
+        symbol [ initialize %tmp.3 14 16 26 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_13_26_15_4_stop:
+    }
+    [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc"; @line = 17; @symbol_functiondef = [getInitialView,17,13,27]; ]
+    function getInitialView() {
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_17_30_25_4_start:
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc" 18 8 ]
+        symbol [ mistyStateDetectionView %tmp.4 18 19 42 ];
+        %tmp.4 = getv ? :mistyStateDetectionView;
+        %tmp.1 = newc %tmp.4 ();
+        symbol [ view ? 18 8 12 ];
+        putv self :view %tmp.1;
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc" 20 8 ]
+        [ "c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_17_30_25_4_start" "c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_17_30_25_4_stop" ]
+        %pollTimer.1 = local;
+        symbol [ pollTimer %pollTimer.1 20 12 21 ];
+        symbol [ Timer %tmp.7 20 28 33 ];
+        %tmp.7 = getm $.Toybox.Timer;
+        symbol [ Timer %tmp.8 20 34 39 ];
+        %tmp.8 = getv function ? %tmp.7 :Timer;
+        %tmp.5 = newc %tmp.8 ();
+        lputv %pollTimer.1 %tmp.5;
+        symbol [ pollTimer %pollTimer.1 20 12 21 ];
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc" 22 8 ]
+        %tmp.9 = lgetv %pollTimer.1;
+        symbol [ pollTimer %tmp.9 22 8 17 ];
+        symbol [ start %tmp.10 22 18 23 ];
+        %tmp.10 = getv function %tmp.9 :start;
+        %tmp.11 = self;
+        symbol [ method %tmp.12 22 24 30 ];
+        %tmp.12 = getv function %tmp.11 :method;
+        %tmp.14 = const :fetchData;
+        symbol [ fetchData %tmp.14 22 32 41 const ];
+        %tmp.15 = invoke %tmp.11 %tmp.12(%tmp.14);
+        %tmp.16 = as %tmp.15 (callback() as Void);
+        %tmp.17 = 3000;
+        %tmp.18 = true;
+        invoke %tmp.9 %tmp.10(%tmp.16, %tmp.17, %tmp.18);
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc" 24 8 ]
+        %tmp.19 = newa 1;
+        symbol [ view %tmp.21 24 17 21 ];
+        %tmp.21 = getv ? :view;
+        %tmp.22 = dup %tmp.19;
+        %tmp.23 = aputv %tmp.22 0 %tmp.21;
+        ret %tmp.23;
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_17_30_25_4_stop:
+    }
+    [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc"; @line = 27; @symbol_functiondef = [fetchData,27,13,22]; ]
+    function fetchData() as Void {
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_27_33_41_4_start:
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc" 28 8 ]
+        [ "c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_27_33_41_4_start" "c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_27_33_41_4_stop" ]
+        %url.1 = local;
+        symbol [ url %url.1 28 12 15 ];
+        symbol [ NGROK_GARMIN %tmp.2 28 18 30 ];
+        %tmp.2 = getv ? :NGROK_GARMIN;
+        lputv %url.1 %tmp.2;
+        symbol [ url %url.1 28 12 15 ];
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc" 30 8 ]
+        [ "c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_27_33_41_4_start" "c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_27_33_41_4_stop" ]
+        %options.2 = local;
+        symbol [ options %options.2 30 12 19 ];
+        %tmp.3 = newd 2;
+        %tmp.5 = const :method;
+        symbol [ method %tmp.5 31 13 19 const ];
+        symbol [ Communications %tmp.6 31 23 37 ];
+        %tmp.6 = getm $.Toybox.Communications;
+        symbol [ HTTP_REQUEST_METHOD_GET %tmp.7 31 38 61 ];
+        %tmp.7 = getv %tmp.6 :HTTP_REQUEST_METHOD_GET;
+        %tmp.8 = dup %tmp.3;
+        %tmp.9 = aputv %tmp.8 %tmp.5 %tmp.7;
+        %tmp.11 = const :responseType;
+        symbol [ responseType %tmp.11 32 13 25 const ];
+        symbol [ Communications %tmp.12 32 29 43 ];
+        %tmp.12 = getm $.Toybox.Communications;
+        symbol [ HTTP_RESPONSE_CONTENT_TYPE_JSON %tmp.13 32 44 75 ];
+        %tmp.13 = getv %tmp.12 :HTTP_RESPONSE_CONTENT_TYPE_JSON;
+        %tmp.14 = dup %tmp.9;
+        %tmp.15 = aputv %tmp.14 %tmp.11 %tmp.13;
+        lputv %options.2 %tmp.15;
+        symbol [ options %options.2 30 12 19 ];
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc" 35 8 ]
+        symbol [ Communications %tmp.16 35 8 22 ];
+        %tmp.16 = getm $.Toybox.Communications;
+        symbol [ makeWebRequest %tmp.17 35 23 37 ];
+        %tmp.17 = getv function %tmp.16 :makeWebRequest;
+        %tmp.18 = lgetv %url.1;
+        symbol [ url %tmp.18 36 12 15 ];
+        %tmp.19 = newd 0;
+        %tmp.20 = lgetv %options.2;
+        symbol [ options %tmp.20 38 12 19 ];
+        %tmp.21 = self;
+        symbol [ method %tmp.22 39 12 18 ];
+        %tmp.22 = getv function %tmp.21 :method;
+        %tmp.24 = const :onResponse;
+        symbol [ onResponse %tmp.24 39 20 30 const ];
+        %tmp.25 = invoke %tmp.21 %tmp.22(%tmp.24);
+        %tmp.26 = as %tmp.25 (callback(code as Lang.Number, data as Lang.Dictionary or Null) as Void);
+        symbol [ code %tmp.26 39 42 46 ];
+        symbol [ Lang %tmp.26 39 50 54 ];
+        symbol [ Number %tmp.26 39 55 61 ];
+        symbol [ data %tmp.26 39 63 67 ];
+        symbol [ Lang %tmp.26 39 71 75 ];
+        symbol [ Dictionary %tmp.26 39 76 86 ];
+        invoke %tmp.16 %tmp.17(%tmp.18, %tmp.19, %tmp.20, %tmp.26);
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_27_33_41_4_stop:
+    }
+    [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc"; @line = 43; @symbol_functiondef = [onResponse,43,13,23]; @symbol_param<0> = [code,43,24,28]; @symbol_param<0>_type<0> = [Lang,43,32,36]; @symbol_param<0>_type<1> = [Number,43,37,43]; @symbol_param<1> = [data,43,45,49]; @symbol_param<1>_type<0> = [Lang,43,53,57]; @symbol_param<1>_type<1> = [Dictionary,43,58,68]; ]
+    function onResponse(code as Lang.Number, data as Lang.Dictionary or Null) as Void {
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_43_86_51_4_start:
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc" 44 8 ]
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_8_50_8_if_stmt:
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_12_44_51_begin:
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_12_44_35_begin:
+        %tmp.1 = lgetv %code;
+        symbol [ code %tmp.1 44 12 16 ];
+        %tmp.2 = 200;
+        %tmp.3 = eq %tmp.1 %tmp.2;
+        bf %tmp.3 @c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_8_50_8_if_end;
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_27_44_35_true:
+        %tmp.4 = lgetv %data;
+        symbol [ data %tmp.4 44 27 31 ];
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        push %tmp.6;
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_27_44_35_end:
+        %tmp.7 = phi [%tmp.3 @c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_12_44_35_begin] [%tmp.6 @c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_27_44_35_true] [%tmp.7 @c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_27_44_35_end];
+        bf %tmp.7 @c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_8_50_8_if_end;
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_43_44_51_true:
+        symbol [ view %tmp.9 44 43 47 ];
+        %tmp.9 = getv ? :view;
+        %tmp.10 = null;
+        %tmp.11 = ne %tmp.9 %tmp.10;
+        push %tmp.11;
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_43_44_51_end:
+        %tmp.12 = phi [%tmp.7 @c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_12_44_51_begin] [%tmp.11 @c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_43_44_51_true] [%tmp.12 @c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_43_44_51_end];
+        bf %tmp.12 @c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_8_50_8_if_end;
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_8_50_8_if_true:
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_57_50_8_start:
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc" 46 12 ]
+        symbol [ view %tmp.14 46 13 17 ];
+        %tmp.14 = getv ? :view;
+        %tmp.15 = as %tmp.14 { (!Null) };
+        %tmp.16 = as %tmp.15 mistyStateDetectionView;
+        symbol [ mistyStateDetectionView %tmp.16 46 21 44 ];
+        symbol [ updateState %tmp.17 46 46 57 ];
+        %tmp.17 = getv function %tmp.16 :updateState;
+        %tmp.18 = lgetv %data;
+        symbol [ data %tmp.18 47 16 20 ];
+        %tmp.19 = as %tmp.18 { (!Null) };
+        symbol [ get %tmp.20 47 21 24 ];
+        %tmp.20 = getv function %tmp.19 :get;
+        %tmp.21 = "breath_rate";
+        %tmp.22 = invoke %tmp.19 %tmp.20(%tmp.21);
+        %tmp.23 = lgetv %data;
+        symbol [ data %tmp.23 48 16 20 ];
+        %tmp.24 = as %tmp.23 { (!Null) };
+        symbol [ get %tmp.25 48 21 24 ];
+        %tmp.25 = getv function %tmp.24 :get;
+        %tmp.26 = "watch_message";
+        %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
+        invoke %tmp.16 %tmp.17(%tmp.22, %tmp.27);
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_57_50_8_stop:
+        goto @c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_8_50_8_if_end;
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_44_8_50_8_if_end:
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionApp_mc_43_86_51_4_stop:
+    }
+}
+[ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionApp.mc"; @line = 1; ]
+<init> {
+}

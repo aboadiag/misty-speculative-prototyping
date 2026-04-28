@@ -59,6 +59,34 @@ def identify_face(image_path):
         print(f"Vision Error: {e}")
         return "Error"
     
+# --- NEW FUNCTION: EMOTION DETECTION ---
+def detect_emotion(image_path):
+    """
+    Analyzes an image to determine the dominant facial emotion.
+    Returns strings like: 'happy', 'sad', 'angry', 'fear', 'surprise', 'disgust', 'neutral'
+    """
+    try:
+        # DeepFace.analyze extracts attributes like emotion, age, gender
+        results = DeepFace.analyze(
+            img_path=image_path,
+            actions=['emotion'],
+            detector_backend='opencv',
+            enforce_detection=False
+        )
+        
+        # DeepFace returns a list of dicts if multiple faces are found, or a single dict
+        if isinstance(results, list) and len(results) > 0:
+            dominant_emotion = results[0]['dominant_emotion']
+        elif isinstance(results, dict):
+            dominant_emotion = results['dominant_emotion']
+        else:
+            return "neutral"
+            
+        return dominant_emotion
+
+    except Exception as e:
+        print(f"Emotion Detection Error: {e}")
+        return "neutral"
 
 if __name__ == "__main__":
     print(f"Vision Module Loaded. Looking for faces in: {FACES_DB}")

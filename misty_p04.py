@@ -45,16 +45,16 @@ def misty_morning_checkin(person_name):
     try:
         # Replace the URL with your actual local Flask endpoint. 
         # The timeout=3 is crucial so Misty doesn't freeze if the server is down.
-        response = requests.get("http://127.0.0.1:5000/api/update_breath", timeout=3)
+        response = requests.get("http://127.0.0.1:5000/get_breath", timeout=3)
         if response.status_code == 200:
             data = response.json()
-            current_breathrate = data.get("heartrate", "UNKNOWN")
+            current_breathrate = data.get("breath_rate", "UNKNOWN")
     except Exception as e:
         print(f"[!] Garmin fetch failed (Watch disconnected?): {e}")
 
     # 2. Contextual Opening based on Garmin heart rate
     # Assuming anxiety spikes push HR over ~85-90 bpm while resting
-    if isinstance(current_breathrate, (int, float)) and current_breathrate > 85:
+    if isinstance(current_breathrate, (int, float)) and current_breathrate > 15:
         greeting = f"Good morning, {person_name}. I notice your heart rate is currently {current_breathrate}. Mornings can be overwhelming. Let's take a moment to ground ourselves."
     else:
         greeting = f"Good morning, {person_name}. It is a new day. Let's take a moment to get centered before we start."
@@ -63,14 +63,18 @@ def misty_morning_checkin(person_name):
     time.sleep(len(greeting) * 0.08 + 1)
 
     # 3. The Core activity --> box breathing followed by schedule OR Affirmations followed by schedule
-    mb.speak_smart("What do you need right now before starting your day? Guided box breathing or affirmations?", misty)
+    mb.speak_smart("What do you need right now before starting your day? Guided box breathing, affirmations, or both?", misty)
         
-    wizard_decision = input("\n[WOZ] Select 'B' for box breathing  or 'A' affirmations : ").strip().lower()
+    wizard_decision = input("\n[WOZ] Select 'B' for box breathing  or 'A' affirmations, or 'C' for both : ").strip().lower()
     
     if wizard_decision == "b":
         guided_box_breathing(cycles=3) # Do 3 rounds for the prototype
     elif wizard_decision == "a":
         misty_affirms()
+
+    elif wizard_decision == "c":
+       guided_box_breathing(cycles=3) # Do 3 rounds for the prototype
+       misty_affirms()
     else:
         print(f"You made a mistake, wizard. Try again")
 
@@ -146,8 +150,9 @@ def misty_affirms():
     """Provides a random affirmation, ensures no repeats, and asks WOZ to continue."""
     global available_affirmations
     
+    count = 0
+
     while True:
-        count = 0
         # Check if we ran out of affirmations
         if not available_affirmations:
             msg = "We have gone through all of our affirmations for today. Remember, you are powerful and you are safe."
@@ -172,7 +177,7 @@ def misty_affirms():
         time.sleep(len(affirmation_speech) * 0.08 + 1)
         misty.ChangeLED(0, 255, 0) # Back to Green
 
-        count+=1
+        count=count+1
 
         print(f"count is: {count}")
         # Wizard Prompt
@@ -181,7 +186,10 @@ def misty_affirms():
         wizard_decision = input("\n[WOZ] Give another affirmation? (Y/N): ").strip().lower()
         
         if wizard_decision != 'y':
-            mb.speak_smart("Okay. I am here if you need me.", misty)
+            depart_words = "Okay. I am here if you need me."
+            mb.speak_smart(depart_words, misty)
+            time.sleep(len(depart_words) * 0.08 + 1)
+
             break
 
 

@@ -1,0 +1,1836 @@
+[ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [MistyHappy,9,27,37]; @symbol_type<0> = [ResourceId,9,41,51]; ]
+        var MistyHappy as ResourceId;
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 10; @position = 27; initialized = true; @symbol_vardef = [MistyConcerned,10,27,41]; @symbol_type<0> = [ResourceId,10,45,55]; ]
+        var MistyConcerned as ResourceId;
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 11; @position = 27; initialized = true; @symbol_vardef = [id_monkey,11,27,36]; @symbol_type<0> = [ResourceId,11,40,50]; ]
+        var id_monkey as ResourceId;
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 12; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,12,27,39]; @symbol_type<0> = [ResourceId,12,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 15; @symbol_moduledef = [Layouts,15,11,18]; ]
+    module Layouts {
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 15; ]
+        <init> {
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 16; @symbol_functiondef = [MainLayout,16,17,27]; @symbol_param<0> = [dc,16,28,30]; @symbol_param<0>_type<0> = [Graphics,16,34,42]; @symbol_param<0>_type<1> = [Dc,16,43,45]; @symbol_return<0> = [Array,16,50,55]; @symbol_return<1> = [WatchUi,16,56,63]; @symbol_return<2> = [Drawable,16,64,72]; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_bin_gen_006_B4260_00_source_Rez_mcgen_16_74_25_8_start:
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 17 12 ]
+            [ "c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_bin_gen_006_B4260_00_source_Rez_mcgen_16_74_25_8_start" "c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_bin_gen_006_B4260_00_source_Rez_mcgen_16_74_25_8_stop" ]
+            %rez_cmp_local_var_dc_getWidth.1 = local;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.1 17 16 45 ];
+            %tmp.1 = lgetv %dc;
+            symbol [ dc %tmp.1 17 48 50 ];
+            symbol [ getWidth %tmp.2 17 51 59 ];
+            %tmp.2 = getv function %tmp.1 :getWidth;
+            %tmp.3 = invoke %tmp.1 %tmp.2();
+            lputv %rez_cmp_local_var_dc_getWidth.1 %tmp.3;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.1 17 16 45 ];
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 19 12 ]
+            [ "c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_bin_gen_006_B4260_00_source_Rez_mcgen_16_74_25_8_start" "c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_bin_gen_006_B4260_00_source_Rez_mcgen_16_74_25_8_stop" ]
+            %rez_cmp_local_text_1193959466.2 = local;
+            symbol [ rez_cmp_local_text_1193959466 %rez_cmp_local_text_1193959466.2 19 16 45 ];
+            symbol [ WatchUi %tmp.6 19 52 59 ];
+            %tmp.6 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.7 19 60 64 ];
+            %tmp.7 = getv function ? %tmp.6 :Text;
+            %tmp.8 = newd 6;
+            %tmp.10 = const :color;
+            symbol [ color %tmp.10 19 67 72 const ];
+            symbol [ Graphics %tmp.11 19 74 82 ];
+            %tmp.11 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.12 19 83 94 ];
+            %tmp.12 = getv %tmp.11 :COLOR_WHITE;
+            %tmp.13 = dup %tmp.8;
+            %tmp.14 = aputv %tmp.13 %tmp.10 %tmp.12;
+            %tmp.16 = const :locX;
+            symbol [ locX %tmp.16 19 97 101 const ];
+            %tmp.17 = lgetv %rez_cmp_local_var_dc_getWidth.1;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.17 19 104 133 ];
+            %tmp.18 = 0.5;
+            %tmp.19 = mul %tmp.17 %tmp.18;
+            %tmp.20 = dup %tmp.14;
+            %tmp.21 = aputv %tmp.20 %tmp.16 %tmp.19;
+            %tmp.23 = const :locY;
+            symbol [ locY %tmp.23 19 143 147 const ];
+            %tmp.24 = 5;
+            %tmp.25 = dup %tmp.21;
+            %tmp.26 = aputv %tmp.25 %tmp.23 %tmp.24;
+            %tmp.28 = const :text;
+            symbol [ text %tmp.28 19 153 157 const ];
+            symbol [ $ %tmp.29 19 159 160 ];
+            %tmp.29 = getm $;
+            symbol [ Rez %tmp.30 19 161 164 ];
+            %tmp.30 = getv %tmp.29 :Rez;
+            symbol [ Strings %tmp.31 19 165 172 ];
+            %tmp.31 = getv %tmp.30 :Strings;
+            symbol [ prompt %tmp.32 19 173 179 ];
+            %tmp.32 = getv %tmp.31 :prompt;
+            %tmp.33 = dup %tmp.26;
+            %tmp.34 = aputv %tmp.33 %tmp.28 %tmp.32;
+            %tmp.36 = const :justification;
+            symbol [ justification %tmp.36 19 182 195 const ];
+            symbol [ Graphics %tmp.37 19 197 205 ];
+            %tmp.37 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.38 19 206 225 ];
+            %tmp.38 = getv %tmp.37 :TEXT_JUSTIFY_CENTER;
+            %tmp.39 = dup %tmp.34;
+            %tmp.40 = aputv %tmp.39 %tmp.36 %tmp.38;
+            %tmp.42 = const :font;
+            symbol [ font %tmp.42 19 228 232 const ];
+            symbol [ Graphics %tmp.43 19 234 242 ];
+            %tmp.43 = getm $.Toybox.Graphics;
+            symbol [ FONT_MEDIUM %tmp.44 19 243 254 ];
+            %tmp.44 = getv %tmp.43 :FONT_MEDIUM;
+            %tmp.45 = dup %tmp.40;
+            %tmp.46 = aputv %tmp.45 %tmp.42 %tmp.44;
+            %tmp.4 = newc %tmp.7 (%tmp.46);
+            lputv %rez_cmp_local_text_1193959466.2 %tmp.4;
+            symbol [ rez_cmp_local_text_1193959466 %rez_cmp_local_text_1193959466.2 19 16 45 ];
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 21 12 ]
+            [ "c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_bin_gen_006_B4260_00_source_Rez_mcgen_16_74_25_8_start" "c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_bin_gen_006_B4260_00_source_Rez_mcgen_16_74_25_8_stop" ]
+            %rez_cmp_local_bitmap_id_monkey.3 = local;
+            symbol [ rez_cmp_local_bitmap_id_monkey %rez_cmp_local_bitmap_id_monkey.3 21 16 46 ];
+            symbol [ WatchUi %tmp.49 21 53 60 ];
+            %tmp.49 = getm $.Toybox.WatchUi;
+            symbol [ Bitmap %tmp.50 21 61 67 ];
+            %tmp.50 = getv function ? %tmp.49 :Bitmap;
+            %tmp.51 = newd 4;
+            %tmp.53 = const :identifier;
+            symbol [ identifier %tmp.53 21 70 80 const ];
+            %tmp.54 = "id_monkey";
+            %tmp.55 = dup %tmp.51;
+            %tmp.56 = aputv %tmp.55 %tmp.53 %tmp.54;
+            %tmp.58 = const :rezId;
+            symbol [ rezId %tmp.58 21 96 101 const ];
+            symbol [ $ %tmp.59 21 103 104 ];
+            %tmp.59 = getm $;
+            symbol [ Rez %tmp.60 21 105 108 ];
+            %tmp.60 = getv %tmp.59 :Rez;
+            symbol [ Drawables %tmp.61 21 109 118 ];
+            %tmp.61 = getv %tmp.60 :Drawables;
+            symbol [ id_monkey %tmp.62 21 119 128 ];
+            %tmp.62 = getv %tmp.61 :id_monkey;
+            %tmp.63 = dup %tmp.56;
+            %tmp.64 = aputv %tmp.63 %tmp.58 %tmp.62;
+            %tmp.66 = const :locX;
+            symbol [ locX %tmp.66 21 131 135 const ];
+            symbol [ WatchUi %tmp.67 21 137 144 ];
+            %tmp.67 = getm $.Toybox.WatchUi;
+            symbol [ LAYOUT_HALIGN_CENTER %tmp.68 21 145 165 ];
+            %tmp.68 = getv %tmp.67 :LAYOUT_HALIGN_CENTER;
+            %tmp.69 = dup %tmp.64;
+            %tmp.70 = aputv %tmp.69 %tmp.66 %tmp.68;
+            %tmp.72 = const :locY;
+            symbol [ locY %tmp.72 21 168 172 const ];
+            %tmp.73 = 30;
+            %tmp.74 = dup %tmp.70;
+            %tmp.75 = aputv %tmp.74 %tmp.72 %tmp.73;
+            %tmp.47 = newc %tmp.50 (%tmp.75);
+            lputv %rez_cmp_local_bitmap_id_monkey.3 %tmp.47;
+            symbol [ rez_cmp_local_bitmap_id_monkey %rez_cmp_local_bitmap_id_monkey.3 21 16 46 ];
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 22 12 ]
+            %tmp.76 = lgetv %rez_cmp_local_bitmap_id_monkey.3;
+            symbol [ rez_cmp_local_bitmap_id_monkey %tmp.76 22 12 42 ];
+            symbol [ setLocation %tmp.77 22 43 54 ];
+            %tmp.77 = getv function %tmp.76 :setLocation;
+            %tmp.78 = lgetv %rez_cmp_local_var_dc_getWidth.1;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.78 22 57 86 ];
+            %tmp.79 = lgetv %rez_cmp_local_bitmap_id_monkey.3;
+            symbol [ rez_cmp_local_bitmap_id_monkey %tmp.79 22 89 119 ];
+            symbol [ width %tmp.80 22 120 125 ];
+            %tmp.80 = getv %tmp.79 :width;
+            %tmp.81 = sub %tmp.78 %tmp.80;
+            %tmp.82 = 0.5;
+            %tmp.83 = mul %tmp.81 %tmp.82;
+            %tmp.84 = lgetv %rez_cmp_local_bitmap_id_monkey.3;
+            symbol [ rez_cmp_local_bitmap_id_monkey %tmp.84 22 135 165 ];
+            symbol [ locY %tmp.85 22 166 170 ];
+            %tmp.85 = getv %tmp.84 :locY;
+            invoke %tmp.76 %tmp.77(%tmp.83, %tmp.85);
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 24 12 ]
+            %tmp.86 = newa 2 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.86 24 86 91 ];
+            symbol [ WatchUi %tmp.86 24 92 99 ];
+            symbol [ Drawable %tmp.86 24 100 108 ];
+            %tmp.87 = lgetv %rez_cmp_local_text_1193959466.2;
+            symbol [ rez_cmp_local_text_1193959466 %tmp.87 24 20 49 ];
+            %tmp.88 = dup %tmp.86;
+            %tmp.89 = aputv %tmp.88 0 %tmp.87;
+            %tmp.90 = lgetv %rez_cmp_local_bitmap_id_monkey.3;
+            symbol [ rez_cmp_local_bitmap_id_monkey %tmp.90 24 51 81 ];
+            %tmp.91 = dup %tmp.89;
+            %tmp.92 = aputv %tmp.91 1 %tmp.90;
+            ret %tmp.92;
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_bin_gen_006_B4260_00_source_Rez_mcgen_16_74_25_8_stop:
+        }
+    }
+    [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 28; @symbol_moduledef = [Menus,28,11,16]; ]
+    module Menus {
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 28; ]
+        <init> {
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 29; @symbol_classdef = [MainMenu,29,14,22]; @symbol_extends<0> = [WatchUi,29,31,38]; @symbol_extends<1> = [Menu,29,39,43]; ]
+        class MainMenu extends WatchUi.Menu {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 29; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 29; ]
+            static
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 30; @symbol_functiondef = [initialize,30,21,31]; ]
+            function initialize() as Void {
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_bin_gen_006_B4260_00_source_Rez_mcgen_30_34_34_12_start:
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 31 16 ]
+                symbol [ Menu %tmp.2 31 16 20 ];
+                %tmp.2 = getv ? :Menu;
+                symbol [ initialize %tmp.3 31 21 31 ];
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 32 16 ]
+                %tmp.4 = self;
+                symbol [ addItem %tmp.5 32 16 23 ];
+                %tmp.5 = getv function %tmp.4 :addItem;
+                symbol [ WatchUi %tmp.6 32 25 32 ];
+                %tmp.6 = getm $.Toybox.WatchUi;
+                symbol [ loadResource %tmp.7 32 33 45 ];
+                %tmp.7 = getv function %tmp.6 :loadResource;
+                symbol [ $ %tmp.8 32 46 47 ];
+                %tmp.8 = getm $;
+                symbol [ Rez %tmp.9 32 48 51 ];
+                %tmp.9 = getv %tmp.8 :Rez;
+                symbol [ Strings %tmp.10 32 52 59 ];
+                %tmp.10 = getv %tmp.9 :Strings;
+                symbol [ menu_label_1 %tmp.11 32 60 72 ];
+                %tmp.11 = getv %tmp.10 :menu_label_1;
+                %tmp.12 = invoke %tmp.6 %tmp.7(%tmp.11);
+                %tmp.13 = as %tmp.12 String;
+                symbol [ String %tmp.13 32 77 83 ];
+                %tmp.15 = const :item_1;
+                symbol [ item_1 %tmp.15 32 87 93 const ];
+                invoke %tmp.4 %tmp.5(%tmp.13, %tmp.15);
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 33 16 ]
+                %tmp.16 = self;
+                symbol [ addItem %tmp.17 33 16 23 ];
+                %tmp.17 = getv function %tmp.16 :addItem;
+                symbol [ WatchUi %tmp.18 33 25 32 ];
+                %tmp.18 = getm $.Toybox.WatchUi;
+                symbol [ loadResource %tmp.19 33 33 45 ];
+                %tmp.19 = getv function %tmp.18 :loadResource;
+                symbol [ $ %tmp.20 33 46 47 ];
+                %tmp.20 = getm $;
+                symbol [ Rez %tmp.21 33 48 51 ];
+                %tmp.21 = getv %tmp.20 :Rez;
+                symbol [ Strings %tmp.22 33 52 59 ];
+                %tmp.22 = getv %tmp.21 :Strings;
+                symbol [ menu_label_2 %tmp.23 33 60 72 ];
+                %tmp.23 = getv %tmp.22 :menu_label_2;
+                %tmp.24 = invoke %tmp.18 %tmp.19(%tmp.23);
+                %tmp.25 = as %tmp.24 String;
+                symbol [ String %tmp.25 33 77 83 ];
+                %tmp.27 = const :item_2;
+                symbol [ item_2 %tmp.27 33 87 93 const ];
+                invoke %tmp.16 %tmp.17(%tmp.25, %tmp.27);
+c__Users_aboad_misty_speculative_prototyping_mistyStateDetection_bin_gen_006_B4260_00_source_Rez_mcgen_30_34_34_12_stop:
+            }
+        }
+    }
+    [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 38; @symbol_moduledef = [Strings,38,11,18]; ]
+    module Strings {
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 38; ]
+        <init> {
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 39; @position = 27; initialized = true; @symbol_vardef = [menu_label_1,39,27,39]; @symbol_type<0> = [ResourceId,39,43,53]; ]
+        var menu_label_1 as ResourceId;
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 40; @position = 27; initialized = true; @symbol_vardef = [menu_label_2,40,27,39]; @symbol_type<0> = [ResourceId,40,43,53]; ]
+        var menu_label_2 as ResourceId;
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 41; @position = 27; initialized = true; @symbol_vardef = [prompt,41,27,33]; @symbol_type<0> = [ResourceId,41,37,47]; ]
+        var prompt as ResourceId;
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 42; @position = 27; initialized = true; @symbol_vardef = [AppName,42,27,34]; @symbol_type<0> = [ResourceId,42,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 45; @symbol_moduledef = [Styles,45,11,17]; ]
+    module Styles {
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 45; ]
+        <init> {
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 46; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,46,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 46; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 47 18 ]
+                symbol [ Graphics %tmp.28 47 34 42 ];
+                %tmp.28 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.29 47 43 62 ];
+                %tmp.29 = getv %tmp.28 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.29;
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 48 18 ]
+                symbol [ Graphics %tmp.30 48 25 33 ];
+                %tmp.30 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.31 48 34 44 ];
+                %tmp.31 = getv %tmp.30 :FONT_SMALL;
+                putv self :font %tmp.31;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 47; @position = 18; @symbol_constdef = [justification,47,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 48; @position = 18; @symbol_constdef = [font,48,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 51; @symbol_moduledef = [system_size__menu_header,51,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 51; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 52; @position = 18; @symbol_constdef = [width,52,18,23]; @symbol_type<0> = [Number,52,27,33]; ]
+            const width as Number = 454;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 53; @position = 18; @symbol_constdef = [height,53,18,24]; @symbol_type<0> = [Number,53,28,34]; ]
+            const height as Number = 105;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 56; @symbol_moduledef = [system_loc__hint_button_left_bottom,56,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 56; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 57; @position = 18; @symbol_constdef = [exclude,57,18,25]; @symbol_type<0> = [Boolean,57,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 60; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,60,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 60; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 61 18 ]
+                symbol [ Graphics %tmp.32 61 34 42 ];
+                %tmp.32 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.33 61 43 62 ];
+                %tmp.33 = getv %tmp.32 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.34 61 63 71 ];
+                %tmp.34 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.35 61 72 92 ];
+                %tmp.35 = getv %tmp.34 :TEXT_JUSTIFY_VCENTER;
+                %tmp.36 = bitor %tmp.33 %tmp.35;
+                putv self :justification %tmp.36;
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 62 18 ]
+                symbol [ Graphics %tmp.37 62 25 33 ];
+                %tmp.37 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.38 62 34 44 ];
+                %tmp.38 = getv %tmp.37 :FONT_SMALL;
+                putv self :font %tmp.38;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 61; @position = 18; @symbol_constdef = [justification,61,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 62; @position = 18; @symbol_constdef = [font,62,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 65; @symbol_moduledef = [prompt_loc__body_no_title,65,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 65; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 66; @position = 18; @symbol_constdef = [x,66,18,19]; @symbol_type<0> = [Number,66,23,29]; ]
+            const x as Number = 45;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 67; @position = 18; @symbol_constdef = [y,67,18,19]; @symbol_type<0> = [Number,67,23,29]; ]
+            const y as Number = 68;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 70; @symbol_moduledef = [system_icon_dark__about,70,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 70; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 71; @position = 18; @symbol_constdef = [filename,71,18,26]; @symbol_type<0> = [String,71,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__about.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 72; @position = 18; @symbol_constdef = [compress,72,18,26]; @symbol_type<0> = [String,72,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 73; @position = 18; @symbol_constdef = [dithering,73,18,27]; @symbol_type<0> = [String,73,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 74; @position = 18; @symbol_constdef = [automaticPalette,74,18,34]; @symbol_type<0> = [String,74,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 75; @position = 18; @symbol_constdef = [packingFormat,75,18,31]; @symbol_type<0> = [String,75,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 78; @symbol_moduledef = [system_icon_light__question,78,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 78; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 79; @position = 18; @symbol_constdef = [filename,79,18,26]; @symbol_type<0> = [String,79,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__question.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 80; @position = 18; @symbol_constdef = [compress,80,18,26]; @symbol_type<0> = [String,80,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 81; @position = 18; @symbol_constdef = [dithering,81,18,27]; @symbol_type<0> = [String,81,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 82; @position = 18; @symbol_constdef = [automaticPalette,82,18,34]; @symbol_type<0> = [String,82,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 83; @position = 18; @symbol_constdef = [packingFormat,83,18,31]; @symbol_type<0> = [String,83,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 86; @symbol_moduledef = [system_loc__hint_button_left_top,86,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 86; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 87; @position = 18; @symbol_constdef = [exclude,87,18,25]; @symbol_type<0> = [Boolean,87,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 90; @symbol_moduledef = [prompt_font__title,90,15,33]; ]
+        module prompt_font__title {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 90; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 91 18 ]
+                symbol [ Graphics %tmp.39 91 34 42 ];
+                %tmp.39 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.40 91 43 62 ];
+                %tmp.40 = getv %tmp.39 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.41 91 63 71 ];
+                %tmp.41 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.42 91 72 92 ];
+                %tmp.42 = getv %tmp.41 :TEXT_JUSTIFY_VCENTER;
+                %tmp.43 = bitor %tmp.40 %tmp.42;
+                putv self :justification %tmp.43;
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 92 18 ]
+                symbol [ Graphics %tmp.44 92 25 33 ];
+                %tmp.44 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.45 92 34 44 ];
+                %tmp.45 = getv %tmp.44 :FONT_XTINY;
+                putv self :font %tmp.45;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 91; @position = 18; @symbol_constdef = [justification,91,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 92; @position = 18; @symbol_constdef = [font,92,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 95; @symbol_moduledef = [system_icon_dark__discard,95,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 95; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 96; @position = 18; @symbol_constdef = [filename,96,18,26]; @symbol_type<0> = [String,96,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__discard.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 97; @position = 18; @symbol_constdef = [compress,97,18,26]; @symbol_type<0> = [String,97,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 98; @position = 18; @symbol_constdef = [dithering,98,18,27]; @symbol_type<0> = [String,98,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 99; @position = 18; @symbol_constdef = [automaticPalette,99,18,34]; @symbol_type<0> = [String,99,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 100; @position = 18; @symbol_constdef = [packingFormat,100,18,31]; @symbol_type<0> = [String,100,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 103; @symbol_moduledef = [system_size__menu_item,103,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 103; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 104; @position = 18; @symbol_constdef = [width,104,18,23]; @symbol_type<0> = [Number,104,27,33]; ]
+            const width as Number = 454;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 105; @position = 18; @symbol_constdef = [height,105,18,24]; @symbol_type<0> = [Number,105,28,34]; ]
+            const height as Number = 116;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 108; @symbol_moduledef = [system_color_dark__text,108,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 108; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 110 18 ]
+                symbol [ Graphics %tmp.46 110 31 39 ];
+                %tmp.46 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.47 110 40 57 ];
+                %tmp.47 = getv %tmp.46 :COLOR_TRANSPARENT;
+                putv self :background %tmp.47;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 109; @position = 18; @symbol_constdef = [color,109,18,23]; @symbol_type<0> = [Number,109,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 110; @position = 18; @symbol_constdef = [background,110,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 113; @symbol_moduledef = [system_icon_destructive__discard,113,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 113; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 114; @position = 18; @symbol_constdef = [filename,114,18,26]; @symbol_type<0> = [String,114,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_destructive__discard.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 115; @position = 18; @symbol_constdef = [dithering,115,18,27]; @symbol_type<0> = [String,115,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 116; @position = 18; @symbol_constdef = [packingFormat,116,18,31]; @symbol_type<0> = [String,116,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 119; @symbol_moduledef = [system_icon_dark__hint_action_menu,119,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 119; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 120; @position = 18; @symbol_constdef = [filename,120,18,26]; @symbol_type<0> = [String,120,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__hint_action_menu.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 121; @position = 18; @symbol_constdef = [dithering,121,18,27]; @symbol_type<0> = [String,121,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 122; @position = 18; @symbol_constdef = [packingFormat,122,18,31]; @symbol_type<0> = [String,122,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 125; @symbol_moduledef = [prompt_size__title,125,15,33]; ]
+        module prompt_size__title {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 125; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 126; @position = 18; @symbol_constdef = [width,126,18,23]; @symbol_type<0> = [Number,126,27,33]; ]
+            const width as Number = 192;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 127; @position = 18; @symbol_constdef = [height,127,18,24]; @symbol_type<0> = [Number,127,28,34]; ]
+            const height as Number = 81;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 130; @symbol_moduledef = [confirmation_font__body,130,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 130; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 131 18 ]
+                symbol [ Graphics %tmp.48 131 34 42 ];
+                %tmp.48 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.49 131 43 62 ];
+                %tmp.49 = getv %tmp.48 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.50 131 63 71 ];
+                %tmp.50 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.51 131 72 92 ];
+                %tmp.51 = getv %tmp.50 :TEXT_JUSTIFY_VCENTER;
+                %tmp.52 = bitor %tmp.49 %tmp.51;
+                putv self :justification %tmp.52;
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 132 18 ]
+                symbol [ Graphics %tmp.53 132 25 33 ];
+                %tmp.53 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.54 132 34 43 ];
+                %tmp.54 = getv %tmp.53 :FONT_TINY;
+                putv self :font %tmp.54;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 131; @position = 18; @symbol_constdef = [justification,131,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 132; @position = 18; @symbol_constdef = [font,132,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 135; @symbol_moduledef = [system_color_dark__background,135,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 135; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 136; @position = 18; @symbol_constdef = [color,136,18,23]; @symbol_type<0> = [Number,136,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 137; @position = 18; @symbol_constdef = [background,137,18,28]; @symbol_type<0> = [Number,137,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 140; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,140,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 140; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 141; @position = 18; @symbol_constdef = [exclude,141,18,25]; @symbol_type<0> = [Boolean,141,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 144; @symbol_moduledef = [system_size__launch_icon,144,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 144; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 145; @position = 18; @symbol_constdef = [scaleX,145,18,24]; @symbol_type<0> = [Number,145,28,34]; ]
+            const scaleX as Number = 70;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 146; @position = 18; @symbol_constdef = [scaleY,146,18,24]; @symbol_type<0> = [Number,146,28,34]; ]
+            const scaleY as Number = 70;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 147; @position = 18; @symbol_constdef = [scaleRelativeTo,147,18,33]; @symbol_type<0> = [String,147,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 150; @symbol_moduledef = [confirmation_input__confirm,150,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 150; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 151; @position = 18; @symbol_constdef = [y1,151,18,20]; @symbol_type<0> = [Number,151,24,30]; ]
+            const y1 as Number = 345;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 152; @position = 18; @symbol_constdef = [x1,152,18,20]; @symbol_type<0> = [Number,152,24,30]; ]
+            const x1 as Number = 84;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 153; @position = 18; @symbol_constdef = [y2,153,18,20]; @symbol_type<0> = [Number,153,24,30]; ]
+            const y2 as Number = 454;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 154; @position = 18; @symbol_constdef = [x2,154,18,20]; @symbol_type<0> = [Number,154,24,30]; ]
+            const x2 as Number = 370;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 157; @symbol_moduledef = [prompt_font__body_with_title,157,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 157; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 158 18 ]
+                symbol [ Graphics %tmp.55 158 34 42 ];
+                %tmp.55 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.56 158 43 62 ];
+                %tmp.56 = getv %tmp.55 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.56;
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 159 18 ]
+                symbol [ Graphics %tmp.57 159 25 33 ];
+                %tmp.57 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.58 159 34 43 ];
+                %tmp.58 = getv %tmp.57 :FONT_TINY;
+                putv self :font %tmp.58;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 158; @position = 18; @symbol_constdef = [justification,158,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 159; @position = 18; @symbol_constdef = [font,159,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 162; @symbol_moduledef = [confirmation_loc__body,162,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 162; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 163; @position = 18; @symbol_constdef = [x,163,18,19]; @symbol_type<0> = [Number,163,23,29]; ]
+            const x as Number = 93;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 164; @position = 18; @symbol_constdef = [y,164,18,19]; @symbol_type<0> = [Number,164,23,29]; ]
+            const y as Number = 91;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 167; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,167,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 167; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 168; @position = 18; @symbol_constdef = [exclude,168,18,25]; @symbol_type<0> = [Boolean,168,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 171; @symbol_moduledef = [prompt_color_dark__background,171,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 171; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 172; @position = 18; @symbol_constdef = [color,172,18,23]; @symbol_type<0> = [Number,172,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 173; @position = 18; @symbol_constdef = [background,173,18,28]; @symbol_type<0> = [Number,173,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 176; @symbol_moduledef = [system_icon_destructive__hint_action_menu,176,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 176; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 177; @position = 18; @symbol_constdef = [filename,177,18,26]; @symbol_type<0> = [String,177,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_destructive__hint_action_menu.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 178; @position = 18; @symbol_constdef = [dithering,178,18,27]; @symbol_type<0> = [String,178,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 179; @position = 18; @symbol_constdef = [packingFormat,179,18,31]; @symbol_type<0> = [String,179,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 182; @symbol_moduledef = [system_loc__hint_action_menu,182,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 182; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 183; @position = 18; @symbol_constdef = [x,183,18,19]; @symbol_type<0> = [Number,183,23,29]; ]
+            const x as Number = 227;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 184; @position = 18; @symbol_constdef = [horizontalJustification,184,18,41]; @symbol_type<0> = [String,184,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 185; @position = 18; @symbol_constdef = [y,185,18,19]; @symbol_type<0> = [Number,185,23,29]; ]
+            const y as Number = 370;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 188; @symbol_moduledef = [confirmation_icon__hint_confirm,188,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 188; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 189; @position = 18; @symbol_constdef = [filename,189,18,26]; @symbol_type<0> = [String,189,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 190; @position = 18; @symbol_constdef = [dithering,190,18,27]; @symbol_type<0> = [String,190,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 191; @position = 18; @symbol_constdef = [packingFormat,191,18,31]; @symbol_type<0> = [String,191,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 194; @symbol_moduledef = [system_loc__hint_button_left_middle,194,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 194; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 195; @position = 18; @symbol_constdef = [exclude,195,18,25]; @symbol_type<0> = [Boolean,195,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 198; @symbol_moduledef = [prompt_size__body_no_title,198,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 198; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 199; @position = 18; @symbol_constdef = [width,199,18,23]; @symbol_type<0> = [Number,199,27,33]; ]
+            const width as Number = 363;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 200; @position = 18; @symbol_constdef = [height,200,18,24]; @symbol_type<0> = [Number,200,28,34]; ]
+            const height as Number = 295;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 203; @symbol_moduledef = [system_icon_light__hint_button_left_top,203,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 203; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 204; @position = 18; @symbol_constdef = [exclude,204,18,25]; @symbol_type<0> = [Boolean,204,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 207; @symbol_moduledef = [prompt_color_light__background,207,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 207; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 208; @position = 18; @symbol_constdef = [color,208,18,23]; @symbol_type<0> = [Number,208,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 209; @position = 18; @symbol_constdef = [background,209,18,28]; @symbol_type<0> = [Number,209,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 212; @symbol_moduledef = [confirmation_input__delete,212,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 212; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 213 18 ]
+                symbol [ WatchUi %tmp.59 213 27 34 ];
+                %tmp.59 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.60 213 35 44 ];
+                %tmp.60 = getv %tmp.59 :KEY_ENTER;
+                putv self :button %tmp.60;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 213; @position = 18; @symbol_constdef = [button,213,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 216; @symbol_moduledef = [system_icon_dark__hint_button_left_top,216,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 216; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 217; @position = 18; @symbol_constdef = [exclude,217,18,25]; @symbol_type<0> = [Boolean,217,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 220; @symbol_moduledef = [system_input__action_menu,220,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 220; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 221; @position = 18; @symbol_constdef = [y1,221,18,20]; @symbol_type<0> = [Number,221,24,30]; ]
+            const y1 as Number = 370;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 222; @position = 18; @symbol_constdef = [x1,222,18,20]; @symbol_type<0> = [Number,222,24,30]; ]
+            const x1 as Number = 113;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 223; @position = 18; @symbol_constdef = [y2,223,18,20]; @symbol_type<0> = [Number,223,24,30]; ]
+            const y2 as Number = 454;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 224; @position = 18; @symbol_constdef = [x2,224,18,20]; @symbol_type<0> = [Number,224,24,30]; ]
+            const x2 as Number = 341;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 227; @symbol_moduledef = [system_icon_light__save,227,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 227; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 228; @position = 18; @symbol_constdef = [filename,228,18,26]; @symbol_type<0> = [String,228,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__save.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 229; @position = 18; @symbol_constdef = [compress,229,18,26]; @symbol_type<0> = [String,229,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 230; @position = 18; @symbol_constdef = [dithering,230,18,27]; @symbol_type<0> = [String,230,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 231; @position = 18; @symbol_constdef = [automaticPalette,231,18,34]; @symbol_type<0> = [String,231,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 232; @position = 18; @symbol_constdef = [packingFormat,232,18,31]; @symbol_type<0> = [String,232,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 235; @symbol_moduledef = [prompt_color_light__body,235,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 235; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 237 18 ]
+                symbol [ Graphics %tmp.61 237 31 39 ];
+                %tmp.61 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.62 237 40 57 ];
+                %tmp.62 = getv %tmp.61 :COLOR_TRANSPARENT;
+                putv self :background %tmp.62;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 236; @position = 18; @symbol_constdef = [color,236,18,23]; @symbol_type<0> = [Number,236,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 237; @position = 18; @symbol_constdef = [background,237,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 240; @symbol_moduledef = [system_loc__subwindow,240,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 240; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 241; @position = 18; @symbol_constdef = [exclude,241,18,25]; @symbol_type<0> = [Boolean,241,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 244; @symbol_moduledef = [system_icon_light__warning,244,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 244; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 245; @position = 18; @symbol_constdef = [filename,245,18,26]; @symbol_type<0> = [String,245,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__warning.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 246; @position = 18; @symbol_constdef = [compress,246,18,26]; @symbol_type<0> = [String,246,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 247; @position = 18; @symbol_constdef = [dithering,247,18,27]; @symbol_type<0> = [String,247,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 248; @position = 18; @symbol_constdef = [automaticPalette,248,18,34]; @symbol_type<0> = [String,248,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 249; @position = 18; @symbol_constdef = [packingFormat,249,18,31]; @symbol_type<0> = [String,249,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 252; @symbol_moduledef = [confirmation_color_light__body,252,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 252; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 254 18 ]
+                symbol [ Graphics %tmp.63 254 31 39 ];
+                %tmp.63 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.64 254 40 57 ];
+                %tmp.64 = getv %tmp.63 :COLOR_TRANSPARENT;
+                putv self :background %tmp.64;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 253; @position = 18; @symbol_constdef = [color,253,18,23]; @symbol_type<0> = [Number,253,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 254; @position = 18; @symbol_constdef = [background,254,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 257; @symbol_moduledef = [confirmation_icon_light__hint_keep,257,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 257; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 258; @position = 18; @symbol_constdef = [filename,258,18,26]; @symbol_type<0> = [String,258,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 259; @position = 18; @symbol_constdef = [dithering,259,18,27]; @symbol_type<0> = [String,259,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 260; @position = 18; @symbol_constdef = [packingFormat,260,18,31]; @symbol_type<0> = [String,260,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 263; @symbol_moduledef = [activity_color_light__background,263,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 263; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 264; @position = 18; @symbol_constdef = [color,264,18,23]; @symbol_type<0> = [Number,264,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 265; @position = 18; @symbol_constdef = [background,265,18,28]; @symbol_type<0> = [Number,265,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 268; @symbol_moduledef = [system_icon_positive__hint_button_right_top,268,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 268; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 269; @position = 18; @symbol_constdef = [filename,269,18,26]; @symbol_type<0> = [String,269,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_positive__hint_button_right_top.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 270; @position = 18; @symbol_constdef = [dithering,270,18,27]; @symbol_type<0> = [String,270,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 273; @symbol_moduledef = [system_size__screen,273,15,34]; ]
+        module system_size__screen {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 273; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 274; @position = 18; @symbol_constdef = [width,274,18,23]; @symbol_type<0> = [Number,274,27,33]; ]
+            const width as Number = 454;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 275; @position = 18; @symbol_constdef = [height,275,18,24]; @symbol_type<0> = [Number,275,28,34]; ]
+            const height as Number = 454;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 278; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,278,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 278; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 279; @position = 18; @symbol_constdef = [filename,279,18,26]; @symbol_type<0> = [String,279,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 280; @position = 18; @symbol_constdef = [dithering,280,18,27]; @symbol_type<0> = [String,280,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 283; @symbol_moduledef = [system_color_light__background,283,15,45]; ]
+        module system_color_light__background {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 283; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 284; @position = 18; @symbol_constdef = [color,284,18,23]; @symbol_type<0> = [Number,284,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 285; @position = 18; @symbol_constdef = [background,285,18,28]; @symbol_type<0> = [Number,285,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 288; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,288,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 288; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 289; @position = 18; @symbol_constdef = [filename,289,18,26]; @symbol_type<0> = [String,289,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 290; @position = 18; @symbol_constdef = [dithering,290,18,27]; @symbol_type<0> = [String,290,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 293; @symbol_moduledef = [confirmation_loc__hint_confirm,293,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 293; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 294; @position = 18; @symbol_constdef = [x,294,18,19]; @symbol_type<0> = [Number,294,23,29]; ]
+            const x as Number = 227;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 295; @position = 18; @symbol_constdef = [horizontalJustification,295,18,41]; @symbol_type<0> = [String,295,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 296; @position = 18; @symbol_constdef = [y,296,18,19]; @symbol_type<0> = [Number,296,23,29]; ]
+            const y as Number = 345;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 299; @symbol_moduledef = [activity_color_dark__text,299,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 299; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 301 18 ]
+                symbol [ Graphics %tmp.65 301 31 39 ];
+                %tmp.65 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.66 301 40 57 ];
+                %tmp.66 = getv %tmp.65 :COLOR_TRANSPARENT;
+                putv self :background %tmp.66;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 300; @position = 18; @symbol_constdef = [color,300,18,23]; @symbol_type<0> = [Number,300,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 301; @position = 18; @symbol_constdef = [background,301,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 304; @symbol_moduledef = [confirmation_input__keep,304,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 304; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 305 18 ]
+                symbol [ WatchUi %tmp.67 305 27 34 ];
+                %tmp.67 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ESC %tmp.68 305 35 42 ];
+                %tmp.68 = getv %tmp.67 :KEY_ESC;
+                putv self :button %tmp.68;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 305; @position = 18; @symbol_constdef = [button,305,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 308; @symbol_moduledef = [prompt_loc__body_with_title,308,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 308; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 309; @position = 18; @symbol_constdef = [x,309,18,19]; @symbol_type<0> = [Number,309,23,29]; ]
+            const x as Number = 45;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 310; @position = 18; @symbol_constdef = [y,310,18,19]; @symbol_type<0> = [Number,310,23,29]; ]
+            const y as Number = 114;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 313; @symbol_moduledef = [system_icon_dark__search,313,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 313; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 314; @position = 18; @symbol_constdef = [filename,314,18,26]; @symbol_type<0> = [String,314,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__search.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 315; @position = 18; @symbol_constdef = [compress,315,18,26]; @symbol_type<0> = [String,315,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 316; @position = 18; @symbol_constdef = [dithering,316,18,27]; @symbol_type<0> = [String,316,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 317; @position = 18; @symbol_constdef = [automaticPalette,317,18,34]; @symbol_type<0> = [String,317,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 318; @position = 18; @symbol_constdef = [packingFormat,318,18,31]; @symbol_type<0> = [String,318,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 321; @symbol_moduledef = [activity_color_light__text,321,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 321; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 323 18 ]
+                symbol [ Graphics %tmp.69 323 31 39 ];
+                %tmp.69 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.70 323 40 57 ];
+                %tmp.70 = getv %tmp.69 :COLOR_TRANSPARENT;
+                putv self :background %tmp.70;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 322; @position = 18; @symbol_constdef = [color,322,18,23]; @symbol_type<0> = [Number,322,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 323; @position = 18; @symbol_constdef = [background,323,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 326; @symbol_moduledef = [confirmation_icon__hint_keep,326,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 326; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 327; @position = 18; @symbol_constdef = [filename,327,18,26]; @symbol_type<0> = [String,327,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 328; @position = 18; @symbol_constdef = [dithering,328,18,27]; @symbol_type<0> = [String,328,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 329; @position = 18; @symbol_constdef = [packingFormat,329,18,31]; @symbol_type<0> = [String,329,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 332; @symbol_moduledef = [system_icon_dark__save,332,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 332; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 333; @position = 18; @symbol_constdef = [filename,333,18,26]; @symbol_type<0> = [String,333,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__save.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 334; @position = 18; @symbol_constdef = [compress,334,18,26]; @symbol_type<0> = [String,334,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 335; @position = 18; @symbol_constdef = [dithering,335,18,27]; @symbol_type<0> = [String,335,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 336; @position = 18; @symbol_constdef = [automaticPalette,336,18,34]; @symbol_type<0> = [String,336,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 337; @position = 18; @symbol_constdef = [packingFormat,337,18,31]; @symbol_type<0> = [String,337,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 340; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,340,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 340; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 341; @position = 18; @symbol_constdef = [exclude,341,18,25]; @symbol_type<0> = [Boolean,341,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 344; @symbol_moduledef = [system_icon_light__search,344,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 344; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 345; @position = 18; @symbol_constdef = [filename,345,18,26]; @symbol_type<0> = [String,345,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__search.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 346; @position = 18; @symbol_constdef = [compress,346,18,26]; @symbol_type<0> = [String,346,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 347; @position = 18; @symbol_constdef = [dithering,347,18,27]; @symbol_type<0> = [String,347,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 348; @position = 18; @symbol_constdef = [automaticPalette,348,18,34]; @symbol_type<0> = [String,348,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 349; @position = 18; @symbol_constdef = [packingFormat,349,18,31]; @symbol_type<0> = [String,349,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 352; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,352,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 352; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 353; @position = 18; @symbol_constdef = [exclude,353,18,25]; @symbol_type<0> = [Boolean,353,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 356; @symbol_moduledef = [system_icon_positive__hint_button_left_top,356,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 356; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 357; @position = 18; @symbol_constdef = [exclude,357,18,25]; @symbol_type<0> = [Boolean,357,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 360; @symbol_moduledef = [system_loc__hint_button_right_bottom,360,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 360; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 361; @position = 18; @symbol_constdef = [x,361,18,19]; @symbol_type<0> = [Number,361,23,29]; ]
+            const x as Number = 342;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 362; @position = 18; @symbol_constdef = [y,362,18,19]; @symbol_type<0> = [Number,362,23,29]; ]
+            const y as Number = 256;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 365; @symbol_moduledef = [confirmation_icon_dark__hint_reject,365,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 365; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 366; @position = 18; @symbol_constdef = [filename,366,18,26]; @symbol_type<0> = [String,366,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 367; @position = 18; @symbol_constdef = [dithering,367,18,27]; @symbol_type<0> = [String,367,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 368; @position = 18; @symbol_constdef = [packingFormat,368,18,31]; @symbol_type<0> = [String,368,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 371; @symbol_moduledef = [confirmation_color_dark__body,371,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 371; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 373 18 ]
+                symbol [ Graphics %tmp.71 373 31 39 ];
+                %tmp.71 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.72 373 40 57 ];
+                %tmp.72 = getv %tmp.71 :COLOR_TRANSPARENT;
+                putv self :background %tmp.72;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 372; @position = 18; @symbol_constdef = [color,372,18,23]; @symbol_type<0> = [Number,372,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 373; @position = 18; @symbol_constdef = [background,373,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 376; @symbol_moduledef = [confirmation_icon_light__hint_confirm,376,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 376; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 377; @position = 18; @symbol_constdef = [filename,377,18,26]; @symbol_type<0> = [String,377,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 378; @position = 18; @symbol_constdef = [dithering,378,18,27]; @symbol_type<0> = [String,378,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 379; @position = 18; @symbol_constdef = [packingFormat,379,18,31]; @symbol_type<0> = [String,379,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 382; @symbol_moduledef = [prompt_color_dark__title,382,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 382; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 384 18 ]
+                symbol [ Graphics %tmp.73 384 31 39 ];
+                %tmp.73 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.74 384 40 57 ];
+                %tmp.74 = getv %tmp.73 :COLOR_TRANSPARENT;
+                putv self :background %tmp.74;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 383; @position = 18; @symbol_constdef = [color,383,18,23]; @symbol_type<0> = [Number,383,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 384; @position = 18; @symbol_constdef = [background,384,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 387; @symbol_moduledef = [system_icon_destructive__cancel,387,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 387; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 388; @position = 18; @symbol_constdef = [filename,388,18,26]; @symbol_type<0> = [String,388,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_destructive__cancel.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 389; @position = 18; @symbol_constdef = [dithering,389,18,27]; @symbol_type<0> = [String,389,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 390; @position = 18; @symbol_constdef = [packingFormat,390,18,31]; @symbol_type<0> = [String,390,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 393; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,393,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 393; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 394; @position = 18; @symbol_constdef = [filename,394,18,26]; @symbol_type<0> = [String,394,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 395; @position = 18; @symbol_constdef = [dithering,395,18,27]; @symbol_type<0> = [String,395,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 398; @symbol_moduledef = [prompt_loc__title,398,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 398; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 399; @position = 18; @symbol_constdef = [x,399,18,19]; @symbol_type<0> = [Number,399,23,29]; ]
+            const x as Number = 138;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 400; @position = 18; @symbol_constdef = [y,400,18,19]; @symbol_type<0> = [Number,400,23,29]; ]
+            const y as Number = 20;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 403; @symbol_moduledef = [confirmation_font_enhanced_readability__body,403,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 403; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 404 18 ]
+                symbol [ Graphics %tmp.75 404 34 42 ];
+                %tmp.75 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.76 404 43 62 ];
+                %tmp.76 = getv %tmp.75 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.77 404 63 71 ];
+                %tmp.77 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.78 404 72 92 ];
+                %tmp.78 = getv %tmp.77 :TEXT_JUSTIFY_VCENTER;
+                %tmp.79 = bitor %tmp.76 %tmp.78;
+                putv self :justification %tmp.79;
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 405 18 ]
+                symbol [ Graphics %tmp.80 405 25 33 ];
+                %tmp.80 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.81 405 34 44 ];
+                %tmp.81 = getv %tmp.80 :FONT_SMALL;
+                putv self :font %tmp.81;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 404; @position = 18; @symbol_constdef = [justification,404,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 405; @position = 18; @symbol_constdef = [font,405,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 408; @symbol_moduledef = [prompt_color_light__title,408,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 408; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 410 18 ]
+                symbol [ Graphics %tmp.82 410 31 39 ];
+                %tmp.82 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.83 410 40 57 ];
+                %tmp.83 = getv %tmp.82 :COLOR_TRANSPARENT;
+                putv self :background %tmp.83;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 409; @position = 18; @symbol_constdef = [color,409,18,23]; @symbol_type<0> = [Number,409,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 410; @position = 18; @symbol_constdef = [background,410,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 413; @symbol_moduledef = [system_icon_dark__hint_button_right_top,413,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 413; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 414; @position = 18; @symbol_constdef = [filename,414,18,26]; @symbol_type<0> = [String,414,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 415; @position = 18; @symbol_constdef = [dithering,415,18,27]; @symbol_type<0> = [String,415,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 418; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,418,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 418; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 419; @position = 18; @symbol_constdef = [exclude,419,18,25]; @symbol_type<0> = [Boolean,419,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 422; @symbol_moduledef = [confirmation_icon_dark__hint_keep,422,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 422; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 423; @position = 18; @symbol_constdef = [filename,423,18,26]; @symbol_type<0> = [String,423,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 424; @position = 18; @symbol_constdef = [dithering,424,18,27]; @symbol_type<0> = [String,424,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 425; @position = 18; @symbol_constdef = [packingFormat,425,18,31]; @symbol_type<0> = [String,425,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 428; @symbol_moduledef = [system_icon_light__cancel,428,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 428; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 429; @position = 18; @symbol_constdef = [filename,429,18,26]; @symbol_type<0> = [String,429,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__cancel.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 430; @position = 18; @symbol_constdef = [compress,430,18,26]; @symbol_type<0> = [String,430,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 431; @position = 18; @symbol_constdef = [dithering,431,18,27]; @symbol_type<0> = [String,431,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 432; @position = 18; @symbol_constdef = [automaticPalette,432,18,34]; @symbol_type<0> = [String,432,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 433; @position = 18; @symbol_constdef = [packingFormat,433,18,31]; @symbol_type<0> = [String,433,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 436; @symbol_moduledef = [confirmation_icon_light__hint_reject,436,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 436; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 437; @position = 18; @symbol_constdef = [filename,437,18,26]; @symbol_type<0> = [String,437,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 438; @position = 18; @symbol_constdef = [dithering,438,18,27]; @symbol_type<0> = [String,438,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 439; @position = 18; @symbol_constdef = [packingFormat,439,18,31]; @symbol_type<0> = [String,439,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 442; @symbol_moduledef = [system_icon_light__about,442,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 442; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 443; @position = 18; @symbol_constdef = [filename,443,18,26]; @symbol_type<0> = [String,443,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__about.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 444; @position = 18; @symbol_constdef = [compress,444,18,26]; @symbol_type<0> = [String,444,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 445; @position = 18; @symbol_constdef = [dithering,445,18,27]; @symbol_type<0> = [String,445,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 446; @position = 18; @symbol_constdef = [automaticPalette,446,18,34]; @symbol_type<0> = [String,446,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 447; @position = 18; @symbol_constdef = [packingFormat,447,18,31]; @symbol_type<0> = [String,447,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 450; @symbol_moduledef = [system_size__toast_icon,450,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 450; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 451; @position = 18; @symbol_constdef = [scaleX,451,18,24]; @symbol_type<0> = [Number,451,28,34]; ]
+            const scaleX as Number = 38;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 452; @position = 18; @symbol_constdef = [scaleY,452,18,24]; @symbol_type<0> = [Number,452,28,34]; ]
+            const scaleY as Number = 38;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 453; @position = 18; @symbol_constdef = [scaleRelativeTo,453,18,33]; @symbol_type<0> = [String,453,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 456; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,456,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 456; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 457; @position = 18; @symbol_constdef = [exclude,457,18,25]; @symbol_type<0> = [Boolean,457,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 460; @symbol_moduledef = [confirmation_icon__hint_reject,460,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 460; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 461; @position = 18; @symbol_constdef = [filename,461,18,26]; @symbol_type<0> = [String,461,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 462; @position = 18; @symbol_constdef = [dithering,462,18,27]; @symbol_type<0> = [String,462,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 463; @position = 18; @symbol_constdef = [packingFormat,463,18,31]; @symbol_type<0> = [String,463,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 466; @symbol_moduledef = [system_icon_light__hint_action_menu,466,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 466; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 467; @position = 18; @symbol_constdef = [filename,467,18,26]; @symbol_type<0> = [String,467,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__hint_action_menu.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 468; @position = 18; @symbol_constdef = [dithering,468,18,27]; @symbol_type<0> = [String,468,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 469; @position = 18; @symbol_constdef = [packingFormat,469,18,31]; @symbol_type<0> = [String,469,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 472; @symbol_moduledef = [system_icon_light__hint_button_right_middle,472,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 472; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 473; @position = 18; @symbol_constdef = [exclude,473,18,25]; @symbol_type<0> = [Boolean,473,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 476; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,476,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 476; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 477; @position = 18; @symbol_constdef = [exclude,477,18,25]; @symbol_type<0> = [Boolean,477,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 480; @symbol_moduledef = [confirmation_loc__hint_reject,480,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 480; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 481; @position = 18; @symbol_constdef = [x,481,18,19]; @symbol_type<0> = [Number,481,23,29]; ]
+            const x as Number = 227;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 482; @position = 18; @symbol_constdef = [horizontalJustification,482,18,41]; @symbol_type<0> = [String,482,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 483; @position = 18; @symbol_constdef = [y,483,18,19]; @symbol_type<0> = [Number,483,23,29]; ]
+            const y as Number = 0;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 486; @symbol_moduledef = [confirmation_icon_dark__hint_delete,486,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 486; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 487; @position = 18; @symbol_constdef = [filename,487,18,26]; @symbol_type<0> = [String,487,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 488; @position = 18; @symbol_constdef = [dithering,488,18,27]; @symbol_type<0> = [String,488,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 489; @position = 18; @symbol_constdef = [packingFormat,489,18,31]; @symbol_type<0> = [String,489,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 492; @symbol_moduledef = [activity_color_dark__background,492,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 492; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 493; @position = 18; @symbol_constdef = [color,493,18,23]; @symbol_type<0> = [Number,493,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 494; @position = 18; @symbol_constdef = [background,494,18,28]; @symbol_type<0> = [Number,494,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 497; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,497,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 497; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 498; @position = 18; @symbol_constdef = [exclude,498,18,25]; @symbol_type<0> = [Boolean,498,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 501; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,501,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 501; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 502; @position = 18; @symbol_constdef = [exclude,502,18,25]; @symbol_type<0> = [Boolean,502,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 505; @symbol_moduledef = [system_size__menu_icon,505,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 505; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 506; @position = 18; @symbol_constdef = [scaleX,506,18,24]; @symbol_type<0> = [Number,506,28,34]; ]
+            const scaleX as Number = 55;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 507; @position = 18; @symbol_constdef = [scaleY,507,18,24]; @symbol_type<0> = [Number,507,28,34]; ]
+            const scaleY as Number = 55;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 508; @position = 18; @symbol_constdef = [scaleRelativeTo,508,18,33]; @symbol_type<0> = [String,508,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 511; @symbol_moduledef = [system_icon_destructive__warning,511,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 511; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 512; @position = 18; @symbol_constdef = [filename,512,18,26]; @symbol_type<0> = [String,512,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_destructive__warning.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 513; @position = 18; @symbol_constdef = [dithering,513,18,27]; @symbol_type<0> = [String,513,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 514; @position = 18; @symbol_constdef = [packingFormat,514,18,31]; @symbol_type<0> = [String,514,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 517; @symbol_moduledef = [system_loc__hint_button_right_middle,517,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 517; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 518; @position = 18; @symbol_constdef = [exclude,518,18,25]; @symbol_type<0> = [Boolean,518,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 521; @symbol_moduledef = [system_icon_dark__cancel,521,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 521; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 522; @position = 18; @symbol_constdef = [filename,522,18,26]; @symbol_type<0> = [String,522,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__cancel.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 523; @position = 18; @symbol_constdef = [compress,523,18,26]; @symbol_type<0> = [String,523,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 524; @position = 18; @symbol_constdef = [dithering,524,18,27]; @symbol_type<0> = [String,524,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 525; @position = 18; @symbol_constdef = [automaticPalette,525,18,34]; @symbol_type<0> = [String,525,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 526; @position = 18; @symbol_constdef = [packingFormat,526,18,31]; @symbol_type<0> = [String,526,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 529; @symbol_moduledef = [prompt_size__body_with_title,529,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 529; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 530; @position = 18; @symbol_constdef = [width,530,18,23]; @symbol_type<0> = [Number,530,27,33]; ]
+            const width as Number = 363;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 531; @position = 18; @symbol_constdef = [height,531,18,24]; @symbol_type<0> = [Number,531,28,34]; ]
+            const height as Number = 250;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 534; @symbol_moduledef = [system_loc__hint_button_right_top,534,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 534; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 535; @position = 18; @symbol_constdef = [x,535,18,19]; @symbol_type<0> = [Number,535,23,29]; ]
+            const x as Number = 360;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 536; @position = 18; @symbol_constdef = [y,536,18,19]; @symbol_type<0> = [Number,536,23,29]; ]
+            const y as Number = 54;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 539; @symbol_moduledef = [system_color_light__text,539,15,39]; ]
+        module system_color_light__text {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 539; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 541 18 ]
+                symbol [ Graphics %tmp.84 541 31 39 ];
+                %tmp.84 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.85 541 40 57 ];
+                %tmp.85 = getv %tmp.84 :COLOR_TRANSPARENT;
+                putv self :background %tmp.85;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 540; @position = 18; @symbol_constdef = [color,540,18,23]; @symbol_type<0> = [Number,540,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 541; @position = 18; @symbol_constdef = [background,541,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 544; @symbol_moduledef = [system_icon_light__check,544,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 544; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 545; @position = 18; @symbol_constdef = [filename,545,18,26]; @symbol_type<0> = [String,545,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__check.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 546; @position = 18; @symbol_constdef = [compress,546,18,26]; @symbol_type<0> = [String,546,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 547; @position = 18; @symbol_constdef = [dithering,547,18,27]; @symbol_type<0> = [String,547,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 548; @position = 18; @symbol_constdef = [automaticPalette,548,18,34]; @symbol_type<0> = [String,548,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 549; @position = 18; @symbol_constdef = [packingFormat,549,18,31]; @symbol_type<0> = [String,549,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 552; @symbol_moduledef = [confirmation_input__reject,552,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 552; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 553; @position = 18; @symbol_constdef = [y1,553,18,20]; @symbol_type<0> = [Number,553,24,30]; ]
+            const y1 as Number = 0;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 554; @position = 18; @symbol_constdef = [x1,554,18,20]; @symbol_type<0> = [Number,554,24,30]; ]
+            const x1 as Number = 113;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 555; @position = 18; @symbol_constdef = [y2,555,18,20]; @symbol_type<0> = [Number,555,24,30]; ]
+            const y2 as Number = 88;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 556; @position = 18; @symbol_constdef = [x2,556,18,20]; @symbol_type<0> = [Number,556,24,30]; ]
+            const x2 as Number = 341;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 559; @symbol_moduledef = [system_icon_light__revert,559,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 559; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 560; @position = 18; @symbol_constdef = [filename,560,18,26]; @symbol_type<0> = [String,560,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__revert.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 561; @position = 18; @symbol_constdef = [compress,561,18,26]; @symbol_type<0> = [String,561,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 562; @position = 18; @symbol_constdef = [dithering,562,18,27]; @symbol_type<0> = [String,562,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 563; @position = 18; @symbol_constdef = [automaticPalette,563,18,34]; @symbol_type<0> = [String,563,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 564; @position = 18; @symbol_constdef = [packingFormat,564,18,31]; @symbol_type<0> = [String,564,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 567; @symbol_moduledef = [system_size__subwindow,567,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 567; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 568; @position = 18; @symbol_constdef = [exclude,568,18,25]; @symbol_type<0> = [Boolean,568,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 571; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,571,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 571; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 572; @position = 18; @symbol_constdef = [exclude,572,18,25]; @symbol_type<0> = [Boolean,572,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 575; @symbol_moduledef = [system_icon_dark__check,575,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 575; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 576; @position = 18; @symbol_constdef = [filename,576,18,26]; @symbol_type<0> = [String,576,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__check.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 577; @position = 18; @symbol_constdef = [compress,577,18,26]; @symbol_type<0> = [String,577,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 578; @position = 18; @symbol_constdef = [dithering,578,18,27]; @symbol_type<0> = [String,578,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 579; @position = 18; @symbol_constdef = [automaticPalette,579,18,34]; @symbol_type<0> = [String,579,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 580; @position = 18; @symbol_constdef = [packingFormat,580,18,31]; @symbol_type<0> = [String,580,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 583; @symbol_moduledef = [confirmation_loc__hint_keep,583,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 583; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 584; @position = 18; @symbol_constdef = [x,584,18,19]; @symbol_type<0> = [Number,584,23,29]; ]
+            const x as Number = 342;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 585; @position = 18; @symbol_constdef = [y,585,18,19]; @symbol_type<0> = [Number,585,23,29]; ]
+            const y as Number = 256;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 588; @symbol_moduledef = [confirmation_loc__hint_delete,588,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 588; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 589; @position = 18; @symbol_constdef = [x,589,18,19]; @symbol_type<0> = [Number,589,23,29]; ]
+            const x as Number = 358;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 590; @position = 18; @symbol_constdef = [y,590,18,19]; @symbol_type<0> = [Number,590,23,29]; ]
+            const y as Number = 54;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 593; @symbol_moduledef = [system_icon_positive__hint_action_menu,593,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 593; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 594; @position = 18; @symbol_constdef = [filename,594,18,26]; @symbol_type<0> = [String,594,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_positive__hint_action_menu.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 595; @position = 18; @symbol_constdef = [dithering,595,18,27]; @symbol_type<0> = [String,595,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 596; @position = 18; @symbol_constdef = [packingFormat,596,18,31]; @symbol_type<0> = [String,596,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 599; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,599,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 599; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 600; @position = 18; @symbol_constdef = [exclude,600,18,25]; @symbol_type<0> = [Boolean,600,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 603; @symbol_moduledef = [system_icon_light__hint_button_left_middle,603,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 603; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 604; @position = 18; @symbol_constdef = [exclude,604,18,25]; @symbol_type<0> = [Boolean,604,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 607; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,607,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 607; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 608; @position = 18; @symbol_constdef = [filename,608,18,26]; @symbol_type<0> = [String,608,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 609; @position = 18; @symbol_constdef = [dithering,609,18,27]; @symbol_type<0> = [String,609,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 612; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,612,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 612; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 613; @position = 18; @symbol_constdef = [filename,613,18,26]; @symbol_type<0> = [String,613,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 614; @position = 18; @symbol_constdef = [dithering,614,18,27]; @symbol_type<0> = [String,614,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 617; @symbol_moduledef = [system_icon_dark__revert,617,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 617; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 618; @position = 18; @symbol_constdef = [filename,618,18,26]; @symbol_type<0> = [String,618,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__revert.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 619; @position = 18; @symbol_constdef = [compress,619,18,26]; @symbol_type<0> = [String,619,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 620; @position = 18; @symbol_constdef = [dithering,620,18,27]; @symbol_type<0> = [String,620,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 621; @position = 18; @symbol_constdef = [automaticPalette,621,18,34]; @symbol_type<0> = [String,621,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 622; @position = 18; @symbol_constdef = [packingFormat,622,18,31]; @symbol_type<0> = [String,622,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 625; @symbol_moduledef = [confirmation_icon_light__hint_delete,625,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 625; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 626; @position = 18; @symbol_constdef = [filename,626,18,26]; @symbol_type<0> = [String,626,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 627; @position = 18; @symbol_constdef = [dithering,627,18,27]; @symbol_type<0> = [String,627,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 628; @position = 18; @symbol_constdef = [packingFormat,628,18,31]; @symbol_type<0> = [String,628,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 631; @symbol_moduledef = [system_icon_dark__question,631,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 631; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 632; @position = 18; @symbol_constdef = [filename,632,18,26]; @symbol_type<0> = [String,632,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__question.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 633; @position = 18; @symbol_constdef = [compress,633,18,26]; @symbol_type<0> = [String,633,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 634; @position = 18; @symbol_constdef = [dithering,634,18,27]; @symbol_type<0> = [String,634,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 635; @position = 18; @symbol_constdef = [automaticPalette,635,18,34]; @symbol_type<0> = [String,635,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 636; @position = 18; @symbol_constdef = [packingFormat,636,18,31]; @symbol_type<0> = [String,636,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 639; @symbol_moduledef = [system_icon_light__discard,639,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 639; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 640; @position = 18; @symbol_constdef = [filename,640,18,26]; @symbol_type<0> = [String,640,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__discard.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 641; @position = 18; @symbol_constdef = [compress,641,18,26]; @symbol_type<0> = [String,641,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 642; @position = 18; @symbol_constdef = [dithering,642,18,27]; @symbol_type<0> = [String,642,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 643; @position = 18; @symbol_constdef = [automaticPalette,643,18,34]; @symbol_type<0> = [String,643,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 644; @position = 18; @symbol_constdef = [packingFormat,644,18,31]; @symbol_type<0> = [String,644,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 647; @symbol_moduledef = [device_info,647,15,26]; ]
+        module device_info {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 647; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 649 18 ]
+                symbol [ Toybox %tmp.87 649 32 38 ];
+                %tmp.87 = getv ? :Toybox;
+                symbol [ System %tmp.88 649 39 45 ];
+                %tmp.88 = getv %tmp.87 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.89 649 46 64 ];
+                %tmp.89 = getv %tmp.88 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.89;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 648; @position = 18; @symbol_constdef = [screenWidth,648,18,29]; @symbol_type<0> = [Number,648,33,39]; ]
+            const screenWidth as Number = 454;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 649; @position = 18; @symbol_constdef = [screenShape,649,18,29]; ]
+            const screenShape;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 650; @position = 18; @symbol_constdef = [hasNightMode,650,18,30]; @symbol_type<0> = [Boolean,650,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 651; @position = 18; @symbol_constdef = [hasGpu,651,18,24]; @symbol_type<0> = [Boolean,651,28,35]; ]
+            const hasGpu as Boolean = true;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 652; @position = 18; @symbol_constdef = [screenHeight,652,18,30]; @symbol_type<0> = [Number,652,34,40]; ]
+            const screenHeight as Number = 454;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 653; @position = 18; @symbol_constdef = [hasTouchScreen,653,18,32]; @symbol_type<0> = [Boolean,653,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 654; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,654,18,44]; @symbol_type<0> = [Boolean,654,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = true;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 657; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,657,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 657; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 658; @position = 18; @symbol_constdef = [filename,658,18,26]; @symbol_type<0> = [String,658,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 659; @position = 18; @symbol_constdef = [dithering,659,18,27]; @symbol_type<0> = [String,659,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 660; @position = 18; @symbol_constdef = [packingFormat,660,18,31]; @symbol_type<0> = [String,660,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 663; @symbol_moduledef = [prompt_font__body_no_title,663,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 663; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 664 18 ]
+                symbol [ Graphics %tmp.90 664 34 42 ];
+                %tmp.90 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.91 664 43 62 ];
+                %tmp.91 = getv %tmp.90 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.92 664 63 71 ];
+                %tmp.92 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.93 664 72 92 ];
+                %tmp.93 = getv %tmp.92 :TEXT_JUSTIFY_VCENTER;
+                %tmp.94 = bitor %tmp.91 %tmp.93;
+                putv self :justification %tmp.94;
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 665 18 ]
+                symbol [ Graphics %tmp.95 665 25 33 ];
+                %tmp.95 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.96 665 34 43 ];
+                %tmp.96 = getv %tmp.95 :FONT_TINY;
+                putv self :font %tmp.96;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 664; @position = 18; @symbol_constdef = [justification,664,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 665; @position = 18; @symbol_constdef = [font,665,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 668; @symbol_moduledef = [prompt_size__title_icon,668,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 668; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 669; @position = 18; @symbol_constdef = [scaleX,669,18,24]; @symbol_type<0> = [Float,669,28,33]; ]
+            const scaleX as Float = 0.14;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 670; @position = 18; @symbol_constdef = [scaleRelativeTo,670,18,33]; @symbol_type<0> = [String,670,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 673; @symbol_moduledef = [system_icon_dark__warning,673,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 673; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 674; @position = 18; @symbol_constdef = [filename,674,18,26]; @symbol_type<0> = [String,674,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__warning.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 675; @position = 18; @symbol_constdef = [compress,675,18,26]; @symbol_type<0> = [String,675,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 676; @position = 18; @symbol_constdef = [dithering,676,18,27]; @symbol_type<0> = [String,676,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 677; @position = 18; @symbol_constdef = [automaticPalette,677,18,34]; @symbol_type<0> = [String,677,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 678; @position = 18; @symbol_constdef = [packingFormat,678,18,31]; @symbol_type<0> = [String,678,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 681; @symbol_moduledef = [prompt_loc__title_icon,681,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 681; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 682; @position = 18; @symbol_constdef = [x,682,18,19]; @symbol_type<0> = [Number,682,23,29]; ]
+            const x as Number = 227;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 683; @position = 18; @symbol_constdef = [y,683,18,19]; @symbol_type<0> = [Number,683,23,29]; ]
+            const y as Number = 45;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 684; @position = 18; @symbol_constdef = [horizontalJustification,684,18,41]; @symbol_type<0> = [String,684,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 685; @position = 18; @symbol_constdef = [verticalJustification,685,18,39]; @symbol_type<0> = [String,685,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 688; @symbol_moduledef = [prompt_font_enhanced_readability__title,688,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 688; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 689 18 ]
+                symbol [ Graphics %tmp.97 689 34 42 ];
+                %tmp.97 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.98 689 43 62 ];
+                %tmp.98 = getv %tmp.97 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.99 689 63 71 ];
+                %tmp.99 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.100 689 72 92 ];
+                %tmp.100 = getv %tmp.99 :TEXT_JUSTIFY_VCENTER;
+                %tmp.101 = bitor %tmp.98 %tmp.100;
+                putv self :justification %tmp.101;
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 690 18 ]
+                symbol [ Graphics %tmp.102 690 25 33 ];
+                %tmp.102 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.103 690 34 44 ];
+                %tmp.103 = getv %tmp.102 :FONT_XTINY;
+                putv self :font %tmp.103;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 689; @position = 18; @symbol_constdef = [justification,689,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 690; @position = 18; @symbol_constdef = [font,690,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 693; @symbol_moduledef = [prompt_color_dark__body,693,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 693; ]
+            <init> {
+[ "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen" 695 18 ]
+                symbol [ Graphics %tmp.104 695 31 39 ];
+                %tmp.104 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.105 695 40 57 ];
+                %tmp.105 = getv %tmp.104 :COLOR_TRANSPARENT;
+                putv self :background %tmp.105;
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 694; @position = 18; @symbol_constdef = [color,694,18,23]; @symbol_type<0> = [Number,694,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 695; @position = 18; @symbol_constdef = [background,695,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 698; @symbol_moduledef = [confirmation_icon__hint_delete,698,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 698; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 699; @position = 18; @symbol_constdef = [filename,699,18,26]; @symbol_type<0> = [String,699,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 700; @position = 18; @symbol_constdef = [dithering,700,18,27]; @symbol_type<0> = [String,700,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 701; @position = 18; @symbol_constdef = [packingFormat,701,18,31]; @symbol_type<0> = [String,701,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 704; @symbol_moduledef = [system_icon_light__hint_button_right_top,704,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 704; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 705; @position = 18; @symbol_constdef = [filename,705,18,26]; @symbol_type<0> = [String,705,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__hint_button_right_top.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 706; @position = 18; @symbol_constdef = [dithering,706,18,27]; @symbol_type<0> = [String,706,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 709; @symbol_moduledef = [confirmation_size__body,709,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 709; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 710; @position = 18; @symbol_constdef = [width,710,18,23]; @symbol_type<0> = [Number,710,27,33]; ]
+            const width as Number = 269;
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 711; @position = 18; @symbol_constdef = [height,711,18,24]; @symbol_type<0> = [Number,711,28,34]; ]
+            const height as Number = 272;
+        }
+        [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 714; @symbol_moduledef = [system_icon_positive__check,714,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 714; ]
+            <init> {
+            }
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 715; @position = 18; @symbol_constdef = [filename,715,18,26]; @symbol_type<0> = [String,715,30,36]; ]
+            const filename as String = "C:\\Users\\aboad\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_positive__check.svg";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 716; @position = 18; @symbol_constdef = [dithering,716,18,27]; @symbol_type<0> = [String,716,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 717; @position = 18; @symbol_constdef = [packingFormat,717,18,31]; @symbol_type<0> = [String,717,35,41]; ]
+            const packingFormat as String = "png";
+        }
+    }
+}
+[ @file = "c:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\bin\gen\006-B4260-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}

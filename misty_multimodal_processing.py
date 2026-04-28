@@ -26,7 +26,7 @@ PROFILE_CASCADE = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_pro
 
 ## IP addresses
 TTS_KEY = os.getenv("ELEVEN_LAB_KEY")
-NGROK_URL = "https://2ddd-128-2-149-230.ngrok-free.app" #NGROK URL ---> all the modality (vision, wearbles, etc) server url
+NGROK_URL = "https://3ac1-128-237-82-119.ngrok-free.app" #NGROK URL ---> all the modality (vision, wearbles, etc) server url
 
 # Search range for the head (Pitch, Roll, Yaw)
 # Yaw is left/right. -40 is right, 40 is left.
@@ -303,7 +303,7 @@ def identify_person(misty_object, evaluator=None):
         print(f"DEBUG: Vision Server returned: {result}")
        
         # result.get("identified_as") might be "Abena", "Unknown", or None
-        name = result.get("identified_as")
+        name = result.get("name_to_speak")
         is_new = result.get("is_new", False) # set default is_new: False
         
          # If the server found you (even if local crop failed), boost presence!

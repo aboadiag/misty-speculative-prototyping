@@ -180,7 +180,7 @@ def update_breath():
     # THE LOGIC:
     # If breathing is slow (< 22), be calm (BLUE).
     # If breathing is fast (>= 22), be alert (RED).
-    if breath_rate < 18:
+    if breath_rate < 25:
         print("   -> CALM (Turning Blue)")
         change_misty_color(led_blue) # RGB for Blue
         misty_speaks_elevenlabs("Your breathing is perfect. Keep it up.", stability_setting=0.85)
