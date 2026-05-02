@@ -1,0 +1,411 @@
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [ActivityMonitor,3,14,29]; ]
+import Toybox.ActivityMonitor;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Communications,4,14,28]; ]
+import Toybox.Communications;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Timer,5,14,19]; ]
+import Toybox.Timer;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Lang,6,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 8; @symbol_classdef = [MistyHeartMonitorView,8,6,27]; @symbol_extends<0> = [WatchUi,8,36,43]; @symbol_extends<1> = [View,8,44,48]; ]
+class MistyHeartMonitorView extends WatchUi.View {
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 13; @position = 15; @symbol_vardef = [LAPTOP_URL,13,15,25]; ]
+    protected
+    var LAPTOP_URL = "https://26eb-128-237-82-216.ngrok-free.app/update_breath";
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 15; @position = 15; @symbol_vardef = [_timer,15,15,21]; ]
+    protected
+    var _timer;
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 16; @position = 15; @symbol_vardef = [_currentRate,16,15,27]; ]
+    protected
+    var _currentRate = 0;
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 17; @position = 15; @symbol_vardef = [_statusMessage,17,15,29]; ]
+    protected
+    var _statusMessage = "Ready";
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 19; @symbol_functiondef = [initialize,19,13,23]; ]
+    function initialize() as Void {
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_19_26_22_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 20 8 ]
+        symbol [ View %tmp.2 20 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 20 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 21 8 ]
+        symbol [ Timer %tmp.6 21 21 26 ];
+        %tmp.6 = getm $.Toybox.Timer;
+        symbol [ Timer %tmp.7 21 27 32 ];
+        %tmp.7 = getv function ? %tmp.6 :Timer;
+        %tmp.4 = newc %tmp.7 ();
+        symbol [ _timer ? 21 8 14 ];
+        putv self :_timer %tmp.4;
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_19_26_22_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 25; @symbol_functiondef = [onShow,25,13,19]; ]
+    function onShow() {
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_25_22_28_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 27 8 ]
+        symbol [ _timer %tmp.2 27 8 14 ];
+        %tmp.2 = getv ? :_timer;
+        symbol [ start %tmp.3 27 15 20 ];
+        %tmp.3 = getv function %tmp.2 :start;
+        %tmp.4 = self;
+        symbol [ method %tmp.5 27 21 27 ];
+        %tmp.5 = getv function %tmp.4 :method;
+        %tmp.7 = const :onTimer;
+        symbol [ onTimer %tmp.7 27 29 36 const ];
+        %tmp.8 = invoke %tmp.4 %tmp.5(%tmp.7);
+        %tmp.9 = 3000;
+        %tmp.10 = true;
+        invoke %tmp.2 %tmp.3(%tmp.8, %tmp.9, %tmp.10);
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_25_22_28_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 31; @symbol_functiondef = [onHide,31,13,19]; ]
+    function onHide() {
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_31_22_33_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 32 8 ]
+        symbol [ _timer %tmp.2 32 8 14 ];
+        %tmp.2 = getv ? :_timer;
+        symbol [ stop %tmp.3 32 15 19 ];
+        %tmp.3 = getv function %tmp.2 :stop;
+        invoke %tmp.2 %tmp.3();
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_31_22_33_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 36; @symbol_functiondef = [onTimer,36,13,20]; ]
+    function onTimer() {
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_36_23_50_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 37 8 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_36_23_50_4_start" "C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_36_23_50_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 37 12 16 ];
+        symbol [ ActivityMonitor %tmp.1 37 19 34 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 37 35 42 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 37 12 16 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 40 8 ]
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_40_8_47_8_if_stmt:
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_40_12_40_65_begin:
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 40 12 16 ];
+        %tmp.6 = const :respirationRate;
+        symbol [ respirationRate %tmp.6 40 22 37 const ];
+        %tmp.7 = canhazplz %tmp.4 %tmp.6;
+        bf %tmp.7 @C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_40_8_47_8_if_else_false;
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_40_41_40_65_true:
+        %tmp.8 = lgetv %info.1;
+        symbol [ info %tmp.8 40 41 45 ];
+        %tmp.9 = as %tmp.8 { (interface { var respirationRate; }) };
+        symbol [ respirationRate %tmp.10 40 46 61 ];
+        %tmp.10 = getv %tmp.9 :respirationRate;
+        %tmp.11 = null;
+        %tmp.12 = ne %tmp.10 %tmp.11;
+        push %tmp.12;
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_40_41_40_65_end:
+        %tmp.13 = phi [%tmp.7 @C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_40_12_40_65_begin] [%tmp.12 @C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_40_41_40_65_true] [%tmp.13 @C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_40_41_40_65_end];
+        bf %tmp.13 @C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_40_8_47_8_if_else_false;
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_40_8_47_8_if_true:
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_40_71_43_8_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 41 12 ]
+        %tmp.14 = lgetv %info.1;
+        symbol [ info %tmp.14 41 27 31 ];
+        %tmp.15 = as %tmp.14 { (interface { var respirationRate; }) };
+        symbol [ respirationRate %tmp.16 41 32 47 ];
+        %tmp.16 = getv %tmp.15 :respirationRate;
+        symbol [ _currentRate ? 41 12 24 ];
+        putv self :_currentRate %tmp.16;
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 42 12 ]
+        %tmp.17 = self;
+        symbol [ sendToMisty %tmp.18 42 12 23 ];
+        %tmp.18 = getv function %tmp.17 :sendToMisty;
+        symbol [ _currentRate %tmp.20 42 24 36 ];
+        %tmp.20 = getv ? :_currentRate;
+        invoke %tmp.17 %tmp.18(%tmp.20);
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_40_71_43_8_stop:
+        goto @C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_40_8_47_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_40_8_47_8_if_else_false:
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_43_15_47_8_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 45 12 ]
+        %tmp.21 = "Reading...";
+        symbol [ _statusMessage ? 45 12 26 ];
+        putv self :_statusMessage %tmp.21;
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_43_15_47_8_stop:
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_40_8_47_8_if_end:
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 49 8 ]
+        symbol [ WatchUi %tmp.22 49 8 15 ];
+        %tmp.22 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.23 49 16 29 ];
+        %tmp.23 = getv function %tmp.22 :requestUpdate;
+        invoke %tmp.22 %tmp.23();
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_36_23_50_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 53; @symbol_functiondef = [sendToMisty,53,13,24]; @symbol_param<0> = [rate,53,25,29]; ]
+    function sendToMisty(rate) {
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_53_31_72_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 54 8 ]
+        %tmp.1 = "Sending ";
+        %tmp.2 = lgetv %rate;
+        symbol [ rate %tmp.2 54 38 42 ];
+        %tmp.3 = add %tmp.1 %tmp.2;
+        %tmp.4 = "...";
+        %tmp.5 = add %tmp.3 %tmp.4;
+        symbol [ _statusMessage ? 54 8 22 ];
+        putv self :_statusMessage %tmp.5;
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 56 8 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_53_31_72_4_start" "C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_53_31_72_4_stop" ]
+        %payload.1 = local;
+        symbol [ payload %payload.1 56 12 19 ];
+        %tmp.6 = newd 1;
+        %tmp.7 = "breath_rate";
+        %tmp.8 = lgetv %rate;
+        symbol [ rate %tmp.8 57 29 33 ];
+        %tmp.9 = dup %tmp.6;
+        %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+        lputv %payload.1 %tmp.10;
+        symbol [ payload %payload.1 56 12 19 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 60 8 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_53_31_72_4_start" "C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_53_31_72_4_stop" ]
+        %options.2 = local;
+        symbol [ options %options.2 60 12 19 ];
+        %tmp.11 = newd 3;
+        %tmp.13 = const :method;
+        symbol [ method %tmp.13 61 13 19 const ];
+        symbol [ Communications %tmp.14 61 23 37 ];
+        %tmp.14 = getm $.Toybox.Communications;
+        symbol [ HTTP_REQUEST_METHOD_POST %tmp.15 61 38 62 ];
+        %tmp.15 = getv %tmp.14 :HTTP_REQUEST_METHOD_POST;
+        %tmp.16 = dup %tmp.11;
+        %tmp.17 = aputv %tmp.16 %tmp.13 %tmp.15;
+        %tmp.19 = const :headers;
+        symbol [ headers %tmp.19 62 13 20 const ];
+        %tmp.20 = newd 1;
+        %tmp.21 = "Content-Type";
+        symbol [ Communications %tmp.22 62 44 58 ];
+        %tmp.22 = getm $.Toybox.Communications;
+        symbol [ REQUEST_CONTENT_TYPE_JSON %tmp.23 62 59 84 ];
+        %tmp.23 = getv %tmp.22 :REQUEST_CONTENT_TYPE_JSON;
+        %tmp.24 = dup %tmp.20;
+        %tmp.25 = aputv %tmp.24 %tmp.21 %tmp.23;
+        %tmp.26 = dup %tmp.17;
+        %tmp.27 = aputv %tmp.26 %tmp.19 %tmp.25;
+        %tmp.29 = const :responseType;
+        symbol [ responseType %tmp.29 63 13 25 const ];
+        symbol [ Communications %tmp.30 63 29 43 ];
+        %tmp.30 = getm $.Toybox.Communications;
+        symbol [ HTTP_RESPONSE_CONTENT_TYPE_JSON %tmp.31 63 44 75 ];
+        %tmp.31 = getv %tmp.30 :HTTP_RESPONSE_CONTENT_TYPE_JSON;
+        %tmp.32 = dup %tmp.27;
+        %tmp.33 = aputv %tmp.32 %tmp.29 %tmp.31;
+        lputv %options.2 %tmp.33;
+        symbol [ options %options.2 60 12 19 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 66 8 ]
+        symbol [ Communications %tmp.34 66 8 22 ];
+        %tmp.34 = getm $.Toybox.Communications;
+        symbol [ makeWebRequest %tmp.35 66 23 37 ];
+        %tmp.35 = getv function %tmp.34 :makeWebRequest;
+        symbol [ LAPTOP_URL %tmp.37 67 12 22 ];
+        %tmp.37 = getv ? :LAPTOP_URL;
+        %tmp.38 = lgetv %payload.1;
+        symbol [ payload %tmp.38 68 12 19 ];
+        %tmp.39 = lgetv %options.2;
+        symbol [ options %tmp.39 69 12 19 ];
+        %tmp.40 = self;
+        symbol [ method %tmp.41 70 12 18 ];
+        %tmp.41 = getv function %tmp.40 :method;
+        %tmp.43 = const :onReceive;
+        symbol [ onReceive %tmp.43 70 20 29 const ];
+        %tmp.44 = invoke %tmp.40 %tmp.41(%tmp.43);
+        invoke %tmp.34 %tmp.35(%tmp.37, %tmp.38, %tmp.39, %tmp.44);
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_53_31_72_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 76; @symbol_functiondef = [onReceive,76,13,22]; @symbol_param<0> = [responseCode,76,23,35]; @symbol_param<0>_type<0> = [Lang,76,39,43]; @symbol_param<0>_type<1> = [Number,76,44,50]; @symbol_param<1> = [data,76,52,56]; @symbol_param<1>_type<0> = [Lang,76,60,64]; @symbol_param<1>_type<1> = [Dictionary,76,65,75]; @symbol_param<1>_type<2> = [String,76,79,85]; ]
+    function onReceive(responseCode as Lang.Number, data as Lang.Dictionary or String or Null) as Void {
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_76_103_83_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 77 8 ]
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_77_8_81_8_if_stmt:
+        %tmp.1 = lgetv %responseCode;
+        symbol [ responseCode %tmp.1 77 12 24 ];
+        %tmp.2 = 200;
+        %tmp.3 = eq %tmp.1 %tmp.2;
+        bf %tmp.3 @C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_77_8_81_8_if_else_false;
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_77_8_81_8_if_true:
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_77_33_79_8_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 78 12 ]
+        %tmp.4 = "Sent!";
+        symbol [ _statusMessage ? 78 12 26 ];
+        putv self :_statusMessage %tmp.4;
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_77_33_79_8_stop:
+        goto @C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_77_8_81_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_77_8_81_8_if_else_false:
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_79_15_81_8_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 80 12 ]
+        %tmp.5 = "Err: ";
+        %tmp.6 = lgetv %responseCode;
+        symbol [ responseCode %tmp.6 80 39 51 ];
+        %tmp.7 = add %tmp.5 %tmp.6;
+        symbol [ _statusMessage ? 80 12 26 ];
+        putv self :_statusMessage %tmp.7;
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_79_15_81_8_stop:
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_77_8_81_8_if_end:
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 82 8 ]
+        symbol [ WatchUi %tmp.8 82 8 15 ];
+        %tmp.8 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.9 82 16 29 ];
+        %tmp.9 = getv function %tmp.8 :requestUpdate;
+        invoke %tmp.8 %tmp.9();
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_76_103_83_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 86; @symbol_functiondef = [onUpdate,86,13,21]; @symbol_param<0> = [dc,86,22,24]; ]
+    function onUpdate(dc) {
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_86_26_101_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 88 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 88 8 10 ];
+        symbol [ setColor %tmp.2 88 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 88 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 88 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 88 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 88 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 89 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 89 8 10 ];
+        symbol [ clear %tmp.8 89 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 92 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 92 8 10 ];
+        symbol [ setColor %tmp.10 92 11 19 ];
+        %tmp.10 = getv function %tmp.9 :setColor;
+        symbol [ Graphics %tmp.11 92 20 28 ];
+        %tmp.11 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.12 92 29 40 ];
+        %tmp.12 = getv %tmp.11 :COLOR_WHITE;
+        symbol [ Graphics %tmp.13 92 42 50 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.14 92 51 68 ];
+        %tmp.14 = getv %tmp.13 :COLOR_TRANSPARENT;
+        invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 94 8 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_86_26_101_4_start" "C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_86_26_101_4_stop" ]
+        %w.1 = local;
+        symbol [ w %w.1 94 12 13 ];
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 94 16 18 ];
+        symbol [ getWidth %tmp.16 94 19 27 ];
+        %tmp.16 = getv function %tmp.15 :getWidth;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        lputv %w.1 %tmp.17;
+        symbol [ w %w.1 94 12 13 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 95 8 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_86_26_101_4_start" "C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_86_26_101_4_stop" ]
+        %h.2 = local;
+        symbol [ h %h.2 95 12 13 ];
+        %tmp.18 = lgetv %dc;
+        symbol [ dc %tmp.18 95 16 18 ];
+        symbol [ getHeight %tmp.19 95 19 28 ];
+        %tmp.19 = getv function %tmp.18 :getHeight;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        lputv %h.2 %tmp.20;
+        symbol [ h %h.2 95 12 13 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 98 8 ]
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 98 8 10 ];
+        symbol [ drawText %tmp.22 98 11 19 ];
+        %tmp.22 = getv function %tmp.21 :drawText;
+        %tmp.23 = lgetv %w.1;
+        symbol [ w %tmp.23 98 20 21 ];
+        %tmp.24 = 2;
+        %tmp.25 = div %tmp.23 %tmp.24;
+        %tmp.26 = lgetv %h.2;
+        symbol [ h %tmp.26 98 25 26 ];
+        %tmp.27 = 2;
+        %tmp.28 = div %tmp.26 %tmp.27;
+        %tmp.29 = 40;
+        %tmp.30 = sub %tmp.28 %tmp.29;
+        symbol [ Graphics %tmp.31 98 35 43 ];
+        %tmp.31 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.32 98 44 55 ];
+        %tmp.32 = getv %tmp.31 :FONT_MEDIUM;
+        %tmp.33 = "Breath Rate";
+        symbol [ Graphics %tmp.34 98 72 80 ];
+        %tmp.34 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.35 98 81 100 ];
+        %tmp.35 = getv %tmp.34 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.21 %tmp.22(%tmp.25, %tmp.30, %tmp.32, %tmp.33, %tmp.35);
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 99 8 ]
+        %tmp.36 = lgetv %dc;
+        symbol [ dc %tmp.36 99 8 10 ];
+        symbol [ drawText %tmp.37 99 11 19 ];
+        %tmp.37 = getv function %tmp.36 :drawText;
+        %tmp.38 = lgetv %w.1;
+        symbol [ w %tmp.38 99 20 21 ];
+        %tmp.39 = 2;
+        %tmp.40 = div %tmp.38 %tmp.39;
+        %tmp.41 = lgetv %h.2;
+        symbol [ h %tmp.41 99 25 26 ];
+        %tmp.42 = 2;
+        %tmp.43 = div %tmp.41 %tmp.42;
+        symbol [ Graphics %tmp.44 99 30 38 ];
+        %tmp.44 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_HOT %tmp.45 99 39 54 ];
+        %tmp.45 = getv %tmp.44 :FONT_NUMBER_HOT;
+        symbol [ _currentRate %tmp.47 99 56 68 ];
+        %tmp.47 = getv ? :_currentRate;
+        symbol [ toString %tmp.48 99 69 77 ];
+        %tmp.48 = getv function %tmp.47 :toString;
+        %tmp.49 = invoke %tmp.47 %tmp.48();
+        symbol [ Graphics %tmp.50 99 81 89 ];
+        %tmp.50 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.51 99 90 109 ];
+        %tmp.51 = getv %tmp.50 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.36 %tmp.37(%tmp.40, %tmp.43, %tmp.45, %tmp.49, %tmp.51);
+[ "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc" 100 8 ]
+        %tmp.52 = lgetv %dc;
+        symbol [ dc %tmp.52 100 8 10 ];
+        symbol [ drawText %tmp.53 100 11 19 ];
+        %tmp.53 = getv function %tmp.52 :drawText;
+        %tmp.54 = lgetv %w.1;
+        symbol [ w %tmp.54 100 20 21 ];
+        %tmp.55 = 2;
+        %tmp.56 = div %tmp.54 %tmp.55;
+        %tmp.57 = lgetv %h.2;
+        symbol [ h %tmp.57 100 25 26 ];
+        %tmp.58 = 2;
+        %tmp.59 = div %tmp.57 %tmp.58;
+        %tmp.60 = 50;
+        %tmp.61 = add %tmp.59 %tmp.60;
+        symbol [ Graphics %tmp.62 100 35 43 ];
+        %tmp.62 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.63 100 44 54 ];
+        %tmp.63 = getv %tmp.62 :FONT_XTINY;
+        symbol [ _statusMessage %tmp.65 100 56 70 ];
+        %tmp.65 = getv ? :_statusMessage;
+        symbol [ Graphics %tmp.66 100 72 80 ];
+        %tmp.66 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.67 100 81 100 ];
+        %tmp.67 = getv %tmp.66 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.52 %tmp.53(%tmp.56, %tmp.61, %tmp.63, %tmp.65, %tmp.67);
+C__Users_aboad_misty_speculative_prototyping_misty_garmin_MistyHeartMonitor_source_MistyHeartMonitorView_mc_86_26_101_4_stop:
+    }
+}
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\source\MistyHeartMonitorView.mc"; @line = 1; ]
+<init> {
+}

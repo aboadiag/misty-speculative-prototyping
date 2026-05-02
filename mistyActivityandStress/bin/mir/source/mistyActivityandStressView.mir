@@ -1,0 +1,218 @@
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Sensor,3,14,20]; ]
+import Toybox.Sensor;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc"; @line = 5; @symbol_classdef = [mistyActivityandStressView,5,6,32]; @symbol_extends<0> = [WatchUi,5,41,48]; @symbol_extends<1> = [View,5,49,53]; ]
+class mistyActivityandStressView extends WatchUi.View {
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; ]
+    function initialize() as Void {
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_7_26_9_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc" 8 8 ]
+        symbol [ View %tmp.2 8 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 8 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_7_26_9_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc"; @line = 12; @symbol_functiondef = [onLayout,12,13,21]; @symbol_param<0> = [dc,12,22,24]; @symbol_param<0>_type<0> = [Graphics,12,28,36]; @symbol_param<0>_type<1> = [Dc,12,37,39]; ]
+    function onLayout(dc as Graphics.Dc) as Void {
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc"; @line = 17; @symbol_functiondef = [onUpdate,17,13,21]; @symbol_param<0> = [dc,17,22,24]; @symbol_param<0>_type<0> = [Graphics,17,28,36]; @symbol_param<0>_type<1> = [Dc,17,37,39]; ]
+    function onUpdate(dc as Graphics.Dc) as Void {
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_17_49_34_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc" 18 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 18 8 10 ];
+        symbol [ setColor %tmp.2 18 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 18 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 18 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 18 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 18 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc" 19 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 19 8 10 ];
+        symbol [ clear %tmp.8 19 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc" 20 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 20 8 10 ];
+        symbol [ setColor %tmp.10 20 11 19 ];
+        %tmp.10 = getv function %tmp.9 :setColor;
+        symbol [ Graphics %tmp.11 20 20 28 ];
+        %tmp.11 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.12 20 29 40 ];
+        %tmp.12 = getv %tmp.11 :COLOR_WHITE;
+        symbol [ Graphics %tmp.13 20 42 50 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.14 20 51 68 ];
+        %tmp.14 = getv %tmp.13 :COLOR_TRANSPARENT;
+        invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc" 22 8 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_17_49_34_4_start" "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_17_49_34_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 22 12 16 ];
+        symbol [ Sensor %tmp.15 22 19 25 ];
+        %tmp.15 = getm $.Toybox.Sensor;
+        symbol [ getInfo %tmp.16 22 26 33 ];
+        %tmp.16 = getv function %tmp.15 :getInfo;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        lputv %info.1 %tmp.17;
+        symbol [ info %info.1 22 12 16 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc" 23 8 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_17_49_34_4_start" "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_17_49_34_4_stop" ]
+        %hrValue.2 = local;
+        symbol [ hrValue %hrValue.2 23 12 19 ];
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_22_23_93_begin:
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_23_23_57_begin:
+        %tmp.18 = lgetv %info.1;
+        symbol [ info %tmp.18 23 23 27 ];
+        %tmp.19 = null;
+        %tmp.20 = ne %tmp.18 %tmp.19;
+        bf %tmp.20 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_22_23_93_else_false;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_39_23_57_true:
+        %tmp.21 = lgetv %info.1;
+        symbol [ info %tmp.21 23 39 43 ];
+        %tmp.22 = as %tmp.21 { (!Null) };
+        symbol [ heartRate %tmp.23 23 44 53 ];
+        %tmp.23 = getv %tmp.22 :heartRate;
+        %tmp.24 = null;
+        %tmp.25 = ne %tmp.23 %tmp.24;
+        push %tmp.25;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_39_23_57_end:
+        %tmp.26 = phi [%tmp.20 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_23_23_57_begin] [%tmp.25 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_39_23_57_true] [%tmp.26 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_39_23_57_end];
+        bf %tmp.26 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_22_23_93_else_false;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_22_23_93_true:
+        %tmp.27 = lgetv %info.1;
+        symbol [ info %tmp.27 23 65 69 ];
+        %tmp.28 = as %tmp.27 { (!Null) };
+        symbol [ heartRate %tmp.29 23 70 79 ];
+        %tmp.29 = getv %tmp.28 :heartRate;
+        symbol [ toString %tmp.30 23 80 88 ];
+        %tmp.30 = getv function %tmp.29 :toString;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        push %tmp.31;
+        goto @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_22_23_93_end;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_22_23_93_else_false:
+        %tmp.32 = "--";
+        push %tmp.32;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_22_23_93_end:
+        %tmp.33 = phi [%tmp.26 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_22_23_93_begin] [%tmp.31 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_22_23_93_true] [%tmp.32 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_22_23_93_else_false] [%tmp.33 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_23_22_23_93_end];
+        lputv %hrValue.2 %tmp.33;
+        symbol [ hrValue %hrValue.2 23 12 19 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc" 25 8 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_17_49_34_4_start" "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_17_49_34_4_stop" ]
+        %centerX.3 = local;
+        symbol [ centerX %centerX.3 25 12 19 ];
+        %tmp.34 = lgetv %dc;
+        symbol [ dc %tmp.34 25 22 24 ];
+        symbol [ getWidth %tmp.35 25 25 33 ];
+        %tmp.35 = getv function %tmp.34 :getWidth;
+        %tmp.36 = invoke %tmp.34 %tmp.35();
+        %tmp.37 = 2;
+        %tmp.38 = div %tmp.36 %tmp.37;
+        lputv %centerX.3 %tmp.38;
+        symbol [ centerX %centerX.3 25 12 19 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc" 26 8 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_17_49_34_4_start" "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_17_49_34_4_stop" ]
+        %centerY.4 = local;
+        symbol [ centerY %centerY.4 26 12 19 ];
+        %tmp.39 = lgetv %dc;
+        symbol [ dc %tmp.39 26 22 24 ];
+        symbol [ getHeight %tmp.40 26 25 34 ];
+        %tmp.40 = getv function %tmp.39 :getHeight;
+        %tmp.41 = invoke %tmp.39 %tmp.40();
+        %tmp.42 = 2;
+        %tmp.43 = div %tmp.41 %tmp.42;
+        lputv %centerY.4 %tmp.43;
+        symbol [ centerY %centerY.4 26 12 19 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc" 28 8 ]
+        %tmp.44 = lgetv %dc;
+        symbol [ dc %tmp.44 28 8 10 ];
+        symbol [ drawText %tmp.45 28 11 19 ];
+        %tmp.45 = getv function %tmp.44 :drawText;
+        %tmp.46 = lgetv %centerX.3;
+        symbol [ centerX %tmp.46 28 20 27 ];
+        %tmp.47 = lgetv %centerY.4;
+        symbol [ centerY %tmp.47 28 29 36 ];
+        %tmp.48 = 40;
+        %tmp.49 = sub %tmp.47 %tmp.48;
+        symbol [ Graphics %tmp.50 28 43 51 ];
+        %tmp.50 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.51 28 52 62 ];
+        %tmp.51 = getv %tmp.50 :FONT_SMALL;
+        %tmp.52 = "Misty Link P01";
+        symbol [ Graphics %tmp.53 28 82 90 ];
+        %tmp.53 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.54 28 91 110 ];
+        %tmp.54 = getv %tmp.53 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.44 %tmp.45(%tmp.46, %tmp.49, %tmp.51, %tmp.52, %tmp.54);
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc" 31 8 ]
+        %tmp.55 = lgetv %dc;
+        symbol [ dc %tmp.55 31 8 10 ];
+        symbol [ drawText %tmp.56 31 11 19 ];
+        %tmp.56 = getv function %tmp.55 :drawText;
+        %tmp.57 = lgetv %centerX.3;
+        symbol [ centerX %tmp.57 31 20 27 ];
+        %tmp.58 = lgetv %centerY.4;
+        symbol [ centerY %tmp.58 31 29 36 ];
+        symbol [ Graphics %tmp.59 31 38 46 ];
+        %tmp.59 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_MEDIUM %tmp.60 31 47 65 ];
+        %tmp.60 = getv %tmp.59 :FONT_NUMBER_MEDIUM;
+        %tmp.61 = lgetv %hrValue.2;
+        symbol [ hrValue %tmp.61 31 67 74 ];
+        symbol [ Graphics %tmp.62 31 76 84 ];
+        %tmp.62 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.63 31 85 104 ];
+        %tmp.63 = getv %tmp.62 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.55 %tmp.56(%tmp.57, %tmp.58, %tmp.60, %tmp.61, %tmp.63);
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc" 33 8 ]
+        %tmp.64 = lgetv %dc;
+        symbol [ dc %tmp.64 33 8 10 ];
+        symbol [ drawText %tmp.65 33 11 19 ];
+        %tmp.65 = getv function %tmp.64 :drawText;
+        %tmp.66 = lgetv %centerX.3;
+        symbol [ centerX %tmp.66 33 20 27 ];
+        %tmp.67 = lgetv %centerY.4;
+        symbol [ centerY %tmp.67 33 29 36 ];
+        %tmp.68 = 50;
+        %tmp.69 = add %tmp.67 %tmp.68;
+        symbol [ Graphics %tmp.70 33 43 51 ];
+        %tmp.70 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.71 33 52 61 ];
+        %tmp.71 = getv %tmp.70 :FONT_TINY;
+        %tmp.72 = "Sending to Misty...";
+        symbol [ Graphics %tmp.73 33 86 94 ];
+        %tmp.73 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.74 33 95 114 ];
+        %tmp.74 = getv %tmp.73 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.64 %tmp.65(%tmp.66, %tmp.69, %tmp.71, %tmp.72, %tmp.74);
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressView_mc_17_49_34_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc"; @line = 36; @symbol_functiondef = [onShow,36,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc"; @line = 37; @symbol_functiondef = [onHide,37,13,19]; ]
+    function onHide() as Void {
+    }
+}
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressView.mc"; @line = 1; ]
+<init> {
+}

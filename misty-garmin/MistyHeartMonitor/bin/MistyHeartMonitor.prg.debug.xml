@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\aboad\misty-speculative-prototyping\misty-garmin\MistyHeartMonitor\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorApp.mc" id="1" lineNum="5" parent="globals/MistyHeartMonitorApp" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorApp.mc" id="2" lineNum="26" parent="globals" pc="268435472" symbol="getApp"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorApp.mc" id="2" lineNum="27" parent="globals" pc="268435482" symbol="getApp"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorDelegate.mc" id="4" lineNum="4" parent="globals/MistyHeartMonitorDelegate" pc="268435513" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorMenuDelegate.mc" id="5" lineNum="5" parent="globals/MistyHeartMonitorMenuDelegate" pc="268435525" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="6" lineNum="8" parent="globals/MistyHeartMonitorView" pc="268435537" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorApp.mc" id="7" lineNum="12" parent="globals/MistyHeartMonitorApp" pc="268435549" symbol="onStart"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorApp.mc" id="8" lineNum="20" parent="globals/MistyHeartMonitorApp" pc="268435552" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorApp.mc" id="8" lineNum="21" parent="globals/MistyHeartMonitorApp" pc="268435554" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorApp.mc" id="9" lineNum="7" parent="globals/MistyHeartMonitorApp" pc="268435601" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorApp.mc" id="9" lineNum="8" parent="globals/MistyHeartMonitorApp" pc="268435603" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorApp.mc" id="10" lineNum="16" parent="globals/MistyHeartMonitorApp" pc="268435616" symbol="onStop"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorDelegate.mc" id="11" lineNum="10" parent="globals/MistyHeartMonitorDelegate" pc="268435619" symbol="onMenu"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorDelegate.mc" id="11" lineNum="11" parent="globals/MistyHeartMonitorDelegate" pc="268435621" symbol="onMenu"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorDelegate.mc" id="11" lineNum="12" parent="globals/MistyHeartMonitorDelegate" pc="268435686" symbol="onMenu"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorDelegate.mc" id="12" lineNum="6" parent="globals/MistyHeartMonitorDelegate" pc="268435688" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorDelegate.mc" id="12" lineNum="7" parent="globals/MistyHeartMonitorDelegate" pc="268435690" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorMenuDelegate.mc" id="13" lineNum="11" parent="globals/MistyHeartMonitorMenuDelegate" pc="268435703" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorMenuDelegate.mc" id="13" lineNum="12" parent="globals/MistyHeartMonitorMenuDelegate" pc="268435705" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorMenuDelegate.mc" id="13" lineNum="13" parent="globals/MistyHeartMonitorMenuDelegate" pc="268435716" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorMenuDelegate.mc" id="13" lineNum="14" parent="globals/MistyHeartMonitorMenuDelegate" pc="268435737" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorMenuDelegate.mc" id="13" lineNum="15" parent="globals/MistyHeartMonitorMenuDelegate" pc="268435748" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorMenuDelegate.mc" id="14" lineNum="7" parent="globals/MistyHeartMonitorMenuDelegate" pc="268435770" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorMenuDelegate.mc" id="14" lineNum="8" parent="globals/MistyHeartMonitorMenuDelegate" pc="268435772" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="15" lineNum="25" parent="globals/MistyHeartMonitorView" pc="268435785" symbol="onShow"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="15" lineNum="27" parent="globals/MistyHeartMonitorView" pc="268435787" symbol="onShow"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="16" lineNum="19" parent="globals/MistyHeartMonitorView" pc="268435819" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="16" lineNum="20" parent="globals/MistyHeartMonitorView" pc="268435821" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="16" lineNum="21" parent="globals/MistyHeartMonitorView" pc="268435833" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="17" lineNum="31" parent="globals/MistyHeartMonitorView" pc="268435863" symbol="onHide"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="17" lineNum="32" parent="globals/MistyHeartMonitorView" pc="268435865" symbol="onHide"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="18" lineNum="76" parent="globals/MistyHeartMonitorView" pc="268435878" symbol="onReceive"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="18" lineNum="77" parent="globals/MistyHeartMonitorView" pc="268435880" symbol="onReceive"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="18" lineNum="78" parent="globals/MistyHeartMonitorView" pc="268435889" symbol="onReceive"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="18" lineNum="80" parent="globals/MistyHeartMonitorView" pc="268435904" symbol="onReceive"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="18" lineNum="82" parent="globals/MistyHeartMonitorView" pc="268435919" symbol="onReceive"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="19" lineNum="86" parent="globals/MistyHeartMonitorView" pc="268435931" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="19" lineNum="88" parent="globals/MistyHeartMonitorView" pc="268435934" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="19" lineNum="89" parent="globals/MistyHeartMonitorView" pc="268435946" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="19" lineNum="92" parent="globals/MistyHeartMonitorView" pc="268435954" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="19" lineNum="94" parent="globals/MistyHeartMonitorView" pc="268435971" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="19" lineNum="95" parent="globals/MistyHeartMonitorView" pc="268435980" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="19" lineNum="98" parent="globals/MistyHeartMonitorView" pc="268435989" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="19" lineNum="99" parent="globals/MistyHeartMonitorView" pc="268436021" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="19" lineNum="100" parent="globals/MistyHeartMonitorView" pc="268436056" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="20" lineNum="53" parent="globals/MistyHeartMonitorView" pc="268436088" symbol="sendToMisty"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="20" lineNum="54" parent="globals/MistyHeartMonitorView" pc="268436091" symbol="sendToMisty"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="20" lineNum="56" parent="globals/MistyHeartMonitorView" pc="268436112" symbol="sendToMisty"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="20" lineNum="60" parent="globals/MistyHeartMonitorView" pc="268436127" symbol="sendToMisty"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="20" lineNum="66" parent="globals/MistyHeartMonitorView" pc="268436160" symbol="sendToMisty"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="21" lineNum="36" parent="globals/MistyHeartMonitorView" pc="268436196" symbol="onTimer"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="21" lineNum="37" parent="globals/MistyHeartMonitorView" pc="268436199" symbol="onTimer"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="21" lineNum="40" parent="globals/MistyHeartMonitorView" pc="268436211" symbol="onTimer"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="21" lineNum="41" parent="globals/MistyHeartMonitorView" pc="268436233" symbol="onTimer"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="21" lineNum="42" parent="globals/MistyHeartMonitorView" pc="268436247" symbol="onTimer"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="21" lineNum="45" parent="globals/MistyHeartMonitorView" pc="268436264" symbol="onTimer"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\source\\MistyHeartMonitorView.mc" id="21" lineNum="49" parent="globals/MistyHeartMonitorView" pc="268436276" symbol="onTimer"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="22" lineNum="14" parent="globals/Rez/Layouts" pc="268436288" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="22" lineNum="15" parent="globals/Rez/Layouts" pc="268436299" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="22" lineNum="17" parent="globals/Rez/Layouts" pc="268436308" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="22" lineNum="19" parent="globals/Rez/Layouts" pc="268436411" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="22" lineNum="20" parent="globals/Rez/Layouts" pc="268436495" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="22" lineNum="22" parent="globals/Rez/Layouts" pc="268436526" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="23" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268436541" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="24" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268436553" symbol="initialize"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="24" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268436555" symbol="initialize"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="24" lineNum="30" parent="globals/Rez/Menus/MainMenu" pc="268436567" symbol="initialize"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\misty-garmin\\MistyHeartMonitor\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="24" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268436612" symbol="initialize"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="8389346" symbol="text"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="5" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="19" method="true" symbol="sendToMisty"/>
+        <entry id="22" method="true" symbol="MainLayout"/>
+        <entry id="10" object="true" symbol="MistyHeartMonitorView"/>
+        <entry id="8" object="true" symbol="MistyHeartMonitorDelegate"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="24" symbol="AppName"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
+        <entry id="9" object="true" symbol="MistyHeartMonitorMenuDelegate"/>
+        <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389594" symbol="headers"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="8389345" symbol="rezId"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="8391831" symbol="respirationRate"/>
+        <entry field="true" id="27" symbol="prompt"/>
+        <entry field="true" id="21" symbol="id_monkey"/>
+        <entry field="true" id="15" symbol="_statusMessage"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="29" symbol="item_2"/>
+        <entry id="28" symbol="item_1"/>
+        <entry id="12" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry field="true" id="16" symbol="_timer"/>
+        <entry id="7" object="true" symbol="MistyHeartMonitorApp"/>
+        <entry id="8388637" module="true" symbol="Communications"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="23" object="true" symbol="MainMenu"/>
+        <entry id="8389844" symbol="responseType"/>
+        <entry id="8388786" method="true" symbol="method"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="17" method="true" symbol="onReceive"/>
+        <entry field="true" id="13" symbol="LAPTOP_URL"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="20" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389109" method="true" symbol="onMenuItem"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="11" module="true" symbol="Layouts"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="14" symbol="_currentRate"/>
+        <entry id="18" method="true" symbol="onTimer"/>
+        <entry field="true" id="26" symbol="menu_label_2"/>
+        <entry field="true" id="25" symbol="menu_label_1"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435769" name="item" stackId="1" startPc="268435703"/>
+        <entry arg="true" endPc="268435930" name="responseCode" stackId="1" startPc="268435878"/>
+        <entry arg="true" endPc="268435930" name="data" stackId="2" startPc="268435878"/>
+        <entry arg="true" endPc="268436087" name="dc" stackId="1" startPc="268435931"/>
+        <entry endPc="268436086" name="w" stackId="2" startPc="268435934"/>
+        <entry endPc="268436086" name="h" stackId="3" startPc="268435934"/>
+        <entry arg="true" endPc="268436195" name="rate" stackId="1" startPc="268436088"/>
+        <entry endPc="268436194" name="payload" stackId="2" startPc="268436091"/>
+        <entry endPc="268436194" name="options" stackId="3" startPc="268436091"/>
+        <entry endPc="268436286" name="info" stackId="1" startPc="268436199"/>
+        <entry arg="true" endPc="268436540" name="dc" stackId="1" startPc="268436288"/>
+        <entry endPc="268436540" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268436299"/>
+        <entry endPc="268436540" name="rez_cmp_local_text_1193959466" stackId="3" startPc="268436299"/>
+        <entry endPc="268436540" name="rez_cmp_local_bitmap_id_monkey" stackId="4" startPc="268436299"/>
+    </localVars>
+    <deviceInfo deviceVersion="5c7ae9cf907f88c116a91dc4ffd75be9b5b7d2e9" partNumber="006-B4260-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="67" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/MistyHeartMonitorApp" offset="152" parentId="globals" symbolId="MistyHeartMonitorApp" type="class"/>
+        <dataEntry label="globals/Rez" offset="223" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/MistyHeartMonitorDelegate" offset="285" parentId="globals" symbolId="MistyHeartMonitorDelegate" type="class"/>
+        <dataEntry label="globals/MistyHeartMonitorMenuDelegate" offset="338" parentId="globals" symbolId="MistyHeartMonitorMenuDelegate" type="class"/>
+        <dataEntry label="globals/MistyHeartMonitorView" offset="391" parentId="globals" symbolId="MistyHeartMonitorView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="525" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="569" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="604" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="639" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="701" parentId="Menus" symbolId="MainMenu" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="MistyHeartMonitorApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435492" name="getApp" startPc="268435472">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="Rez" startPc="268435493">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="MistyHeartMonitorDelegate" startPc="268435513">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435536" name="&lt;init&gt;" parent="MistyHeartMonitorMenuDelegate" startPc="268435525">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435548" name="&lt;init&gt;" parent="MistyHeartMonitorView" startPc="268435537">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435551" name="onStart" parent="MistyHeartMonitorApp" startPc="268435549">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435600" name="getInitialView" parent="MistyHeartMonitorApp" startPc="268435552">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435615" name="initialize" parent="MistyHeartMonitorApp" startPc="268435601">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435618" name="onStop" parent="MistyHeartMonitorApp" startPc="268435616">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435687" name="onMenu" parent="MistyHeartMonitorDelegate" startPc="268435619">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435702" name="initialize" parent="MistyHeartMonitorDelegate" startPc="268435688">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435769" name="onMenuItem" parent="MistyHeartMonitorMenuDelegate" startPc="268435703">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435784" name="initialize" parent="MistyHeartMonitorMenuDelegate" startPc="268435770">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435818" name="onShow" parent="MistyHeartMonitorView" startPc="268435785">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435862" name="initialize" parent="MistyHeartMonitorView" startPc="268435819">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435877" name="onHide" parent="MistyHeartMonitorView" startPc="268435863">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435930" name="onReceive" parent="MistyHeartMonitorView" startPc="268435878">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436087" name="onUpdate" parent="MistyHeartMonitorView" startPc="268435931">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436195" name="sendToMisty" parent="MistyHeartMonitorView" startPc="268436088">
+            <param id="rate"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436287" name="onTimer" parent="MistyHeartMonitorView" startPc="268436196">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436540" name="MainLayout" parent="Layouts" startPc="268436288">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436552" name="&lt;init&gt;" parent="MainMenu" startPc="268436541">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436657" name="initialize" parent="MainMenu" startPc="268436553">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

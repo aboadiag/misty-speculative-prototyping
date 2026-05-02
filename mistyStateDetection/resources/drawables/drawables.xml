@@ -1,0 +1,10 @@
+<!-- <drawables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <bitmap id="LauncherIcon" filename="launcher_icon.svg" dithering="none" />
+</drawables> -->
+<drawables>
+    <bitmap id="LauncherIcon" filename="misty-default-no-background.png" />
+
+    <bitmap id="MistyDefault" filename="misty-default-no-background.png" />
+    <bitmap id="MistyHappy" filename="misty-happy-no-background.png" />
+    <bitmap id="MistyConcerned" filename="misty-concerned-no-background.png" />
+</drawables>

@@ -1,0 +1,352 @@
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
+import Toybox.Application;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [WatchUi,3,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Sensor,4,14,20]; ]
+import Toybox.Sensor;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Activity,5,14,22]; ]
+import Toybox.Activity;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Timer,6,14,19]; ]
+import Toybox.Timer;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [Communications,7,14,28]; ]
+import Toybox.Communications;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 8; @symbol_importdef<0> = [Toybox,8,7,13]; @symbol_importdef<1> = [ActivityRecording,8,14,31]; ]
+import Toybox.ActivityRecording;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 10; @symbol_classdef = [mistyActivityandStressApp,10,6,31]; @symbol_extends<0> = [Application,10,40,51]; @symbol_extends<1> = [AppBase,10,52,59]; ]
+class mistyActivityandStressApp extends Application.AppBase {
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 10; ]
+    <init> {
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 10; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 11; @position = 8; @symbol_vardef = [dataTimer,11,8,17]; @symbol_type<0> = [Timer,11,21,26]; @symbol_type<1> = [Timer,11,27,32]; ]
+    var dataTimer as Timer.Timer or Null;
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 12; @position = 8; @symbol_vardef = [session,12,8,15]; @symbol_type<0> = [ActivityRecording,12,19,36]; @symbol_type<1> = [Session,12,37,44]; ]
+    var session as ActivityRecording.Session or Null;
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 13; @position = 8; @symbol_vardef = [serverUrl,13,8,17]; ]
+    var serverUrl = "https://58e3-128-237-82-212.ngrok-free.app/update_garmin";
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 15; @symbol_functiondef = [initialize,15,13,23]; ]
+    function initialize() as Void {
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_15_26_17_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 16 8 ]
+        symbol [ AppBase %tmp.2 16 8 15 ];
+        %tmp.2 = getv ? :AppBase;
+        symbol [ initialize %tmp.3 16 16 26 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_15_26_17_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 20; @symbol_functiondef = [onStart,20,13,20]; @symbol_param<0> = [state,20,21,26]; @symbol_param<0>_type<0> = [Lang,20,30,34]; @symbol_param<0>_type<1> = [Dictionary,20,35,45]; ]
+    function onStart(state as Lang.Dictionary or Null) as Void {
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_20_56_32_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 21 8 ]
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_21_8_27_8_if_stmt:
+        symbol [ Toybox %tmp.2 21 12 18 ];
+        %tmp.2 = getv ? :Toybox;
+        %tmp.4 = const :ActivityRecording;
+        symbol [ ActivityRecording %tmp.4 21 24 41 const ];
+        %tmp.5 = canhazplz %tmp.2 %tmp.4;
+        bf %tmp.5 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_21_8_27_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_21_8_27_8_if_true:
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_21_43_27_8_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 22 12 ]
+        symbol [ ActivityRecording %tmp.6 22 22 39 ];
+        %tmp.6 = getm $.Toybox.ActivityRecording;
+        symbol [ createSession %tmp.7 22 40 53 ];
+        %tmp.7 = getv function %tmp.6 :createSession;
+        %tmp.8 = newd 2;
+        %tmp.10 = const :name;
+        symbol [ name %tmp.10 23 17 21 const ];
+        %tmp.11 = "MistyStudy";
+        %tmp.12 = dup %tmp.8;
+        %tmp.13 = aputv %tmp.12 %tmp.10 %tmp.11;
+        %tmp.15 = const :sport;
+        symbol [ sport %tmp.15 24 17 22 const ];
+        symbol [ Activity %tmp.16 24 24 32 ];
+        %tmp.16 = getm $.Toybox.Activity;
+        symbol [ SPORT_GENERIC %tmp.17 24 33 46 ];
+        %tmp.17 = getv %tmp.16 :SPORT_GENERIC;
+        %tmp.18 = dup %tmp.13;
+        %tmp.19 = aputv %tmp.18 %tmp.15 %tmp.17;
+        %tmp.20 = invoke %tmp.6 %tmp.7(%tmp.19);
+        symbol [ session ? 22 12 19 ];
+        putv self :session %tmp.20;
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 26 12 ]
+        symbol [ session %tmp.22 26 12 19 ];
+        %tmp.22 = getv ? :session;
+        symbol [ start %tmp.23 26 20 25 ];
+        %tmp.23 = getv function %tmp.22 :start;
+        invoke %tmp.22 %tmp.23();
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_21_43_27_8_stop:
+        goto @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_21_8_27_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_21_8_27_8_if_end:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 29 8 ]
+        symbol [ Timer %tmp.26 29 24 29 ];
+        %tmp.26 = getm $.Toybox.Timer;
+        symbol [ Timer %tmp.27 29 30 35 ];
+        %tmp.27 = getv function ? %tmp.26 :Timer;
+        %tmp.24 = newc %tmp.27 ();
+        symbol [ dataTimer ? 29 8 17 ];
+        putv self :dataTimer %tmp.24;
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 31 8 ]
+        symbol [ dataTimer %tmp.29 31 8 17 ];
+        %tmp.29 = getv ? :dataTimer;
+        symbol [ start %tmp.30 31 18 23 ];
+        %tmp.30 = getv function %tmp.29 :start;
+        %tmp.31 = self;
+        symbol [ method %tmp.32 31 24 30 ];
+        %tmp.32 = getv function %tmp.31 :method;
+        %tmp.34 = const :onTimerUpdate;
+        symbol [ onTimerUpdate %tmp.34 31 32 45 const ];
+        %tmp.35 = invoke %tmp.31 %tmp.32(%tmp.34);
+        %tmp.36 = as %tmp.35 (callback() as Void);
+        %tmp.37 = 2000;
+        %tmp.38 = true;
+        invoke %tmp.29 %tmp.30(%tmp.36, %tmp.37, %tmp.38);
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_20_56_32_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 34; @symbol_functiondef = [onTimerUpdate,34,13,26]; ]
+    function onTimerUpdate() as Void {
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_34_37_57_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 35 8 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_34_37_57_4_start" "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_34_37_57_4_stop" ]
+        %sInfo.1 = local;
+        symbol [ sInfo %sInfo.1 35 12 17 ];
+        symbol [ Sensor %tmp.1 35 20 26 ];
+        %tmp.1 = getm $.Toybox.Sensor;
+        symbol [ getInfo %tmp.2 35 27 34 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %sInfo.1 %tmp.3;
+        symbol [ sInfo %sInfo.1 35 12 17 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 36 8 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_34_37_57_4_start" "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_34_37_57_4_stop" ]
+        %aInfo.2 = local;
+        symbol [ aInfo %aInfo.2 36 12 17 ];
+        symbol [ Activity %tmp.4 36 20 28 ];
+        %tmp.4 = getm $.Toybox.Activity;
+        symbol [ getActivityInfo %tmp.5 36 29 44 ];
+        %tmp.5 = getv function %tmp.4 :getActivityInfo;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %aInfo.2 %tmp.6;
+        symbol [ aInfo %aInfo.2 36 12 17 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 38 8 ]
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_8_56_8_if_stmt:
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_12_38_48_begin:
+        %tmp.7 = lgetv %sInfo.1;
+        symbol [ sInfo %tmp.7 38 12 17 ];
+        %tmp.8 = null;
+        %tmp.9 = ne %tmp.7 %tmp.8;
+        bf %tmp.9 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_8_56_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_29_38_48_true:
+        %tmp.10 = lgetv %sInfo.1;
+        symbol [ sInfo %tmp.10 38 29 34 ];
+        %tmp.11 = as %tmp.10 { (!Null) };
+        symbol [ heartRate %tmp.12 38 35 44 ];
+        %tmp.12 = getv %tmp.11 :heartRate;
+        %tmp.13 = null;
+        %tmp.14 = ne %tmp.12 %tmp.13;
+        push %tmp.14;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_29_38_48_end:
+        %tmp.15 = phi [%tmp.9 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_12_38_48_begin] [%tmp.14 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_29_38_48_true] [%tmp.15 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_29_38_48_end];
+        bf %tmp.15 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_8_56_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_8_56_8_if_true:
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_54_56_8_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 39 12 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_54_56_8_start" "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_54_56_8_stop" ]
+        %payload.3 = local;
+        symbol [ payload %payload.3 39 16 23 ];
+        %tmp.16 = newd 2;
+        %tmp.17 = "heart_rate";
+        %tmp.18 = lgetv %sInfo.1;
+        symbol [ sInfo %tmp.18 40 32 37 ];
+        %tmp.19 = as %tmp.18 { (!Null) };
+        symbol [ heartRate %tmp.20 40 38 47 ];
+        %tmp.20 = getv %tmp.19 :heartRate;
+        %tmp.21 = dup %tmp.16;
+        %tmp.22 = aputv %tmp.21 %tmp.17 %tmp.20;
+        %tmp.23 = "activity_score";
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_36_41_105_begin:
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_37_41_76_begin:
+        %tmp.24 = lgetv %aInfo.2;
+        symbol [ aInfo %tmp.24 41 37 42 ];
+        %tmp.25 = null;
+        %tmp.26 = ne %tmp.24 %tmp.25;
+        bf %tmp.26 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_36_41_105_else_false;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_54_41_76_true:
+        %tmp.27 = lgetv %aInfo.2;
+        symbol [ aInfo %tmp.27 41 54 59 ];
+        %tmp.28 = as %tmp.27 { (!Null) };
+        symbol [ currentSpeed %tmp.29 41 60 72 ];
+        %tmp.29 = getv %tmp.28 :currentSpeed;
+        %tmp.30 = null;
+        %tmp.31 = ne %tmp.29 %tmp.30;
+        push %tmp.31;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_54_41_76_end:
+        %tmp.32 = phi [%tmp.26 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_37_41_76_begin] [%tmp.31 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_54_41_76_true] [%tmp.32 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_54_41_76_end];
+        bf %tmp.32 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_36_41_105_else_false;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_36_41_105_true:
+        %tmp.33 = lgetv %aInfo.2;
+        symbol [ aInfo %tmp.33 41 84 89 ];
+        %tmp.34 = as %tmp.33 { (!Null) };
+        symbol [ currentSpeed %tmp.35 41 90 102 ];
+        %tmp.35 = getv %tmp.34 :currentSpeed;
+        push %tmp.35;
+        goto @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_36_41_105_end;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_36_41_105_else_false:
+        %tmp.36 = 0.0;
+        push %tmp.36;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_36_41_105_end:
+        %tmp.37 = phi [%tmp.32 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_36_41_105_begin] [%tmp.35 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_36_41_105_true] [%tmp.36 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_36_41_105_else_false] [%tmp.37 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_41_36_41_105_end];
+        %tmp.38 = dup %tmp.22;
+        %tmp.39 = aputv %tmp.38 %tmp.23 %tmp.37;
+        lputv %payload.3 %tmp.39;
+        symbol [ payload %payload.3 39 16 23 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 44 12 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_54_56_8_start" "C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_54_56_8_stop" ]
+        %options.4 = local;
+        symbol [ options %options.4 44 16 23 ];
+        %tmp.40 = newd 2;
+        %tmp.42 = const :method;
+        symbol [ method %tmp.42 45 17 23 const ];
+        symbol [ Communications %tmp.43 45 27 41 ];
+        %tmp.43 = getm $.Toybox.Communications;
+        symbol [ HTTP_REQUEST_METHOD_POST %tmp.44 45 42 66 ];
+        %tmp.44 = getv %tmp.43 :HTTP_REQUEST_METHOD_POST;
+        %tmp.45 = dup %tmp.40;
+        %tmp.46 = aputv %tmp.45 %tmp.42 %tmp.44;
+        %tmp.48 = const :headers;
+        symbol [ headers %tmp.48 46 17 24 const ];
+        %tmp.49 = newd 1;
+        %tmp.50 = "Content-Type";
+        symbol [ Communications %tmp.51 46 47 61 ];
+        %tmp.51 = getm $.Toybox.Communications;
+        symbol [ REQUEST_CONTENT_TYPE_JSON %tmp.52 46 62 87 ];
+        %tmp.52 = getv %tmp.51 :REQUEST_CONTENT_TYPE_JSON;
+        %tmp.53 = dup %tmp.49;
+        %tmp.54 = aputv %tmp.53 %tmp.50 %tmp.52;
+        %tmp.55 = dup %tmp.46;
+        %tmp.56 = aputv %tmp.55 %tmp.48 %tmp.54;
+        lputv %options.4 %tmp.56;
+        symbol [ options %options.4 44 16 23 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 49 12 ]
+        symbol [ Communications %tmp.57 49 12 26 ];
+        %tmp.57 = getm $.Toybox.Communications;
+        symbol [ makeWebRequest %tmp.58 49 27 41 ];
+        %tmp.58 = getv function %tmp.57 :makeWebRequest;
+        symbol [ serverUrl %tmp.60 50 16 25 ];
+        %tmp.60 = getv ? :serverUrl;
+        %tmp.61 = lgetv %payload.3;
+        symbol [ payload %tmp.61 51 16 23 ];
+        %tmp.62 = lgetv %options.4;
+        symbol [ options %tmp.62 52 16 23 ];
+        %tmp.63 = self;
+        symbol [ method %tmp.64 54 16 22 ];
+        %tmp.64 = getv function %tmp.63 :method;
+        %tmp.66 = const :onWebResponse;
+        symbol [ onWebResponse %tmp.66 54 24 37 const ];
+        %tmp.67 = invoke %tmp.63 %tmp.64(%tmp.66);
+        %tmp.68 = as %tmp.67 (callback(responseCode as Lang.Number, data as Lang.Dictionary or Lang.String or Null) as Void);
+        symbol [ responseCode %tmp.68 54 49 61 ];
+        symbol [ Lang %tmp.68 54 65 69 ];
+        symbol [ Number %tmp.68 54 70 76 ];
+        symbol [ data %tmp.68 54 78 82 ];
+        symbol [ Lang %tmp.68 54 86 90 ];
+        symbol [ Dictionary %tmp.68 54 91 101 ];
+        symbol [ Lang %tmp.68 54 105 109 ];
+        symbol [ String %tmp.68 54 110 116 ];
+        invoke %tmp.57 %tmp.58(%tmp.60, %tmp.61, %tmp.62, %tmp.68);
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_54_56_8_stop:
+        goto @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_8_56_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_38_8_56_8_if_end:
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_34_37_57_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 59; @symbol_functiondef = [onWebResponse,59,13,26]; @symbol_param<0> = [code,59,27,31]; @symbol_param<0>_type<0> = [Lang,59,35,39]; @symbol_param<0>_type<1> = [Number,59,40,46]; @symbol_param<1> = [data,59,48,52]; @symbol_param<1>_type<0> = [Lang,59,56,60]; @symbol_param<1>_type<1> = [Dictionary,59,61,71]; @symbol_param<1>_type<2> = [Lang,59,75,79]; @symbol_param<1>_type<3> = [String,59,80,86]; ]
+    function onWebResponse(code as Lang.Number, data as Lang.Dictionary or Lang.String or Null) as Void {
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_59_104_61_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 60 8 ]
+        symbol [ System %tmp.2 60 8 14 ];
+        %tmp.2 = getv ? :System;
+        symbol [ println %tmp.3 60 15 22 ];
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.4 = "Misty Server Response: ";
+        %tmp.5 = lgetv %code;
+        symbol [ code %tmp.5 60 51 55 ];
+        %tmp.6 = add %tmp.4 %tmp.5;
+        invoke %tmp.2 %tmp.3(%tmp.6);
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_59_104_61_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 64; @symbol_functiondef = [onStop,64,13,19]; @symbol_param<0> = [state,64,20,25]; @symbol_param<0>_type<0> = [Lang,64,29,33]; @symbol_param<0>_type<1> = [Dictionary,64,34,44]; ]
+    function onStop(state as Lang.Dictionary or Null) as Void {
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_64_55_73_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 65 8 ]
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_65_8_67_8_if_stmt:
+        symbol [ dataTimer %tmp.2 65 12 21 ];
+        %tmp.2 = getv ? :dataTimer;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_65_8_67_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_65_8_67_8_if_true:
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_65_31_67_8_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 66 12 ]
+        symbol [ dataTimer %tmp.6 66 12 21 ];
+        %tmp.6 = getv ? :dataTimer;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ stop %tmp.8 66 22 26 ];
+        %tmp.8 = getv function %tmp.7 :stop;
+        invoke %tmp.7 %tmp.8();
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_65_31_67_8_stop:
+        goto @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_65_8_67_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_65_8_67_8_if_end:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 68 8 ]
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_68_8_72_8_if_stmt:
+        symbol [ session %tmp.10 68 12 19 ];
+        %tmp.10 = getv ? :session;
+        %tmp.11 = null;
+        %tmp.12 = ne %tmp.10 %tmp.11;
+        bf %tmp.12 @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_68_8_72_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_68_8_72_8_if_true:
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_68_29_72_8_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 69 12 ]
+        symbol [ session %tmp.14 69 12 19 ];
+        %tmp.14 = getv ? :session;
+        %tmp.15 = as %tmp.14 { (!Null) };
+        symbol [ stop %tmp.16 69 20 24 ];
+        %tmp.16 = getv function %tmp.15 :stop;
+        invoke %tmp.15 %tmp.16();
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 70 12 ]
+        symbol [ session %tmp.18 70 12 19 ];
+        %tmp.18 = getv ? :session;
+        symbol [ save %tmp.19 70 20 24 ];
+        %tmp.19 = getv function %tmp.18 :save;
+        invoke %tmp.18 %tmp.19();
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 71 12 ]
+        %tmp.20 = null;
+        symbol [ session ? 71 12 19 ];
+        putv self :session %tmp.20;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_68_29_72_8_stop:
+        goto @C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_68_8_72_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_68_8_72_8_if_end:
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_64_55_73_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 75; @symbol_functiondef = [getInitialView,75,12,26]; ]
+    function getInitialView() {
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_75_29_77_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc" 76 8 ]
+        %tmp.1 = newa 1;
+        symbol [ mistyActivityandStressView %tmp.5 76 21 47 ];
+        %tmp.5 = getv ? :mistyActivityandStressView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        ret %tmp.7;
+C__Users_aboad_misty_speculative_prototyping_mistyActivityandStress_source_mistyActivityandStressApp_mc_75_29_77_4_stop:
+    }
+}
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyActivityandStress\source\mistyActivityandStressApp.mc"; @line = 1; ]
+<init> {
+}

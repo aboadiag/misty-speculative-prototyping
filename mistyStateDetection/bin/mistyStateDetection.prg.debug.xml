@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionMenuDelegate.mc" id="1" lineNum="5" parent="globals/mistyStateDetectionMenuDelegate" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435472" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionDelegate.mc" id="3" lineNum="4" parent="globals/mistyStateDetectionDelegate" pc="268435492" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="4" lineNum="6" parent="globals/mistyStateDetectionView" pc="268435504" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="5" lineNum="9" parent="globals/mistyStateDetectionApp" pc="268435516" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionMenuDelegate.mc" id="6" lineNum="11" parent="globals/mistyStateDetectionMenuDelegate" pc="268435528" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionMenuDelegate.mc" id="6" lineNum="12" parent="globals/mistyStateDetectionMenuDelegate" pc="268435530" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionMenuDelegate.mc" id="6" lineNum="13" parent="globals/mistyStateDetectionMenuDelegate" pc="268435541" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionMenuDelegate.mc" id="6" lineNum="14" parent="globals/mistyStateDetectionMenuDelegate" pc="268435562" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionMenuDelegate.mc" id="6" lineNum="15" parent="globals/mistyStateDetectionMenuDelegate" pc="268435573" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionMenuDelegate.mc" id="7" lineNum="7" parent="globals/mistyStateDetectionMenuDelegate" pc="268435595" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionMenuDelegate.mc" id="7" lineNum="8" parent="globals/mistyStateDetectionMenuDelegate" pc="268435597" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionDelegate.mc" id="8" lineNum="10" parent="globals/mistyStateDetectionDelegate" pc="268435610" symbol="onMenu"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionDelegate.mc" id="8" lineNum="11" parent="globals/mistyStateDetectionDelegate" pc="268435612" symbol="onMenu"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionDelegate.mc" id="8" lineNum="12" parent="globals/mistyStateDetectionDelegate" pc="268435677" symbol="onMenu"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionDelegate.mc" id="9" lineNum="6" parent="globals/mistyStateDetectionDelegate" pc="268435679" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionDelegate.mc" id="9" lineNum="7" parent="globals/mistyStateDetectionDelegate" pc="268435681" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="37" parent="globals/mistyStateDetectionView" pc="268435694" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="40" parent="globals/mistyStateDetectionView" pc="268435696" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="41" parent="globals/mistyStateDetectionView" pc="268435702" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="45" parent="globals/mistyStateDetectionView" pc="268435720" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="46" parent="globals/mistyStateDetectionView" pc="268435726" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="50" parent="globals/mistyStateDetectionView" pc="268435764" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="51" parent="globals/mistyStateDetectionView" pc="268435788" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="54" parent="globals/mistyStateDetectionView" pc="268435838" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="56" parent="globals/mistyStateDetectionView" pc="268435857" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="57" parent="globals/mistyStateDetectionView" pc="268435865" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="60" parent="globals/mistyStateDetectionView" pc="268435880" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="61" parent="globals/mistyStateDetectionView" pc="268435888" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="64" parent="globals/mistyStateDetectionView" pc="268435903" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="65" parent="globals/mistyStateDetectionView" pc="268435921" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="67" parent="globals/mistyStateDetectionView" pc="268435929" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="69" parent="globals/mistyStateDetectionView" pc="268435970" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="73" parent="globals/mistyStateDetectionView" pc="268435982" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="10" lineNum="75" parent="globals/mistyStateDetectionView" pc="268435990" symbol="updateState"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="11" lineNum="26" parent="globals/mistyStateDetectionView" pc="268436002" symbol="onLayout"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="11" lineNum="28" parent="globals/mistyStateDetectionView" pc="268436004" symbol="onLayout"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="11" lineNum="29" parent="globals/mistyStateDetectionView" pc="268436042" symbol="onLayout"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="11" lineNum="30" parent="globals/mistyStateDetectionView" pc="268436080" symbol="onLayout"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="11" lineNum="32" parent="globals/mistyStateDetectionView" pc="268436118" symbol="onLayout"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="12" lineNum="22" parent="globals/mistyStateDetectionView" pc="268436131" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="12" lineNum="23" parent="globals/mistyStateDetectionView" pc="268436133" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="13" lineNum="78" parent="globals/mistyStateDetectionView" pc="268436146" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="13" lineNum="79" parent="globals/mistyStateDetectionView" pc="268436149" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="13" lineNum="80" parent="globals/mistyStateDetectionView" pc="268436161" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="13" lineNum="85" parent="globals/mistyStateDetectionView" pc="268436169" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="13" lineNum="86" parent="globals/mistyStateDetectionView" pc="268436178" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="13" lineNum="90" parent="globals/mistyStateDetectionView" pc="268436201" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="13" lineNum="91" parent="globals/mistyStateDetectionView" pc="268436218" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="13" lineNum="94" parent="globals/mistyStateDetectionView" pc="268436247" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="13" lineNum="95" parent="globals/mistyStateDetectionView" pc="268436278" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionView.mc" id="13" lineNum="106" parent="globals/mistyStateDetectionView" pc="268436379" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="14" lineNum="68" parent="globals/mistyStateDetectionApp" pc="268436395" symbol="onResponse"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="14" lineNum="69" parent="globals/mistyStateDetectionApp" pc="268436397" symbol="onResponse"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="14" lineNum="71" parent="globals/mistyStateDetectionApp" pc="268436421" symbol="onResponse"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="15" lineNum="28" parent="globals/mistyStateDetectionApp" pc="268436469" symbol="fetchData"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="15" lineNum="29" parent="globals/mistyStateDetectionApp" pc="268436472" symbol="fetchData"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="15" lineNum="30" parent="globals/mistyStateDetectionApp" pc="268436479" symbol="fetchData"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="15" lineNum="33" parent="globals/mistyStateDetectionApp" pc="268436483" symbol="fetchData"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="15" lineNum="35" parent="globals/mistyStateDetectionApp" pc="268436495" symbol="fetchData"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="15" lineNum="37" parent="globals/mistyStateDetectionApp" pc="268436501" symbol="fetchData"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="15" lineNum="38" parent="globals/mistyStateDetectionApp" pc="268436523" symbol="fetchData"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="15" lineNum="42" parent="globals/mistyStateDetectionApp" pc="268436541" symbol="fetchData"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="15" lineNum="43" parent="globals/mistyStateDetectionApp" pc="268436552" symbol="fetchData"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="15" lineNum="48" parent="globals/mistyStateDetectionApp" pc="268436576" symbol="fetchData"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="15" lineNum="52" parent="globals/mistyStateDetectionApp" pc="268436591" symbol="fetchData"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="15" lineNum="60" parent="globals/mistyStateDetectionApp" pc="268436624" symbol="fetchData"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="16" lineNum="18" parent="globals/mistyStateDetectionApp" pc="268436657" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="16" lineNum="19" parent="globals/mistyStateDetectionApp" pc="268436660" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="16" lineNum="21" parent="globals/mistyStateDetectionApp" pc="268436685" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="16" lineNum="23" parent="globals/mistyStateDetectionApp" pc="268436709" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="16" lineNum="25" parent="globals/mistyStateDetectionApp" pc="268436736" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="17" lineNum="14" parent="globals/mistyStateDetectionApp" pc="268436749" symbol="initialize"/>
+        <entry filename="C:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\source\\mistyStateDetectionApp.mc" id="17" lineNum="15" parent="globals/mistyStateDetectionApp" pc="268436751" symbol="initialize"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="18" lineNum="17" parent="globals/Rez/Layouts" pc="268436764" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="18" lineNum="18" parent="globals/Rez/Layouts" pc="268436775" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="18" lineNum="20" parent="globals/Rez/Layouts" pc="268436784" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="18" lineNum="22" parent="globals/Rez/Layouts" pc="268436887" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="18" lineNum="23" parent="globals/Rez/Layouts" pc="268436971" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="18" lineNum="25" parent="globals/Rez/Layouts" pc="268437002" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="19" lineNum="30" parent="globals/Rez/Menus/MainMenu" pc="268437017" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="20" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268437029" symbol="initialize"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="20" lineNum="32" parent="globals/Rez/Menus/MainMenu" pc="268437031" symbol="initialize"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="20" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268437043" symbol="initialize"/>
+        <entry filename="c:\\Users\\aboad\\misty-speculative-prototyping\\mistyStateDetection\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="20" lineNum="34" parent="globals/Rez/Menus/MainMenu" pc="268437088" symbol="initialize"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="25" method="true" symbol="fetchData"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="8389346" symbol="text"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="5" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="32" method="true" symbol="MainLayout"/>
+        <entry id="9" object="true" symbol="mistyStateDetectionMenuDelegate"/>
+        <entry field="true" id="19" symbol="happyIcon"/>
+        <entry field="true" id="16" symbol="currentMsg"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="20" symbol="isAnxious"/>
+        <entry id="8389108" method="true" symbol="onResponse"/>
+        <entry field="true" id="24" symbol="NGROK_GARMIN"/>
+        <entry field="true" id="34" symbol="AppName"/>
+        <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389594" symbol="headers"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="8389345" symbol="rezId"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="8" object="true" symbol="mistyStateDetectionDelegate"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="8391831" symbol="respirationRate"/>
+        <entry field="true" id="37" symbol="prompt"/>
+        <entry field="true" id="31" symbol="id_monkey"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry field="true" id="8389067" symbol="height"/>
+        <entry id="39" symbol="item_2"/>
+        <entry id="38" symbol="item_1"/>
+        <entry id="12" module="true" symbol="Menus"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry field="true" id="8389066" symbol="width"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry field="true" id="23" symbol="watch_message"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="8388987" method="true" symbol="vibrate"/>
+        <entry field="true" id="13" symbol="br"/>
+        <entry id="10" object="true" symbol="mistyStateDetectionView"/>
+        <entry id="8388637" module="true" symbol="Communications"/>
+        <entry id="22" method="true" symbol="updateState"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="33" object="true" symbol="MainMenu"/>
+        <entry id="8389844" symbol="responseType"/>
+        <entry field="true" id="17" symbol="current_icon"/>
+        <entry id="8388786" method="true" symbol="method"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="29" symbol="MistyDefault"/>
+        <entry field="true" id="27" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry field="true" id="15" symbol="concernedIcon"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="7" object="true" symbol="mistyStateDetectionApp"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="18" symbol="defaultIcon"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry field="true" id="28" symbol="MistyConcerned"/>
+        <entry field="true" id="26" symbol="view"/>
+        <entry field="true" id="14" symbol="breath_rate"/>
+        <entry field="true" id="30" symbol="MistyHappy"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389109" method="true" symbol="onMenuItem"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry field="true" id="21" symbol="isFirstUpdate"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="11" module="true" symbol="Layouts"/>
+        <entry id="8388636" module="true" symbol="Attention"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="36" symbol="menu_label_2"/>
+        <entry field="true" id="35" symbol="menu_label_1"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435594" name="item" stackId="1" startPc="268435528"/>
+        <entry arg="true" endPc="268436001" name="newBr" stackId="1" startPc="268435694"/>
+        <entry arg="true" endPc="268436001" name="newMsg" stackId="2" startPc="268435694"/>
+        <entry arg="true" endPc="268436130" name="dc" stackId="1" startPc="268436002"/>
+        <entry arg="true" endPc="268436394" name="dc" stackId="1" startPc="268436146"/>
+        <entry endPc="268436390" name="textArea" stackId="2" startPc="268436278"/>
+        <entry arg="true" endPc="268436468" name="code" stackId="1" startPc="268436395"/>
+        <entry arg="true" endPc="268436468" name="data" stackId="2" startPc="268436395"/>
+        <entry endPc="268436655" name="url" stackId="1" startPc="268436472"/>
+        <entry endPc="268436655" name="currentBr" stackId="2" startPc="268436472"/>
+        <entry endPc="268436655" name="info" stackId="3" startPc="268436472"/>
+        <entry endPc="268436655" name="params" stackId="4" startPc="268436472"/>
+        <entry endPc="268436655" name="options" stackId="5" startPc="268436472"/>
+        <entry endPc="268436748" name="pollTimer" stackId="1" startPc="268436660"/>
+        <entry arg="true" endPc="268437016" name="dc" stackId="1" startPc="268436764"/>
+        <entry endPc="268437016" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268436775"/>
+        <entry endPc="268437016" name="rez_cmp_local_text_1193959466" stackId="3" startPc="268436775"/>
+        <entry endPc="268437016" name="rez_cmp_local_bitmap_id_monkey" stackId="4" startPc="268436775"/>
+    </localVars>
+    <deviceInfo deviceVersion="5c7ae9cf907f88c116a91dc4ffd75be9b5b7d2e9" partNumber="006-B4260-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="MistyConcerned"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="MistyHappy"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="MistyDefault"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="67" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/mistyStateDetectionMenuDelegate" offset="143" parentId="globals" symbolId="mistyStateDetectionMenuDelegate" type="class"/>
+        <dataEntry label="globals/Rez" offset="196" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/mistyStateDetectionDelegate" offset="258" parentId="globals" symbolId="mistyStateDetectionDelegate" type="class"/>
+        <dataEntry label="globals/mistyStateDetectionView" offset="311" parentId="globals" symbolId="mistyStateDetectionView" type="class"/>
+        <dataEntry label="globals/mistyStateDetectionApp" offset="472" parentId="globals" symbolId="mistyStateDetectionApp" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="561" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="632" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="667" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="702" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="764" parentId="Menus" symbolId="MainMenu" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="mistyStateDetectionMenuDelegate" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435491" name="&lt;init&gt;" parent="Rez" startPc="268435472">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435503" name="&lt;init&gt;" parent="mistyStateDetectionDelegate" startPc="268435492">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435515" name="&lt;init&gt;" parent="mistyStateDetectionView" startPc="268435504">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435527" name="&lt;init&gt;" parent="mistyStateDetectionApp" startPc="268435516">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435594" name="onMenuItem" parent="mistyStateDetectionMenuDelegate" startPc="268435528">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435609" name="initialize" parent="mistyStateDetectionMenuDelegate" startPc="268435595">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435678" name="onMenu" parent="mistyStateDetectionDelegate" startPc="268435610">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435693" name="initialize" parent="mistyStateDetectionDelegate" startPc="268435679">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436001" name="updateState" parent="mistyStateDetectionView" startPc="268435694">
+            <param id="newBr"/>
+            <param id="newMsg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436130" name="onLayout" parent="mistyStateDetectionView" startPc="268436002">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436145" name="initialize" parent="mistyStateDetectionView" startPc="268436131">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436394" name="onUpdate" parent="mistyStateDetectionView" startPc="268436146">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436468" name="onResponse" parent="mistyStateDetectionApp" startPc="268436395">
+            <param id="code"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436656" name="fetchData" parent="mistyStateDetectionApp" startPc="268436469">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436748" name="getInitialView" parent="mistyStateDetectionApp" startPc="268436657">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436763" name="initialize" parent="mistyStateDetectionApp" startPc="268436749">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437016" name="MainLayout" parent="Layouts" startPc="268436764">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437028" name="&lt;init&gt;" parent="MainMenu" startPc="268437017">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437133" name="initialize" parent="MainMenu" startPc="268437029">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

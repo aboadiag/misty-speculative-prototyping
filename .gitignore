@@ -1,0 +1,27 @@
+# --- Private Data ---
+pruned_backups/
+known_faces/
+incoming_photos/
+audio_cache/
+# Hides ANY json & db file in the main folder
+*.json
+*.db
+*.backup_*
+transcripts/
+audio-recordings/
+
+# --- Python Junk ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# --- VS Code & System ---
+.vscode/
+.DS_Store
+structure.txt
+
+# Secrets
+.env
