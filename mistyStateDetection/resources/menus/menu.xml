@@ -1,4 +1,10 @@
-<menu id="MainMenu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+<!-- <menu id="MainMenu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
     <menu-item id="item_1" label="@Strings.menu_label_1" />
     <menu-item id="item_2" label="@Strings.menu_label_2" />
+</menu> -->
+<menu id="MainMenu">
+    <menu-item id="item_breathe" label="Guided Breathing" />
+    <menu-item id="item_walk" label="Take a Walk" />
+    <menu-item id="item_imagery" label="Guided Imagery" />
+    <menu-item id="item_ignore" label="Dismiss" />
 </menu>

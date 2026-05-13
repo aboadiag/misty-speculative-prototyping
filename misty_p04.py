@@ -17,6 +17,8 @@ load_dotenv() # Add this - it loads the variables from .env into your system
 
 #start misty robot instance
 misty = mb.misty
+SERVER_URL = "http://127.0.0.1:5000"
+NGROK_HEADERS = {"ngrok-skip-browser-warning": "true"}
 
 # Source: https://theallpurposewoman.com/40-positive-affirmations-for-black-women/
 all_affirmations = [
@@ -192,15 +194,79 @@ def misty_affirms():
 
             break
 
+# session 3:
+def morning_routine(person_name="P04"):
+    print(f"[P04] Initiating morning routine for {person_name}...")
+    
+    # Set a friendly face
+    misty.DisplayImage("e_Joy.jpg")
+    misty.ChangeLED(0, 255, 0) # Green
+    misty.MoveHead(0, 0, 0, 40)
+    
+    mb.speak_smart(f"Good morning! Before you get caught up in work, let's review your morning checklist.", misty)
+    time.sleep(6)
+    
+    mb.speak_smart("First, please remember to feed the dogs and the cats.", misty)
+    time.sleep(4)
+    
+    mb.speak_smart("Next, it's time to take the dogs for a quick walk.", misty)
+    time.sleep(4)
+    
+    mb.speak_smart("Also, please remember to take your daily medication.", misty)
+    time.sleep(4)
+    
+    mb.speak_smart("And finally, make sure you sit down and eat breakfast!", misty)
+    time.sleep(4)
+    
+    misty.DisplayImage("e_DefaultContent.jpg")
+    print("[P04] Morning routine complete. Transitioning to workday reminders.")
+
+    time.sleep(4)
+
+
+def workday_reminders():
+    print("[P04] Starting workday boundary reminders (Watch App)...")
+    
+    # We use tags like [DEFAULT] and [CONCERNED] so the watch knows which image to load!
+    # We also use \n to format the text nicely on the small watch screen.
+    reminders = [
+        "[DEFAULT]Remember to relax\nyour shoulders.",
+        "[CONCERNED]Check in with \nyourself before\ncommitting\nto more work.",
+        "[HAPPY]Time for a quick\nstretch break.",
+        "[CONCERNED]Have you drank\nwater recently?"
+    ]
+    
+    while True:
+        for reminder in reminders:
+            try:
+                # Push the reminder to the Flask Server
+                print(f"[P04] Sending to watch: {reminder}")
+                requests.post(f"{SERVER_URL}/send_watch_alert", json={"message": reminder}, headers=NGROK_HEADERS)
+                
+                # Wait 30 seconds before sending the next one (Change this to 1-2 hours in real life!)
+                time.sleep(10) 
+            except Exception as e:
+                print(f"[!] Error sending reminder: {e}")
+                time.sleep(5)
 
 if __name__ == "__main__":
     print("Misty is looking for P04...")
-    identified_name = mb.misty_search() 
+    # identified_name = mb.misty_search() 
     misty.MoveHead(0, 0, 0, 40) # move head 
 
     try:
         while True:
-            misty_morning_checkin(identified_name)
+
+            # ---- session 3 ----
+            # 1. Run the verbal morning checklist on the robot
+            morning_routine()
+        
+             # 2. Start pushing text reminders to the watch
+            workday_reminders()
+
+
+            # ----- session 2 ----
+            # misty_morning_checkin(identified_name)
 
 
     except KeyboardInterrupt:
@@ -209,7 +275,7 @@ if __name__ == "__main__":
         print(f"\n[!] Unexpected error: {e}")
     finally:
         # This block runs NO MATTER WHAT (even on Ctrl+C)
-        print(f"Finalizing transcript for {identified_name}...")
+        # print(f"Finalizing transcript for {identified_name}...")
         # You could add a 'Session Ended Abruptly' note here if you want
         print(f"Demo complete.")
 

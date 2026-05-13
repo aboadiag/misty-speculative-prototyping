@@ -285,6 +285,38 @@ def hardware_mic_test():
     time.sleep(6)
     print("Test complete.")
 
+# to make video for P05
+def guided_box_breathing(cycles=3):
+
+    """Guides user through a 4-4-4-4 breathing exercise with LED visual anchors."""
+    
+
+    for i in range(cycles):
+        print(f"Breathing Cycle {i+1}/{cycles}")
+        
+        # Inhale (Blue)
+        misty.ChangeLED(0, 100, 255) 
+        misty.MoveArms(-88, -88, 50, 50) #up
+        time.sleep(4)
+        
+        # Hold (Green)
+        misty.ChangeLED(0, 255, 0)
+        time.sleep(4)
+        
+        # Exhale (Orange)
+        misty.ChangeLED(255, 100, 0)
+        misty.MoveArms(88, 88, 50, 50) #down
+        time.sleep(4)
+        
+        # Hold Empty (Dim White)
+        misty.ChangeLED(50, 50, 50)
+        time.sleep(4)
+
+    # Reset LED and finish
+    misty.ChangeLED(0, 255, 0)
+    time.sleep(2)
+
+
 def main_loop():
     print(f"Connecting to Misty at {MISTY_IP}...")
     

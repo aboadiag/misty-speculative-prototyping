@@ -9,6 +9,16 @@ module Rez {
         (:initialized) var MistyDefault as ResourceId;
         (:initialized) var MistyHappy as ResourceId;
         (:initialized) var MistyConcerned as ResourceId;
+        (:initialized) var frame_1 as ResourceId;
+        (:initialized) var frame_2 as ResourceId;
+        (:initialized) var frame_3 as ResourceId;
+        (:initialized) var frame_4 as ResourceId;
+        (:initialized) var frame_5 as ResourceId;
+        (:initialized) var frame_6 as ResourceId;
+        (:initialized) var frame_7 as ResourceId;
+        (:initialized) var frame_8 as ResourceId;
+        (:initialized) var frame_9 as ResourceId;
+        (:initialized) var frame_10 as ResourceId;
         (:initialized) var id_monkey as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
@@ -30,8 +40,10 @@ module Rez {
         class MainMenu extends WatchUi.Menu {
             function initialize() {
                 Menu.initialize();
-                addItem((WatchUi.loadResource($.Rez.Strings.menu_label_1) as String), :item_1);
-                addItem((WatchUi.loadResource($.Rez.Strings.menu_label_2) as String), :item_2);
+                addItem("Guided Breathing", :item_breathe);
+                addItem("Take a Walk", :item_walk);
+                addItem("Guided Imagery", :item_imagery);
+                addItem("Dismiss", :item_ignore);
             }
         }
     } // Menus

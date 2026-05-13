@@ -1,0 +1,389 @@
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Attention,4,14,23]; ]
+import Toybox.Attention;
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 6; @symbol_classdef = [mistyChecksInView,6,6,23]; @symbol_extends<0> = [WatchUi,6,32,39]; @symbol_extends<1> = [View,6,40,44]; ]
+class mistyChecksInView extends WatchUi.View {
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 8; @position = 8; @symbol_vardef = [currentMsg,8,8,18]; @symbol_type<0> = [Lang,8,22,26]; @symbol_type<1> = [String,8,27,33]; ]
+    var currentMsg as Lang.String = "Waiting for\nreminders...";
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 9; @position = 8; @symbol_vardef = [lastMsg,9,8,15]; @symbol_type<0> = [Lang,9,19,23]; @symbol_type<1> = [String,9,24,30]; ]
+    var lastMsg as Lang.String = "";
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 12; @position = 8; @symbol_vardef = [iconDefault,12,8,19]; @symbol_type<0> = [WatchUi,12,23,30]; @symbol_type<1> = [BitmapResource,12,31,45]; ]
+    var iconDefault as WatchUi.BitmapResource or Null;
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 13; @position = 8; @symbol_vardef = [iconConcerned,13,8,21]; @symbol_type<0> = [WatchUi,13,25,32]; @symbol_type<1> = [BitmapResource,13,33,47]; ]
+    var iconConcerned as WatchUi.BitmapResource or Null;
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 14; @position = 8; @symbol_vardef = [iconHappy,14,8,17]; @symbol_type<0> = [WatchUi,14,21,28]; @symbol_type<1> = [BitmapResource,14,29,43]; ]
+    var iconHappy as WatchUi.BitmapResource or Null;
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 17; @symbol_functiondef = [initialize,17,13,23]; ]
+    function initialize() as Void {
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_17_26_19_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 18 8 ]
+        symbol [ View %tmp.2 18 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 18 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_17_26_19_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 21; @symbol_functiondef = [onLayout,21,13,21]; @symbol_param<0> = [dc,21,22,24]; @symbol_param<0>_type<0> = [Dc,21,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_21_40_27_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 23 8 ]
+        symbol [ WatchUi %tmp.1 23 22 29 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.2 23 30 42 ];
+        %tmp.2 = getv function %tmp.1 :loadResource;
+        symbol [ Rez %tmp.4 23 43 46 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Drawables %tmp.5 23 47 56 ];
+        %tmp.5 = getv %tmp.4 :Drawables;
+        symbol [ misty_default %tmp.6 23 57 70 ];
+        %tmp.6 = getv %tmp.5 :misty_default;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+        symbol [ iconDefault ? 23 8 19 ];
+        putv self :iconDefault %tmp.7;
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 24 8 ]
+        symbol [ WatchUi %tmp.8 24 24 31 ];
+        %tmp.8 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.9 24 32 44 ];
+        %tmp.9 = getv function %tmp.8 :loadResource;
+        symbol [ Rez %tmp.11 24 45 48 ];
+        %tmp.11 = getv ? :Rez;
+        symbol [ Drawables %tmp.12 24 49 58 ];
+        %tmp.12 = getv %tmp.11 :Drawables;
+        symbol [ misty_concerned %tmp.13 24 59 74 ];
+        %tmp.13 = getv %tmp.12 :misty_concerned;
+        %tmp.14 = invoke %tmp.8 %tmp.9(%tmp.13);
+        symbol [ iconConcerned ? 24 8 21 ];
+        putv self :iconConcerned %tmp.14;
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 25 8 ]
+        symbol [ WatchUi %tmp.15 25 20 27 ];
+        %tmp.15 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.16 25 28 40 ];
+        %tmp.16 = getv function %tmp.15 :loadResource;
+        symbol [ Rez %tmp.18 25 41 44 ];
+        %tmp.18 = getv ? :Rez;
+        symbol [ Drawables %tmp.19 25 45 54 ];
+        %tmp.19 = getv %tmp.18 :Drawables;
+        symbol [ misty_happy %tmp.20 25 55 66 ];
+        %tmp.20 = getv %tmp.19 :misty_happy;
+        %tmp.21 = invoke %tmp.15 %tmp.16(%tmp.20);
+        symbol [ iconHappy ? 25 8 17 ];
+        putv self :iconHappy %tmp.21;
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_21_40_27_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 29; @symbol_functiondef = [updateMessage,29,13,26]; @symbol_param<0> = [msg,29,27,30]; @symbol_param<0>_type<0> = [Lang,29,34,38]; @symbol_param<0>_type<1> = [String,29,39,45]; ]
+    function updateMessage(msg as Lang.String) as Void {
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_29_55_45_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 31 8 ]
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_31_8_44_8_if_stmt:
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_31_12_31_50_begin:
+        %tmp.1 = lgetv %msg;
+        symbol [ msg %tmp.1 31 13 16 ];
+        symbol [ equals %tmp.2 31 17 23 ];
+        %tmp.2 = getv function %tmp.1 :equals;
+        symbol [ lastMsg %tmp.4 31 24 31 ];
+        %tmp.4 = getv ? :lastMsg;
+        %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.4);
+        %tmp.6 = not %tmp.5;
+        bf %tmp.6 @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_31_8_44_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_31_36_31_50_true:
+        %tmp.7 = lgetv %msg;
+        symbol [ msg %tmp.7 31 37 40 ];
+        symbol [ equals %tmp.8 31 41 47 ];
+        %tmp.8 = getv function %tmp.7 :equals;
+        %tmp.9 = "";
+        %tmp.10 = invoke %tmp.7 %tmp.8(%tmp.9);
+        %tmp.11 = not %tmp.10;
+        push %tmp.11;
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_31_36_31_50_end:
+        %tmp.12 = phi [%tmp.6 @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_31_12_31_50_begin] [%tmp.11 @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_31_36_31_50_true] [%tmp.12 @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_31_36_31_50_end];
+        bf %tmp.12 @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_31_8_44_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_31_8_44_8_if_true:
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_31_53_44_8_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 32 12 ]
+        %tmp.13 = lgetv %msg;
+        symbol [ msg %tmp.13 32 25 28 ];
+        symbol [ currentMsg ? 32 12 22 ];
+        putv self :currentMsg %tmp.13;
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 33 12 ]
+        %tmp.14 = lgetv %msg;
+        symbol [ msg %tmp.14 33 22 25 ];
+        symbol [ lastMsg ? 33 12 19 ];
+        putv self :lastMsg %tmp.14;
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 35 12 ]
+        symbol [ System %tmp.16 35 12 18 ];
+        %tmp.16 = getv ? :System;
+        symbol [ println %tmp.17 35 19 26 ];
+        %tmp.17 = getv function %tmp.16 :println;
+        %tmp.18 = "New Reminder Received: ";
+        symbol [ currentMsg %tmp.20 35 55 65 ];
+        %tmp.20 = getv ? :currentMsg;
+        %tmp.21 = add %tmp.18 %tmp.20;
+        invoke %tmp.16 %tmp.17(%tmp.21);
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 38 12 ]
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_38_12_41_12_if_stmt:
+        symbol [ Attention %tmp.22 38 16 25 ];
+        %tmp.22 = getm $.Toybox.Attention;
+        %tmp.24 = const :vibrate;
+        symbol [ vibrate %tmp.24 38 31 38 const ];
+        %tmp.25 = canhazplz %tmp.22 %tmp.24;
+        bf %tmp.25 @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_38_12_41_12_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_38_12_41_12_if_true:
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_38_40_41_12_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 39 16 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_38_40_41_12_start" "C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_38_40_41_12_stop" ]
+        %vibeData.1 = local;
+        symbol [ vibeData %vibeData.1 39 20 28 ];
+        %tmp.26 = newa 1;
+        symbol [ Attention %tmp.29 39 36 45 ];
+        %tmp.29 = getm $.Toybox.Attention;
+        symbol [ VibeProfile %tmp.30 39 46 57 ];
+        %tmp.30 = getv function ? %tmp.29 :VibeProfile;
+        %tmp.31 = 100;
+        %tmp.32 = 1500;
+        %tmp.27 = newc %tmp.30 (%tmp.31, %tmp.32);
+        %tmp.33 = dup %tmp.26;
+        %tmp.34 = aputv %tmp.33 0 %tmp.27;
+        lputv %vibeData.1 %tmp.34;
+        symbol [ vibeData %vibeData.1 39 20 28 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 40 16 ]
+        symbol [ Attention %tmp.35 40 16 25 ];
+        %tmp.35 = getm $.Toybox.Attention;
+        symbol [ vibrate %tmp.36 40 26 33 ];
+        %tmp.36 = getv function %tmp.35 :vibrate;
+        %tmp.37 = lgetv %vibeData.1;
+        symbol [ vibeData %tmp.37 40 34 42 ];
+        invoke %tmp.35 %tmp.36(%tmp.37);
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_38_40_41_12_stop:
+        goto @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_38_12_41_12_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_38_12_41_12_if_end:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 43 12 ]
+        symbol [ WatchUi %tmp.38 43 12 19 ];
+        %tmp.38 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.39 43 20 33 ];
+        %tmp.39 = getv function %tmp.38 :requestUpdate;
+        invoke %tmp.38 %tmp.39();
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_31_53_44_8_stop:
+        goto @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_31_8_44_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_31_8_44_8_if_end:
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_29_55_45_4_stop:
+    }
+    [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 47; @symbol_functiondef = [onUpdate,47,13,21]; @symbol_param<0> = [dc,47,22,24]; @symbol_param<0>_type<0> = [Dc,47,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_47_40_79_4_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 48 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 48 8 10 ];
+        symbol [ setColor %tmp.2 48 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 48 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 48 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 48 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 48 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 49 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 49 8 10 ];
+        symbol [ clear %tmp.8 49 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 51 8 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_47_40_79_4_start" "C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_47_40_79_4_stop" ]
+        %iconToDraw.1 = local;
+        symbol [ iconToDraw %iconToDraw.1 51 12 22 ];
+        symbol [ iconDefault %tmp.10 51 25 36 ];
+        %tmp.10 = getv ? :iconDefault;
+        lputv %iconToDraw.1 %tmp.10;
+        symbol [ iconToDraw %iconToDraw.1 51 12 22 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 52 8 ]
+        [ "C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_47_40_79_4_start" "C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_47_40_79_4_stop" ]
+        %displayText.2 = local;
+        symbol [ displayText %displayText.2 52 12 23 ];
+        symbol [ currentMsg %tmp.12 52 26 36 ];
+        %tmp.12 = getv ? :currentMsg;
+        lputv %displayText.2 %tmp.12;
+        symbol [ displayText %displayText.2 52 12 23 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 55 8 ]
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_55_8_67_8_if_stmt:
+        symbol [ currentMsg %tmp.14 55 12 22 ];
+        %tmp.14 = getv ? :currentMsg;
+        symbol [ find %tmp.15 55 23 27 ];
+        %tmp.15 = getv function %tmp.14 :find;
+        %tmp.16 = "[CONCERNED]";
+        %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+        %tmp.18 = null;
+        %tmp.19 = ne %tmp.17 %tmp.18;
+        bf %tmp.19 @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_55_8_67_8_if_false;
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_55_8_67_8_if_true:
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_55_52_59_8_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 56 12 ]
+        symbol [ iconConcerned %tmp.21 56 25 38 ];
+        %tmp.21 = getv ? :iconConcerned;
+        lputv %iconToDraw.1 %tmp.21;
+        symbol [ iconToDraw %iconToDraw.1 56 12 22 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 58 12 ]
+        symbol [ currentMsg %tmp.23 58 26 36 ];
+        %tmp.23 = getv ? :currentMsg;
+        symbol [ substring %tmp.24 58 37 46 ];
+        %tmp.24 = getv function %tmp.23 :substring;
+        %tmp.25 = 11;
+        symbol [ currentMsg %tmp.27 58 51 61 ];
+        %tmp.27 = getv ? :currentMsg;
+        symbol [ length %tmp.28 58 62 68 ];
+        %tmp.28 = getv function %tmp.27 :length;
+        %tmp.29 = invoke %tmp.27 %tmp.28();
+        %tmp.30 = invoke %tmp.23 %tmp.24(%tmp.25, %tmp.29);
+        lputv %displayText.2 %tmp.30;
+        symbol [ displayText %displayText.2 58 12 23 ];
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_55_52_59_8_stop:
+        goto @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_55_8_67_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_55_8_67_8_if_false:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 59 15 ]
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_59_15_67_8_if_stmt:
+        symbol [ currentMsg %tmp.32 59 19 29 ];
+        %tmp.32 = getv ? :currentMsg;
+        symbol [ find %tmp.33 59 30 34 ];
+        %tmp.33 = getv function %tmp.32 :find;
+        %tmp.34 = "[DEFAULT]";
+        %tmp.35 = invoke %tmp.32 %tmp.33(%tmp.34);
+        %tmp.36 = null;
+        %tmp.37 = ne %tmp.35 %tmp.36;
+        bf %tmp.37 @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_59_15_67_8_if_false;
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_59_15_67_8_if_true:
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_59_57_63_8_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 60 12 ]
+        symbol [ iconDefault %tmp.39 60 25 36 ];
+        %tmp.39 = getv ? :iconDefault;
+        lputv %iconToDraw.1 %tmp.39;
+        symbol [ iconToDraw %iconToDraw.1 60 12 22 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 62 12 ]
+        symbol [ currentMsg %tmp.41 62 26 36 ];
+        %tmp.41 = getv ? :currentMsg;
+        symbol [ substring %tmp.42 62 37 46 ];
+        %tmp.42 = getv function %tmp.41 :substring;
+        %tmp.43 = 9;
+        symbol [ currentMsg %tmp.45 62 50 60 ];
+        %tmp.45 = getv ? :currentMsg;
+        symbol [ length %tmp.46 62 61 67 ];
+        %tmp.46 = getv function %tmp.45 :length;
+        %tmp.47 = invoke %tmp.45 %tmp.46();
+        %tmp.48 = invoke %tmp.41 %tmp.42(%tmp.43, %tmp.47);
+        lputv %displayText.2 %tmp.48;
+        symbol [ displayText %displayText.2 62 12 23 ];
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_59_57_63_8_stop:
+        goto @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_59_15_67_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_59_15_67_8_if_false:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 63 17 ]
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_63_17_67_8_if_stmt:
+        symbol [ currentMsg %tmp.50 63 21 31 ];
+        %tmp.50 = getv ? :currentMsg;
+        symbol [ find %tmp.51 63 32 36 ];
+        %tmp.51 = getv function %tmp.50 :find;
+        %tmp.52 = "[HAPPY]";
+        %tmp.53 = invoke %tmp.50 %tmp.51(%tmp.52);
+        %tmp.54 = null;
+        %tmp.55 = ne %tmp.53 %tmp.54;
+        bf %tmp.55 @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_63_17_67_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_63_17_67_8_if_true:
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_63_57_67_8_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 64 12 ]
+        symbol [ iconHappy %tmp.57 64 25 34 ];
+        %tmp.57 = getv ? :iconHappy;
+        lputv %iconToDraw.1 %tmp.57;
+        symbol [ iconToDraw %iconToDraw.1 64 12 22 ];
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 66 12 ]
+        symbol [ currentMsg %tmp.59 66 26 36 ];
+        %tmp.59 = getv ? :currentMsg;
+        symbol [ substring %tmp.60 66 37 46 ];
+        %tmp.60 = getv function %tmp.59 :substring;
+        %tmp.61 = 7;
+        symbol [ currentMsg %tmp.63 66 50 60 ];
+        %tmp.63 = getv ? :currentMsg;
+        symbol [ length %tmp.64 66 61 67 ];
+        %tmp.64 = getv function %tmp.63 :length;
+        %tmp.65 = invoke %tmp.63 %tmp.64();
+        %tmp.66 = invoke %tmp.59 %tmp.60(%tmp.61, %tmp.65);
+        lputv %displayText.2 %tmp.66;
+        symbol [ displayText %displayText.2 66 12 23 ];
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_63_57_67_8_stop:
+        goto @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_63_17_67_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_63_17_67_8_if_end:
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_59_15_67_8_if_end:
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_55_8_67_8_if_end:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 71 8 ]
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_71_8_73_8_if_stmt:
+        %tmp.67 = lgetv %iconToDraw.1;
+        symbol [ iconToDraw %tmp.67 71 12 22 ];
+        %tmp.68 = null;
+        %tmp.69 = ne %tmp.67 %tmp.68;
+        bf %tmp.69 @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_71_8_73_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_71_8_73_8_if_true:
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_71_32_73_8_start:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 72 12 ]
+        %tmp.70 = lgetv %dc;
+        symbol [ dc %tmp.70 72 12 14 ];
+        symbol [ drawBitmap %tmp.71 72 15 25 ];
+        %tmp.71 = getv function %tmp.70 :drawBitmap;
+        %tmp.72 = 200;
+        %tmp.73 = 100;
+        %tmp.74 = lgetv %iconToDraw.1;
+        symbol [ iconToDraw %tmp.74 72 36 46 ];
+        %tmp.75 = as %tmp.74 { (!Null) };
+        invoke %tmp.70 %tmp.71(%tmp.72, %tmp.73, %tmp.75);
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_71_32_73_8_stop:
+        goto @C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_71_8_73_8_if_end;
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_71_8_73_8_if_end:
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 77 8 ]
+        %tmp.76 = lgetv %dc;
+        symbol [ dc %tmp.76 77 8 10 ];
+        symbol [ setColor %tmp.77 77 11 19 ];
+        %tmp.77 = getv function %tmp.76 :setColor;
+        symbol [ Graphics %tmp.78 77 20 28 ];
+        %tmp.78 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.79 77 29 40 ];
+        %tmp.79 = getv %tmp.78 :COLOR_WHITE;
+        symbol [ Graphics %tmp.80 77 42 50 ];
+        %tmp.80 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.81 77 51 68 ];
+        %tmp.81 = getv %tmp.80 :COLOR_TRANSPARENT;
+        invoke %tmp.76 %tmp.77(%tmp.79, %tmp.81);
+[ "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc" 78 8 ]
+        %tmp.82 = lgetv %dc;
+        symbol [ dc %tmp.82 78 8 10 ];
+        symbol [ drawText %tmp.83 78 11 19 ];
+        %tmp.83 = getv function %tmp.82 :drawText;
+        %tmp.84 = 40;
+        %tmp.85 = 90;
+        symbol [ Graphics %tmp.86 78 28 36 ];
+        %tmp.86 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.87 78 37 47 ];
+        %tmp.87 = getv %tmp.86 :FONT_XTINY;
+        %tmp.88 = lgetv %displayText.2;
+        symbol [ displayText %tmp.88 78 49 60 ];
+        symbol [ Graphics %tmp.89 78 62 70 ];
+        %tmp.89 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.90 78 71 88 ];
+        %tmp.90 = getv %tmp.89 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.82 %tmp.83(%tmp.84, %tmp.85, %tmp.87, %tmp.88, %tmp.90);
+C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInView_mc_47_40_79_4_stop:
+    }
+}
+[ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInView.mc"; @line = 1; ]
+<init> {
+}

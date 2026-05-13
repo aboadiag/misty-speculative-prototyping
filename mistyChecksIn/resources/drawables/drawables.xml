@@ -1,0 +1,8 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="misty-happy-no-background.png" />
+
+    <bitmap id="misty_default" filename="misty-default-no-background.png" />
+    <bitmap id="misty_concerned" filename="misty-concerned-no-background.png" />
+    <bitmap id="misty_happy" filename="misty-happy-no-background.png" />
+
+</drawables>

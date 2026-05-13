@@ -1,110 +1,186 @@
 import Toybox.WatchUi;
 import Toybox.Graphics;
 import Toybox.Lang;
-import Toybox.Attention;
+import Toybox.Timer;
+import Toybox.System;
 
 class mistyStateDetectionView extends WatchUi.View {
-    // 1. Declare variables one per line with explicit types
-    var happyIcon as WatchUi.BitmapResource?;
-    var concernedIcon as WatchUi.BitmapResource?;
-    var defaultIcon as WatchUi.BitmapResource?;
+    
+    var current_icon as WatchUi.BitmapResource?;
     var currentMsg as Lang.String = "";
     var br as Lang.String = "--";
-    var isAnxious as Lang.Boolean = false;
 
-    // --- Flag to track the initial startup ---
-    var isFirstUpdate as Lang.Boolean = true;
+    // Animation Variables
+    var isAnimating as Lang.Boolean = false;
+    var animTimer as Timer.Timer?;
+    var animTick as Lang.Number = 0;
+    var breathingText as Lang.String = "";
+    var cycleCount as Lang.Number = 0;
+    var animStartTime as Lang.Number = 0; // Tracks when animation started for the shield
 
-    var breath_rate = 15;
-    var watch_message = "";
-    var current_icon as WatchUi.BitmapResource?;
+    // We store RESOURCE IDs, not the actual images, to save memory!
+    var animFrameIds as Lang.Array<Lang.ResourceId> = new [10] as Lang.Array<Lang.ResourceId>;
 
     function initialize() {
         View.initialize(); 
+
+        animFrameIds[0] = Rez.Drawables.frame_1;
+        animFrameIds[1] = Rez.Drawables.frame_2;
+        animFrameIds[2] = Rez.Drawables.frame_3;
+        animFrameIds[3] = Rez.Drawables.frame_4;
+        animFrameIds[4] = Rez.Drawables.frame_5;
+        animFrameIds[5] = Rez.Drawables.frame_6;
+        animFrameIds[6] = Rez.Drawables.frame_7;
+        animFrameIds[7] = Rez.Drawables.frame_8;
+        animFrameIds[8] = Rez.Drawables.frame_9;
+        animFrameIds[9] = Rez.Drawables.frame_10;
+        
+        loadDefaultFace();
     }
 
-    function onLayout(dc as Graphics.Dc) as Void {
-        // 2. Explicitly cast the loaded resources as BitmapResources
-        happyIcon = WatchUi.loadResource(Rez.Drawables.MistyHappy) as WatchUi.BitmapResource;
-        concernedIcon = WatchUi.loadResource(Rez.Drawables.MistyConcerned) as WatchUi.BitmapResource;
-        defaultIcon = WatchUi.loadResource(Rez.Drawables.MistyDefault) as WatchUi.BitmapResource;
-
-        current_icon = defaultIcon;
+    function loadDefaultFace() as Void {
+        try {
+            current_icon = WatchUi.loadResource(Rez.Drawables.MistyDefault);
+        } catch(e) {
+            System.println("Default icon load failed.");
+        }
     }
 
-
-    // 3. Accept multiple types since JSON data can sometimes be a Number, String, or Null
-    function updateState(newBr as Lang.Number or Lang.String or Null, newMsg as Lang.String or Null) as Void {
+    // --- THE TRIGGER ---
+    function startBreathingAnimation() as Void {
+        if (isAnimating) { return; } 
         
-        // Convert the breath rate to a string for the UI
-        if (newBr != null) {
-            br = newBr.toString();
+        System.println(">>> STARTING BREATHING ANIMATION <<<");
+        isAnimating = true;
+        animTick = 0;
+        cycleCount = 0; 
+        breathingText = "Inhale..."; 
+        animStartTime = System.getTimer(); // ✅ Uses correct Garmin timer function
+
+        // Safely load just the first frame
+        try { current_icon = WatchUi.loadResource(animFrameIds[0]); } catch(e) {}
+
+        // ✅ Memory-Safe Timer Initialization
+        if (animTimer != null) { 
+            animTimer.stop(); 
+        } else {
+            animTimer = new Timer.Timer();
         }
         
-        // Handle the message and vibration safely
-        if (newMsg != null) {
-            if (!newMsg.equals("") && !newMsg.equals(currentMsg)) {
-                // Ensure the watch actually supports vibration before calling it
-               // --- NEW LOGIC: Suppress vibration on app startup! ---
-                // Similar to p05's calibration, we skip the beep on the very first update
-                if (!isFirstUpdate && Attention has :vibrate) {
-                    Attention.vibrate([new Attention.VibeProfile(100, 500)]);
-                }
-                // --- Check message content to decide the emotion! ---
-                if (newMsg.find("Good") != null) {
-                    // It's the reward message! Show Happy Misty.
-                    isAnxious = false;
-                    current_icon = happyIcon;
-                } else {
-                    // It's the anxiety message. Show Concerned Misty.
-                    isAnxious = true;
-                    current_icon = concernedIcon;
-                }
-                
-            } else if (newMsg.equals("")) {
-                isAnxious = false;
-                // Swap back to happy image
-                current_icon = WatchUi.loadResource(Rez.Drawables.MistyHappy);
-            }
-            currentMsg = newMsg;
-        }
+        animTimer.start(method(:onAnimTick), 1000, true); 
 
-        // --- The initial load is over, allow vibrations for future updates ---
-        isFirstUpdate = false;
+        WatchUi.requestUpdate(); 
+    }
+
+    // --- THE STOP ---
+    function stopBreathingAnimation() as Void {
+        if (!isAnimating) { return; }
         
+        System.println(">>> STOPPING ANIMATION <<<");
+        isAnimating = false;
+        
+        if (animTimer != null) { 
+            animTimer.stop();
+        }
+        
+        loadDefaultFace();
         WatchUi.requestUpdate();
     }
 
-     function onUpdate(dc as Graphics.Dc) as Void {
+    // --- NETWORK STATE HANDLER ---
+    function updateState(newBr as Lang.Object or Null, newMsg as Lang.String or Null) as Void {
+        if (newBr != null) { br = newBr.toString(); }
+
+        if (newMsg != null) {
+            if (newMsg.find("[ANIM:BREATHE]") != null) {
+                startBreathingAnimation();
+            } 
+            else if (isAnimating) {
+                // ✅ CLAUDE'S SHIELD FIX: Ignore messages for the first 3 seconds
+                if (System.getTimer() - animStartTime < 3000) {
+                    return; 
+                }
+                
+                // Keep ignoring standard anxious/reset messages while breathing
+                if (newMsg.equals("Anxious? Press Start for options.") || newMsg.equals("reset")) {
+                    return;
+                }
+                
+                // If it's a completely new, valid message, stop animation and show it
+                stopBreathingAnimation();
+                currentMsg = newMsg;
+            }
+            else if (!newMsg.equals("")) {
+                stopBreathingAnimation();
+                currentMsg = newMsg;
+            }
+            else if (newMsg.equals("") && !isAnimating) {
+                currentMsg = "";
+            }
+        }
+        WatchUi.requestUpdate();
+    }
+    
+    // --- THE ANIMATION LOOP ---
+    function onAnimTick() as Void {
+        if (!isAnimating) { return; } // Safety check
+        
+        animTick++;
+        if (animTick >= 10) { 
+            animTick = 0; 
+            cycleCount++;
+            
+            // AUTO-STOP: Stop after 3 full breaths (30 seconds)
+            if (cycleCount >= 3) {
+                System.println("[ANIMATION] 3 breaths completed. Stopping.");
+                stopBreathingAnimation();
+                currentMsg = "Great job.";
+                WatchUi.requestUpdate();
+                return;
+            }
+        }
+
+        if (animTick < 4) { breathingText = "Inhale..."; }
+        else if (animTick < 6) { breathingText = "Hold..."; }
+        else { breathingText = "Exhale..."; }
+
+        // ✅ Memory-safe load per tick
+        try { 
+            current_icon = WatchUi.loadResource(animFrameIds[animTick]); 
+        } catch(e) {
+            System.println("Frame load failed at: " + animTick);
+        }
+        
+        WatchUi.requestUpdate(); 
+    }
+
+    // ✅ CLEANUP WHEN VIEW IS HIDDEN (Great Catch by Claude)
+    function onHide() as Void {
+        System.println("[VIEW] onHide called - cleaning up animation");
+        if (animTimer != null) {
+            animTimer.stop();
+        }
+        isAnimating = false;
+    }
+
+    // --- THE DRAW FUNCTION ---
+    function onUpdate(dc as Graphics.Dc) as Void {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
         
-        // 2. Draw Misty on the RIGHT side
-        // X = 230 pushes her to the right half of the 454px screen
-        // Y = 80 drops her down slightly from the top edge
         if (current_icon != null) {
-            dc.drawBitmap(230, 80, current_icon); 
+            // Centered draw (adjust 120, 80 based on your screen size)
+            dc.drawBitmap(200, 100, current_icon); 
         }
 
-        // 3. Draw the Breath Rate on the LEFT side
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(50, 100, Graphics.FONT_MEDIUM, "BR: " + br, Graphics.TEXT_JUSTIFY_LEFT);
+        dc.drawText(45, 90, Graphics.FONT_XTINY, "BR: " + br, Graphics.TEXT_JUSTIFY_LEFT);
 
-        // 4. Draw the Wrapped Text Box on the LEFT side
-        if (currentMsg != null && !currentMsg.equals("")) {
-            var textArea = new WatchUi.TextArea({
-                :text => currentMsg,
-                :color => Graphics.COLOR_WHITE,
-                :font => Graphics.FONT_XTINY, 
-                :locX => 50,          // Start near the left edge
-                :locY => 150,         // Start right below the Breath Rate
-                :width => 180,        // Restrict the width to the left half of the screen
-                :height => 250,       // HUGE height limit so it never triggers the "..."
-                :justification => Graphics.TEXT_JUSTIFY_LEFT // Left-align the text itself
-            });
-            
-            textArea.draw(dc); 
+        if (isAnimating) {
+            // x, y
+            dc.drawText(45, 240, Graphics.FONT_SMALL, breathingText, Graphics.TEXT_JUSTIFY_CENTER);
+        } else if (currentMsg != null && !currentMsg.equals("")) {
+            dc.drawText(45, 240, Graphics.FONT_XTINY, currentMsg, Graphics.TEXT_JUSTIFY_CENTER);
         }
     }
-
 }

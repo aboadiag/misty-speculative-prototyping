@@ -26,7 +26,7 @@ PROFILE_CASCADE = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_pro
 
 ## IP addresses
 TTS_KEY = os.getenv("ELEVEN_LAB_KEY")
-NGROK_URL = "https://26eb-128-237-82-216.ngrok-free.app" #NGROK URL ---> all the modality (vision, wearbles, etc) server url
+NGROK_URL = "https://3793-128-237-82-122.ngrok-free.app" #NGROK URL ---> all the modality (vision, wearbles, etc) server url
 
 # Search range for the head (Pitch, Roll, Yaw)
 # Yaw is left/right. -40 is right, 40 is left.

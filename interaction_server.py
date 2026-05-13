@@ -289,6 +289,36 @@ def get_situation():
     # 3. Always return the hub data (which contains watch_message) back to the watch
     return jsonify(state_hub), 200
 
+# p05 -- session 3
+@app.route('/user_choice', methods=['GET', 'POST'])
+def user_choice():
+    global state_hub
+    
+    # If python is ASKING for the choice (GET)
+    if request.method == 'GET':
+        # Return whatever is currently saved in the hub (default to "none")
+        current_choice = state_hub.get("user_choice", "none")
+        return jsonify({"choice": current_choice}), 200
+
+    # If the watch or python is SAVING a new choice (POST)
+    elif request.method == 'POST':
+        try:
+            data = request.get_json(force=True)
+            choice = data.get("choice", "none")
+            
+            # Save it into the central state hub
+            state_hub["user_choice"] = choice
+            
+            # Only print if a user actually made a choice (so we don't spam the logs with 'none')
+            if choice != "none":
+                print(f"[mistyStateDetection] User selected intervention -> {choice}")
+                
+            return jsonify({"status": "success"}), 200
+            
+        except Exception as e:
+            print(f"[!] Error parsing user choice: {e}")
+            return jsonify({"status": "error"}), 400
+
 @app.route('/update_vision', methods=['POST'])
 def update_vision():
     global state_hub
@@ -302,6 +332,7 @@ def send_watch_alert():
     global state_hub
     data = request.get_json(force=True)
     state_hub["watch_message"] = data.get("message", "")
+    print(f"[mistyStateDetection] watch Update -> {state_hub['watch_message']}")
     return jsonify({"status": "success"}), 200
 
 

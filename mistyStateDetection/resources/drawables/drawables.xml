@@ -7,4 +7,16 @@
     <bitmap id="MistyDefault" filename="misty-default-no-background.png" />
     <bitmap id="MistyHappy" filename="misty-happy-no-background.png" />
     <bitmap id="MistyConcerned" filename="misty-concerned-no-background.png" />
+
+
+    <bitmap id="frame_1" filename="misty_box_breathing_start1.png" />
+    <bitmap id="frame_2" filename="misty_box_breathing_start2.png" />
+    <bitmap id="frame_3" filename="misty_box_breathing_inhale1.png" />
+    <bitmap id="frame_4" filename="misty_box_breathing_inhale2.png" />
+    <bitmap id="frame_5" filename="misty_box_breathing_inhale3.png" />
+    <bitmap id="frame_6" filename="misty_box_breathing_inhale4.png" />
+    <bitmap id="frame_7" filename="misty_box_breathing_exhale1.png" />
+    <bitmap id="frame_8" filename="misty_box_breathing_exhale2.png" />
+    <bitmap id="frame_9" filename="misty_box_breathing_exhale3.png" />
+    <bitmap id="frame_10" filename="misty_box_breathing_exhale4.png" />
 </drawables>
