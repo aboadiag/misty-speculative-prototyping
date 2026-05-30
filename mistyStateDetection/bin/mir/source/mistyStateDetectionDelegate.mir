@@ -83,11 +83,11 @@ C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistySta
         %tmp.20 = getv %tmp.19 :currentMsg;
         symbol [ equals %tmp.21 18 32 38 ];
         %tmp.21 = getv function %tmp.20 :equals;
-        %tmp.22 = "Anxious? Press Start for options.";
+        %tmp.22 = "Anxious? Tap screen\nfor menu options.";
         %tmp.23 = invoke %tmp.20 %tmp.21(%tmp.22);
         bf %tmp.23 @C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionDelegate_mc_18_12_22_12_if_end;
 C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionDelegate_mc_18_12_22_12_if_true:
-C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionDelegate_mc_18_77_22_12_start:
+C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionDelegate_mc_18_82_22_12_start:
 [ "C:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionDelegate.mc" 19 16 ]
         symbol [ System %tmp.24 19 16 22 ];
         %tmp.24 = getm $.Toybox.System;
@@ -118,7 +118,7 @@ C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistySta
 [ "C:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionDelegate.mc" 21 16 ]
         %tmp.41 = true;
         ret %tmp.41;
-C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionDelegate_mc_18_77_22_12_stop:
+C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionDelegate_mc_18_82_22_12_stop:
         goto @C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionDelegate_mc_18_12_22_12_if_end;
 C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionDelegate_mc_18_12_22_12_if_end:
 C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionDelegate_mc_17_53_23_8_stop:

@@ -36,6 +36,10 @@ class mistyStateDetectionMenuDelegate extends WatchUi.MenuInputDelegate {
             app.queuedChoice = selectedChoice; 
             
             // Instantly update the UI so the user gets immediate feedback
+            // if (selectedChoice.equals("breathe") && app.view != null) {
+            //     // FIX: Change this to a neutral message instead of [ANIM:BREATHE]
+            //     app.view.updateState(null, "Starting breathing...");
+            // } else 
             if (app.view != null) {
                 app.view.updateState(null, updateText);
             }

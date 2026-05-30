@@ -9,7 +9,7 @@ class mistyChecksInApp extends Application.AppBase {
     var pollTimer as Timer.Timer?;
 
     // REPLACE WITH YOUR CURRENT NGROK URL:
-    hidden var NGROK_URL = "https://ceb3-128-237-82-150.ngrok-free.app/get_situation";
+    hidden var NGROK_URL = "https://85a0-128-237-82-122.ngrok-free.app/get_situation";
 
     function initialize() {
         AppBase.initialize();

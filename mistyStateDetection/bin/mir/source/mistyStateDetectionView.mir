@@ -509,32 +509,32 @@ C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistySta
 C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_100_16_102_16_if_end:
 [ "C:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionView.mc" 105 16 ]
 C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_16_107_16_if_stmt:
-C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_20_105_95_begin:
+C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_20_105_100_begin:
         %tmp.30 = lgetv %newMsg;
         symbol [ newMsg %tmp.30 105 20 26 ];
         %tmp.31 = as %tmp.30 { (!Null) };
         symbol [ equals %tmp.32 105 27 33 ];
         %tmp.32 = getv function %tmp.31 :equals;
-        %tmp.33 = "Anxious? Press Start for options.";
+        %tmp.33 = "Anxious? Tap screen\nfor menu options.";
         %tmp.34 = invoke %tmp.31 %tmp.32(%tmp.33);
         bt %tmp.34 @C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_16_107_16_if_true;
-C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_74_105_95_false:
+C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_79_105_100_false:
         %tmp.35 = lgetv %newMsg;
-        symbol [ newMsg %tmp.35 105 74 80 ];
+        symbol [ newMsg %tmp.35 105 79 85 ];
         %tmp.36 = as %tmp.35 { (!Null) };
-        symbol [ equals %tmp.37 105 81 87 ];
+        symbol [ equals %tmp.37 105 86 92 ];
         %tmp.37 = getv function %tmp.36 :equals;
         %tmp.38 = "reset";
         %tmp.39 = invoke %tmp.36 %tmp.37(%tmp.38);
         push %tmp.39;
-C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_74_105_95_end:
-        %tmp.40 = phi [%tmp.34 @C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_20_105_95_begin] [%tmp.39 @C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_74_105_95_false] [%tmp.40 @C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_74_105_95_end];
+C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_79_105_100_end:
+        %tmp.40 = phi [%tmp.34 @C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_20_105_100_begin] [%tmp.39 @C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_79_105_100_false] [%tmp.40 @C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_79_105_100_end];
         bf %tmp.40 @C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_16_107_16_if_end;
 C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_16_107_16_if_true:
-C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_98_107_16_start:
+C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_103_107_16_start:
 [ "C:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionView.mc" 106 20 ]
         ret ?;
-C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_98_107_16_stop:
+C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_103_107_16_stop:
         goto @C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_16_107_16_if_end;
 C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_105_16_107_16_if_end:
 [ "C:\Users\aboad\misty-speculative-prototyping\mistyStateDetection\source\mistyStateDetectionView.mc" 110 16 ]
@@ -932,14 +932,14 @@ C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistySta
         %tmp.43 = 240;
         symbol [ Graphics %tmp.44 181 33 41 ];
         %tmp.44 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.45 181 42 52 ];
-        %tmp.45 = getv %tmp.44 :FONT_SMALL;
+        symbol [ FONT_XTINY %tmp.45 181 42 52 ];
+        %tmp.45 = getv %tmp.44 :FONT_XTINY;
         symbol [ breathingText %tmp.47 181 54 67 ];
         %tmp.47 = getv ? :breathingText;
         symbol [ Graphics %tmp.48 181 69 77 ];
         %tmp.48 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.49 181 78 97 ];
-        %tmp.49 = getv %tmp.48 :TEXT_JUSTIFY_CENTER;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.49 181 78 95 ];
+        %tmp.49 = getv %tmp.48 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.40 %tmp.41(%tmp.42, %tmp.43, %tmp.45, %tmp.47, %tmp.49);
 C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_179_25_182_8_stop:
         goto @C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_179_8_184_8_if_end;
@@ -972,7 +972,7 @@ C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistySta
         symbol [ dc %tmp.62 183 12 14 ];
         symbol [ drawText %tmp.63 183 15 23 ];
         %tmp.63 = getv function %tmp.62 :drawText;
-        %tmp.64 = 45;
+        %tmp.64 = 40;
         %tmp.65 = 240;
         symbol [ Graphics %tmp.66 183 33 41 ];
         %tmp.66 = getm $.Toybox.Graphics;
@@ -982,8 +982,8 @@ C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistySta
         %tmp.69 = getv ? :currentMsg;
         symbol [ Graphics %tmp.70 183 66 74 ];
         %tmp.70 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.71 183 75 94 ];
-        %tmp.71 = getv %tmp.70 :TEXT_JUSTIFY_CENTER;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.71 183 75 92 ];
+        %tmp.71 = getv %tmp.70 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.62 %tmp.63(%tmp.64, %tmp.65, %tmp.67, %tmp.69, %tmp.71);
 C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_182_65_184_8_stop:
         goto @C__Users_aboad_misty_speculative_prototyping_mistyStateDetection_source_mistyStateDetectionView_mc_182_15_184_8_if_end;

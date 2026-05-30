@@ -102,7 +102,7 @@ class mistyStateDetectionView extends WatchUi.View {
                 }
                 
                 // Keep ignoring standard anxious/reset messages while breathing
-                if (newMsg.equals("Anxious? Press Start for options.") || newMsg.equals("reset")) {
+                if (newMsg.equals("Anxious? Tap screen\nfor menu options.") || newMsg.equals("reset")) {
                     return;
                 }
                 
@@ -178,9 +178,9 @@ class mistyStateDetectionView extends WatchUi.View {
 
         if (isAnimating) {
             // x, y
-            dc.drawText(45, 240, Graphics.FONT_SMALL, breathingText, Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(45, 240, Graphics.FONT_XTINY, breathingText, Graphics.TEXT_JUSTIFY_LEFT);
         } else if (currentMsg != null && !currentMsg.equals("")) {
-            dc.drawText(45, 240, Graphics.FONT_XTINY, currentMsg, Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(40, 240, Graphics.FONT_XTINY, currentMsg, Graphics.TEXT_JUSTIFY_LEFT);
         }
     }
 }

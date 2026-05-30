@@ -15,7 +15,7 @@ class mistyStateDetectionDelegate extends WatchUi.BehaviorDelegate {
 
         // 2. THE LOCK: Only trigger the menu if the anxiety alert is active!
         if (view != null && view.currentMsg != null) {
-            if (view.currentMsg.equals("Anxious? Press Start for options.")) {
+            if (view.currentMsg.equals("Anxious? Tap screen\nfor menu options.")) {
                 System.println("[STATE] Anxiety detected. Opening Menu!");
                 WatchUi.pushView(new Rez.Menus.MainMenu(), new mistyStateDetectionMenuDelegate(), WatchUi.SLIDE_UP);
                 return true;

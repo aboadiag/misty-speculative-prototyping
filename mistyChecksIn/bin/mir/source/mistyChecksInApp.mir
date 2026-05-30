@@ -23,7 +23,7 @@ class mistyChecksInApp extends Application.AppBase {
     var pollTimer as Timer.Timer or Null;
     [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInApp.mc"; @line = 12; @position = 15; @symbol_vardef = [NGROK_URL,12,15,24]; ]
     protected
-    var NGROK_URL = "https://ceb3-128-237-82-150.ngrok-free.app/get_situation";
+    var NGROK_URL = "https://85a0-128-237-82-122.ngrok-free.app/get_situation";
     [ @file = "C:\Users\aboad\misty-speculative-prototyping\mistyChecksIn\source\mistyChecksInApp.mc"; @line = 14; @symbol_functiondef = [initialize,14,13,23]; ]
     function initialize() as Void {
 C__Users_aboad_misty_speculative_prototyping_mistyChecksIn_source_mistyChecksInApp_mc_14_26_16_4_start:

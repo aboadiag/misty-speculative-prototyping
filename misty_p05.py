@@ -243,7 +243,7 @@ def misty_embodiment():
                 # 🚨 FIX: Only send the POST request ONCE to stop the spam loop
                 if not was_anxious: 
                     print(f"[P05] Anxiety Spike! Unlocking watch menu...")
-                    requests.post(f"{SERVER_URL}/send_watch_alert", json={"message": "Anxious? Press Start for options."}, headers=NGROK_HEADERS)
+                    requests.post(f"{SERVER_URL}/send_watch_alert", json={"message": "Anxious? Tap screen\nfor menu options."}, headers=NGROK_HEADERS)
                 
                 was_anxious = True
                 alert_active_until = current_time + 15 # Keep pushing the 15-second timer back as long as BR is high
@@ -281,24 +281,25 @@ def misty_embodiment():
 
                 # --- IF PRIVATE: Misty physically embodies the intervention ---
                 if ENVIRONMENT == "private":
-                    mb.speak_smart("Follow along with physical Misty!", misty)
+                    mb.speak_smart("Pay attention to me.", misty)
+                    time.sleep(5)
 
                     if choice == "breathe":
+                        mb.speak_smart("Follow along with me. Let's take some deep breaths.", misty)
+                        time.sleep(5)
                         guided_box_breathing(cycles=3, environment="private")
                     elif choice == "walk":
                         mb.speak_smart("A walk sounds like a great idea. I'll watch the house while you're gone.", misty)
                         misty.DisplayImage("e_Joy.jpg")
                         time.sleep(5)
                     elif choice == "imagery":
-                        mb.speak_smart("Close your eyes. I'll play some calm colors for you.", misty)
+                        mb.speak_smart("Close your eyes. Visualize a calm place", misty)
                         misty.DisplayImage("e_Sleeping.jpg")
                         misty.ChangeLED(0, 0, 50)
                         time.sleep(10)
 
                 # --- IF PUBLIC: Misty stays discrete ---
-                else:
-                    follow_text = "Follow along with virtual Misty on your watch!"
-                    requests.post(f"{SERVER_URL}/send_watch_alert", json={"message": follow_text}, headers=NGROK_HEADERS)
+                elif ENVIRONMENT == "public":
                     misty.DisplayImage("e_Surprised.jpg")
                     print("[P05] Public mode: Staying quiet while watch handles UI.")
                     time.sleep(10) # Wait a bit so the robot holds the supportive expression
@@ -311,9 +312,7 @@ def misty_embodiment():
                 misty.DisplayImage("e_DefaultContent.jpg")
                 misty.ChangeLED(0, 255, 0)
                 
-                # Re-calibrate baseline after an intervention so they start fresh
-                baseline_br = None 
-
+           
         except Exception as e:
             print(f"[!] Monitoring Error: {e}")
 
@@ -340,10 +339,13 @@ if __name__ == "__main__":
     #     mb.set_current_user(identified_name)
     print("Misty is ready to interact with P05...")
     misty.MoveHead(0, 0, 0, 40)
-    time.sleep(2)
+    time.sleep(5)
 
     #SET USER MODE
-    set_user_mode("private")
+    # set_user_mode("public") # ie you're in the world --> robot is discreet (watch)
+    set_user_mode("private") # ie you can be as loud as you want (you're in your space)
+
+
     print(f"Current user mode is set to {ENVIRONMENT}")
 
     try:

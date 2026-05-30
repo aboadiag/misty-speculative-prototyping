@@ -259,7 +259,7 @@ if __name__ == "__main__":
 
             # ---- session 3 ----
             # 1. Run the verbal morning checklist on the robot
-            morning_routine()
+            # morning_routine()
         
              # 2. Start pushing text reminders to the watch
             workday_reminders()

@@ -4,6 +4,7 @@ import Toybox.WatchUi;
 import Toybox.Communications;
 import Toybox.Timer;
 import Toybox.Activity;
+import Toybox.ActivityMonitor; // 🚨 ADD THIS IMPORT!
 
 class mistyStateDetectionApp extends Application.AppBase {
     var view as mistyStateDetectionView?;
@@ -16,8 +17,8 @@ class mistyStateDetectionApp extends Application.AppBase {
     var isNetworkBusy as Lang.Boolean = false;
 
     // UPDATE THESE WITH YOUR CURRENT NGROK URL
-    hidden var NGROK_GARMIN = "https://3793-128-237-82-122.ngrok-free.app/get_situation";
-    hidden var NGROK_CHOICE_URL = "https://3793-128-237-82-122.ngrok-free.app/user_choice";
+    hidden var NGROK_GARMIN = "https://03a3-128-237-82-212.ngrok-free.app/get_situation";
+    hidden var NGROK_CHOICE_URL = "https://03a3-128-237-82-212.ngrok-free.app/user_choice";
 
     function initialize() {
         AppBase.initialize();
@@ -49,10 +50,10 @@ class mistyStateDetectionApp extends Application.AppBase {
     }
 
     function executeFetchData() as Void {
-        var info = Activity.getActivityInfo();
+        var info = ActivityMonitor.getInfo();
         var currentBr = 15;
-        if (info != null && info.currentHeartRate != null) {
-            currentBr = info.currentHeartRate;
+        if (info != null && info.respirationRate != null) {
+            currentBr = info.respirationRate;
         }
 
         isNetworkBusy = true;
